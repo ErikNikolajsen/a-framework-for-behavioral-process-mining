@@ -1,0 +1,24 @@
+  from snakes.nets import *
+  
+  """
+    ##########################
+    with open(args.model, 'r') as file:
+        pnml_string = file.read()
+
+    net = loads(pnml_string)
+    net.fire("p0")
+
+    all_places = net.place()  # Access places using the place() method
+    for place in all_places:
+        print(place.name)
+
+    
+
+    ##########################
+    """
+
+
+    -----8<-----[ cut here ]----
+
+
+str(uuid.uuid4()).replace("-", "")[:10]

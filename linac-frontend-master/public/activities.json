@@ -1,0 +1,3 @@
+{
+    "input": "agent(Agent1){\n  goto(16,9); wait(10);\n  goto(15,11); wait(20);\n  goto(16,9); wait(10);\n  goto(15,11); wait(20);\n  goto(15,8); wait(60);\n  goto(16,9); wait(10);\n  goto(15,11); wait(10);\n  goto(15,7); wait(10);\n  goto(15,11); wait(10);\n  goto(Burner_Kitchen); wait(5);\n  goto(16,7); wait(60);\n  goto(16,11); wait(60);\n  goto(Burner_Kitchen); wait(660);\n  goto(Fridge_Kitchen); wait(10);\n  goto(16,5); wait(10);\n  goto(15,7); wait(10);\n  goto(15,11); wait(10);\n  goto(Burner_Kitchen); wait(35);\n  goto(15,7); wait(10);\n  goto(16,11); wait(5);\n  goto(Sink_Kitchen);\n  goto(Burner_Kitchen);\n  goto(Sink_Kitchen); wait(180);\n  goto(12,11);\n  goto(11,7);\n  }"
+}

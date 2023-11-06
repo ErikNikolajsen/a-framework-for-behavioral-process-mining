@@ -1,0 +1,3 @@
+{
+    "input": "case-1; goto(kitchen); goto(fridge); goto(sink); interact(fridge, toast); goto(9,6); goto(8,7); interact(sink,drink); repeat t5; goto(2,8); interact(sink,wash); goto(8,5); goto(8,5); goto(10,6); repeat t6; repeat t9; goto(8,5); goto(10,6); repeat t6; interact(sink,drink); goto(9,1); goto(sink); repeat t9; repeat t5; goto(2,8); interact(sink,wash); goto(8,5); goto(8,5); goto(10,6); repeat t6; interact(sink,drink); repeat t5; goto(2,8); interact(sink,wash); goto(8,5); goto(table)"
+}

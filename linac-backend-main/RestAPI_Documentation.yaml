@@ -1,0 +1,355 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "SmartHomeSimulatorRestAPI",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "https://smart-home-simulator-backend.herokuapp.com"
+    }
+  ],
+  "paths": {
+    "/api/roomConfig/floorplan": {
+      "post": {
+        "description": "Auto generated using Swagger Inspector",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/body"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n\"tileSideLength\": 1.0,\r\n\"width\": 5,\r\n\"height\": 5,\r\n\"agent\":{\r\n\"position\":{\r\n\"x\": 0,\r\n\"y\": 0\r\n},\r\n\"speed\": 1.0\r\n},\r\n\"passiveSensors\":[\r\n{\r\n\"type\": \"entities.library.PresenceSensor\",\r\n\"name\": \"Light_2\",\r\n\"physicalArea\":[{\"x\": 3, \"y\": 2 }],\r\n\"interactArea\":[{\"x\": 2, \"y\": 2 }],\r\n\"walkable\":true,\r\n\"triggerFrequency\": 500000000\r\n},\r\n  {\r\n\"type\": \"entities.library.FloorSensor\",\r\n\"name\": \"Light_1\",\r\n\"physicalArea\":[{\"x\": 3, \"y\": 2 }],\r\n\"interactArea\":[{\"x\": 2, \"y\": 2 }],\r\n\"walkable\":true,\r\n\"triggerFrequency\": 500000000\r\n},\r\n{\r\n\"type\": \"entities.library.ProximitySensor\",\r\n\"name\": \"passive_light_1\",\r\n\"physicalArea\":[{\"x\": 2, \"y\": 3 },{\"x\": 3, \"y\": 3 }],\r\n\"interactArea\":[{\"x\": 2, \"y\": 1 }],\r\n\"walkable\":true,\r\n\"triggerFrequency\": 300000000\r\n}],\r\n\"activeSensors\":[\r\n{\r\n\"type\": \"entities.library.Television\",\r\n\"name\": \"smartTV\",\r\n\"physicalArea\":[{\"x\": 3, \"y\": 2 }],\r\n\"interactArea\":[{\"x\": 4, \"y\": 0 },{\"x\": 4, \"y\": 1 }],\r\n\"walkable\":false\r\n},\r\n{\r\n\"type\": \"entities.library.Faucet\",\r\n\"name\": \"faucet1\",\r\n\"physicalArea\":[{\"x\": 0, \"y\": 4 }],\r\n\"interactArea\":[{\"x\": 1, \"y\": 4 }],\r\n\"walkable\":false\r\n}\r\n],\r\n\"walls\":[{\"x\": 0, \"y\": 1},{\"x\": 0,\"y\": 3},{\"x\": 1,\"y\": 1},{\"x\": 2,\"y\": 3},{\"x\": 3,\"y\": 3},{\"x\": 4,\"y\": 3}],\r\n\"entities\":[\r\n{\r\n\"name\": \"chair\",\r\n\"physicalArea\":[{\"x\": 4, \"y\": 2 }],\r\n\"interactArea\":[{\"x\": 4, \"y\": 2 }],\r\n\"walkable\":false\r\n},\r\n{\r\n\"name\": \"bed\",\r\n\"physicalArea\":[{\"x\": 3, \"y\": 0 },{\"x\": 3, \"y\": 1 }],\r\n\"interactArea\":[{\"x\": 3, \"y\": 0 },{\"x\": 3, \"y\": 1 }],\r\n\"walkable\":false\r\n},\r\n{\r\n\"name\": \"kitchen\",\r\n\"physicalArea\":[],\r\n\"interactArea\":[{\"x\": 2, \"y\": 4 },{\"x\": 3, \"y\": 4 },{\"x\": 4, \"y\": 4 }],\r\n\"walkable\":true\r\n}\r\n]\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Valid floorplan",
+            "content": {
+              "text/plain;charset=UTF-8": {
+                "schema": {
+                  "type": "string",
+                  "description": "consumed"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://smart-home-simulator-backend.herokuapp.com"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://smart-home-simulator-backend.herokuapp.com"
+        }
+      ]
+    },
+    "/api/simulation/simulator": {
+      "post": {
+        "description": "Auto generated using Swagger Inspector",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/body_1"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\r\n    \"clock\": \"2020-01-01T00:00:00.000000000\",\r\n    \"instantSimulation\": true,\r\n    \"relativeTime\": 1.0,\r\n    \"mqttOutput\": false,\r\n      \"qualityOfService\": 0,\r\n    \"mqttHost\": \"broker.hivemq.com\",\r\n    \"mqttPort\": \"1883\",\r\n      \"rootTopic\": \"smarthome\",\r\n      \"seed\": null\r\n}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Valid simulation configuration",
+            "content": {
+              "text/plain;charset=UTF-8": {
+                "schema": {
+                  "type": "string",
+                  "description": "consumed"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://smart-home-simulator-backend.herokuapp.com"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://smart-home-simulator-backend.herokuapp.com"
+        }
+      ]
+    },
+    "/api/simulation/input": {
+      "post": {
+        "description": "Auto generated using Swagger Inspector",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/body_2"
+              },
+              "examples": {
+                "0": {
+                  "value": "{\"input\":\"goto(4,4);goto(bed);goto(chair);interact(smartTV,ON);interact(smartTV,CHANNEL1);interact(smartTV,VOLUME_UP);interact(faucet1,TURN_ON);wait(3);interact(faucet1,TURN_OFF);\"}"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Valid agent instructions",
+            "content": {
+              "text/plain;charset=UTF-8": {
+                "schema": {
+                  "type": "string",
+                  "description": "consumed"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://smart-home-simulator-backend.herokuapp.com"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://smart-home-simulator-backend.herokuapp.com"
+        }
+      ]
+    },
+    "/api/system/ping": {
+      "get": {
+        "description": "Auto generated using Swagger Inspector",
+        "responses": {
+          "200": {
+            "description": "The server is connected",
+            "content": {
+              "text/plain;charset=UTF-8": {
+                "schema": {
+                  "type": "string",
+                  "description": "pong"
+                },
+                "examples": {}
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://smart-home-simulator-backend.herokuapp.com"
+          }
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://smart-home-simulator-backend.herokuapp.com"
+        }
+      ]
+    }
+  },
+  "components": {
+    "schemas": {
+      "apiroomConfigfloorplan_agent_position": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "integer"
+          },
+          "y": {
+            "type": "integer"
+          }
+        }
+      },
+      "apiroomConfigfloorplan_agent": {
+        "type": "object",
+        "properties": {
+          "position": {
+            "$ref": "#/components/schemas/apiroomConfigfloorplan_agent_position"
+          },
+          "speed": {
+            "type": "number"
+          }
+        }
+      },
+      "apiroomConfigfloorplan_entities": {
+        "type": "object",
+        "properties": {
+          "physicalArea": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/apiroomConfigfloorplan_agent_position"
+            }
+          },
+          "walkable": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "interactArea": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/apiroomConfigfloorplan_agent_position"
+            }
+          }
+        }
+      },
+      "apiroomConfigfloorplan_passiveSensors": {
+        "type": "object",
+        "properties": {
+          "physicalArea": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/apiroomConfigfloorplan_agent_position"
+            }
+          },
+          "walkable": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "interactArea": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/apiroomConfigfloorplan_agent_position"
+            }
+          },
+          "triggerFrequency": {
+            "type": "integer"
+          }
+        }
+      },
+      "apiroomConfigfloorplan_activeSensors": {
+        "type": "object",
+        "properties": {
+          "physicalArea": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/apiroomConfigfloorplan_agent_position"
+            }
+          },
+          "walkable": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "interactArea": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/apiroomConfigfloorplan_agent_position"
+            }
+          }
+        }
+      },
+      "body": {
+        "type": "object",
+        "properties": {
+          "agent": {
+            "$ref": "#/components/schemas/apiroomConfigfloorplan_agent"
+          },
+          "tileSideLength": {
+            "type": "number"
+          },
+          "walls": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/apiroomConfigfloorplan_agent_position"
+            }
+          },
+          "entities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/apiroomConfigfloorplan_entities"
+            }
+          },
+          "width": {
+            "type": "integer"
+          },
+          "passiveSensors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/apiroomConfigfloorplan_passiveSensors"
+            }
+          },
+          "activeSensors": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/apiroomConfigfloorplan_activeSensors"
+            }
+          },
+          "height": {
+            "type": "integer"
+          }
+        }
+      },
+      "body_1": {
+        "type": "object",
+        "properties": {
+          "instantSimulation": {
+            "type": "boolean"
+          },
+          "relativeTime": {
+            "type": "number"
+          },
+          "seed": {},
+          "rootTopic": {
+            "type": "string"
+          },
+          "clock": {
+            "type": "string"
+          },
+          "mqttHost": {
+            "type": "string"
+          },
+          "mqttOutput": {
+            "type": "boolean"
+          },
+          "qualityOfService": {
+            "type": "integer"
+          },
+          "mqttPort": {
+            "type": "string"
+          }
+        }
+      },
+      "body_2": {
+        "type": "object",
+        "properties": {
+          "input": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

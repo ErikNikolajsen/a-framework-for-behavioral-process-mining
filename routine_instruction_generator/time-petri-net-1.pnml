@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml>
+  <net id="timed_petri_net" type="http://www.pnml.org/version-2009/grammar/ptNetType">
+    <page id="page1">
+      <!-- Places -->
+      <place id="p1">
+        <name>
+          <text>Place 1</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+
+      <place id="p2">
+        <name>
+          <text>Place 2</text>
+        </name>
+      </place>
+
+      <!-- Transitions -->
+      <transition id="t1">
+        <name>
+          <text>Transition 1</text>
+        </name>
+      </transition>
+
+      <!-- Arcs -->
+      <arc id="arc1" source="p1" target="t1">
+        <inscription>
+          <text>1 [5]</text>
+        </inscription>
+      </arc>
+
+      <arc id="arc2" source="t1" target="p2">
+        <inscription>
+          <text>1</text>
+        </inscription>
+      </arc>
+    </page>
+  </net>
+</pnml>

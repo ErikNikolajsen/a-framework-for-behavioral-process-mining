@@ -48,9 +48,14 @@ public abstract class Sensor extends Entity{
 		}
 		
 		// CSV output
+
 		if (Resources.getSimulator().getCsvOutput() == true) {
-			Resources.getLog().writeToFile(Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.nnnnnnnnn")).toString()+","+getClass().getSimpleName()+","+getName()+","+state.toString());
-		}
+
+			Resources.getLog().writeToFile(Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")).toString()+","+Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.nnnnnnnnn")).toString()+","+getClass().getSimpleName()+","+getName());
+			
+								 //+","+state.toString());
+			
+						  }
 	}
 	
 }

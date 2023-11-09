@@ -111,7 +111,7 @@ public class Simulator {
 		// instantiate Log object if user wants to generate a CSV file 
 		if (csvOutput == true) {
 			Resources.setLog(new Log(csvFileName));
-			Resources.getLog().createFile();
+			//Resources.getLog().createFile();
 			Resources.getLog().openFileWriter();
 		}
 		
@@ -132,6 +132,7 @@ public class Simulator {
 				
 				// GOTO
 				if (Resources.getInput().getGotopattern().matcher(statement).matches()) {
+					bEvents.add(new BEvent(BEventType.COMMAND, bEventClock, statement.toString()));
 					Position gotoPosition = new Position(
 						Integer.parseInt(Resources.getInput().getGotopattern().matcher(statement).replaceAll("$1")),
 						Integer.parseInt(Resources.getInput().getGotopattern().matcher(statement).replaceAll("$2"))
@@ -151,6 +152,7 @@ public class Simulator {
 				
 				// GOTO ENTITY
 				} else if (Resources.getInput().getGotoentitypattern().matcher(statement).matches()) {
+					bEvents.add(new BEvent(BEventType.COMMAND, bEventClock, statement.toString()));
 					String entityName = Resources.getInput().getGotoentitypattern().matcher(statement).replaceAll("$1");
 					gotoEntityInstructions(agent, entityName);
 				}
@@ -194,7 +196,15 @@ public class Simulator {
 			// Output event
 			} else if (event.getEventType() == BEventType.OUTPUT) {
 				print(event.getOutput());
-			} 
+			}
+
+			else if (event.getEventType() == BEventType.COMMAND) {
+
+				String st = event.getOutput().replace(",", "-");
+
+//                  Resources.getLog().writeToFile(Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")).toString()+","+Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.nnnnnnnnn")).toString()+","+""+","+""+","+st);
+
+		  }
 		}
 		print("*** Simulation has ended ***");
 		

@@ -8,6 +8,6 @@
    "mqttPort":"1883",
    "rootTopic":"smarthome",
    "seed":null,
-   "csvOutput":false,
+   "csvOutput":true,
    "csvFileName":"test"
 }

@@ -9,5 +9,5 @@
    "rootTopic":"smarthome",
    "seed":null,
    "csvOutput":true,
-   "csvFileName":"test"
+   "csvFileName":"eventlog"
 }

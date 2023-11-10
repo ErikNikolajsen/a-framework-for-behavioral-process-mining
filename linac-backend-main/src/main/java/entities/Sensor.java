@@ -3,6 +3,7 @@ package entities;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttPersistenceException;
@@ -15,6 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import geo.Position;
 import main.Main;
 import main.Resources;
+
 
 
 @JsonTypeInfo(use = Id.CLASS,
@@ -51,11 +53,30 @@ public abstract class Sensor extends Entity{
 
 		if (Resources.getSimulator().getCsvOutput() == true) {
 
-			Resources.getLog().writeToFile(Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")).toString()+","+Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.nnnnnnnnn")).toString()+","+getClass().getSimpleName()+","+getName());
+			Resources.getLog().writeToFile(Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.nnnnnnnnn")).toString()+","+getClass().getSimpleName()+","+getName()+","+hashMapToCustomString(state));
 			
-								 //+","+state.toString());
-			
-						  }
+			}
+	}
+
+	// Custom method to convert HashMap to a custom string representation
+	private static <K, V> String hashMapToCustomString(Map<K, V> map) {
+	StringBuilder sb = new StringBuilder();
+	sb.append("{");
+
+	for (Map.Entry<K, V> entry : map.entrySet()) {
+		sb.append(entry.getKey())
+				.append("=")
+				.append(entry.getValue())
+				.append("; ");
+	}
+
+	// Remove the trailing semicolon and space, if any
+	if (sb.length() > 1) {
+		sb.setLength(sb.length() - 2);
+	}
+
+	sb.append("}");
+	return sb.toString();
 	}
 	
 }

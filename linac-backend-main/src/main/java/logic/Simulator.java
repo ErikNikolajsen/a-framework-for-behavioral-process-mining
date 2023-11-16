@@ -31,6 +31,8 @@ import entities.SensorActive;
 import entities.SensorPassive;
 
 public class Simulator {
+
+	private int caseID = 0;
 	
 	private LocalDateTime clock; // LocalDateTime.of(2020, 1, 1, 0, 0, 0, 0); 
 	private boolean instantSimulation = true;
@@ -58,7 +60,7 @@ public class Simulator {
 	ArrayList<BEvent> bEvents;
 	LocalDateTime bEventClock;
 	
-	public Simulator(LocalDateTime clock, boolean instantSimulation, double relativeTime, boolean mqttOutput, int qualityOfService, String mqttHost, String mqttPort, String rootTopic, boolean csvOutput, String csvFileName, Long seed) {
+	public Simulator(LocalDateTime clock, boolean instantSimulation, double relativeTime, boolean mqttOutput, int qualityOfService, String mqttHost, String mqttPort, String rootTopic, boolean csvOutput, String csvFileName, Long seed, int caseID) {
 		this.clock = clock;
 		this.instantSimulation = instantSimulation;
 		this.relativeTime = relativeTime;
@@ -70,6 +72,7 @@ public class Simulator {
 		this.csvOutput = csvOutput;
 		this.csvFileName = csvFileName;
 		this.seed = seed;
+		this.caseID = caseID;
 	}
 	
 	public Simulator() throws MqttException { 
@@ -111,7 +114,7 @@ public class Simulator {
 		// instantiate Log object if user wants to generate a CSV file 
 		if (csvOutput == true) {
 			Resources.setLog(new Log(csvFileName));
-			//Resources.getLog().createFile();
+			Resources.getLog().createFile();
 			Resources.getLog().openFileWriter();
 		}
 		
@@ -132,7 +135,6 @@ public class Simulator {
 				
 				// GOTO
 				if (Resources.getInput().getGotopattern().matcher(statement).matches()) {
-					bEvents.add(new BEvent(BEventType.COMMAND, bEventClock, statement.toString()));
 					Position gotoPosition = new Position(
 						Integer.parseInt(Resources.getInput().getGotopattern().matcher(statement).replaceAll("$1")),
 						Integer.parseInt(Resources.getInput().getGotopattern().matcher(statement).replaceAll("$2"))
@@ -152,10 +154,26 @@ public class Simulator {
 				
 				// GOTO ENTITY
 				} else if (Resources.getInput().getGotoentitypattern().matcher(statement).matches()) {
-					bEvents.add(new BEvent(BEventType.COMMAND, bEventClock, statement.toString()));
 					String entityName = Resources.getInput().getGotoentitypattern().matcher(statement).replaceAll("$1");
 					gotoEntityInstructions(agent, entityName);
-				}
+
+				// CASE
+				} else if (Resources.getInput().getCasepattern().matcher(statement).matches()) {
+					int caseID = Integer.parseInt(Resources.getInput().getCasepattern().matcher(statement).replaceAll("$1"));
+					bEvents.add(new BEvent(BEventType.CASE, bEventClock, caseID));
+
+					// reset sensors' lastTriggerTime variable
+					for (SensorPassive sensor : passiveSensors) {
+						sensor.setLastTriggerTime(null);
+					}
+					
+					// reset agents' positions
+					for (Agent agent2 : floorplan.getAgents()) {
+						agent2.setPosition(agent2.getInitialPosition());
+					}
+					
+					}
+ 
 			}
 			
 			// Add end simulation event (for the scenario where the last instruction is wait, to allow for C-events in waiting period)
@@ -196,15 +214,22 @@ public class Simulator {
 			// Output event
 			} else if (event.getEventType() == BEventType.OUTPUT) {
 				print(event.getOutput());
+
+			// Case event
+			} else if (event.getEventType() == BEventType.CASE) {
+				this.caseID = event.getCaseID();
+				
+				// reset sensors' lastTriggerTime variable
+				for (SensorPassive sensor : passiveSensors) {
+					sensor.setLastTriggerTime(null);
+				}
+				
+				// reset agents' positions
+				for (Agent agent : floorplan.getAgents()) {
+					agent.setPosition(agent.getInitialPosition());
+				}
+
 			}
-
-			else if (event.getEventType() == BEventType.COMMAND) {
-
-				String st = event.getOutput().replace(",", "-");
-
-//                  Resources.getLog().writeToFile(Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")).toString()+","+Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.nnnnnnnnn")).toString()+","+""+","+""+","+st);
-
-		  }
 		}
 		print("*** Simulation has ended ***");
 		
@@ -483,5 +508,11 @@ public class Simulator {
 		this.csvFileName = csvFileName;
 	}
 	
-	
+	public int getCaseID() {
+		return caseID;
+	}
+
+	public void setCaseID(int caseID) {
+		this.caseID = caseID;
+	}
 }

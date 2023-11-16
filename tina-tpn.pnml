@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--created Thu Nov 02 17:38:47 2023 by ndrio version 3.7.5-->
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-2E50-6E429-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>tina-tpn</text>
+  </name>
+ <page id="g-2E50-6E462-1">
+  <place id="p-2E50-6E466-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="30" y="240"/>
+   </graphics>
+  </place>
+  <place id="p-2E50-6E489-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="270" y="290"/>
+   </graphics>
+  </place>
+  <place id="p-2E50-6E48F-4">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="560" y="420"/>
+   </graphics>
+  </place>
+  <place id="p-2E50-6E496-5">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="570" y="165"/>
+   </graphics>
+  </place>
+  <place id="p-2E50-6E499-6">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="810" y="410"/>
+   </graphics>
+  </place>
+  <place id="p-2E50-6E4C0-7">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="835" y="115"/>
+   </graphics>
+  </place>
+  <place id="p-2E50-6E4CA-8">
+  <name>
+   <text>p8</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1125" y="305"/>
+   </graphics>
+  </place>
+  <place id="p-2E50-6E4CE-9">
+  <name>
+   <text>p9</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="270" y="170"/>
+   </graphics>
+  </place>
+  <transition id="t-2E50-6E4D7-10">
+  <name>
+   <text>t0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(kitchen)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>0</cn>
+     <cn>0</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="140" y="240"/>
+   </graphics>
+  </transition>
+  <transition id="t-2E50-6E4E4-11">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(fridge)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>0</cn>
+     <cn>0</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="380" y="170"/>
+   </graphics>
+  </transition>
+  <transition id="t-2E50-6E4ED-12">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(sink)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>5</cn>
+     <cn>10</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="380" y="310"/>
+   </graphics>
+  </transition>
+  <transition id="t-2E50-6E4F5-13">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(fridge,cereal)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="720" y="50"/>
+   </graphics>
+  </transition>
+  <transition id="t-2E50-6E4FD-14">
+  <name>
+   <text>t4</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(fridge, toast)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="700" y="215"/>
+   </graphics>
+  </transition>
+  <transition id="t-2E50-6E5CD-15">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(sink,drink)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="685" y="350"/>
+   </graphics>
+  </transition>
+  <transition id="t-2E50-6E5D8-16">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(sink,wash)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="685" y="515"/>
+   </graphics>
+  </transition>
+  <transition id="t-2E50-6E5E1-17">
+  <name>
+   <text>t8</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(table)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="945" y="290"/>
+   </graphics>
+  </transition>
+  <transition id="t-2E50-6E5E8-18">
+  <name>
+   <text>t9</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(sink)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="700" y="635"/>
+   </graphics>
+  </transition>
+  <arc id="e-2E50-6E5F3-19" source="p-2E50-6E4CE-9" target="t-2E50-6E4E4-11">
+  </arc>
+  <arc id="e-2E50-6E5F8-20" source="t-2E50-6E4FD-14" target="p-2E50-6E4C0-7">
+  </arc>
+  <arc id="e-2E50-6E5FC-21" source="t-2E50-6E4F5-13" target="p-2E50-6E4C0-7">
+  </arc>
+  <arc id="e-2E50-6E5FE-22" source="t-2E50-6E5CD-15" target="p-2E50-6E499-6">
+  </arc>
+  <arc id="e-2E50-6E5FF-23" source="p-2E50-6E48F-4" target="t-2E50-6E5CD-15">
+  </arc>
+  <arc id="e-2E50-6E601-24" source="p-2E50-6E496-5" target="t-2E50-6E4F5-13">
+  </arc>
+  <arc id="e-2E50-6E603-25" source="p-2E50-6E496-5" target="t-2E50-6E4FD-14">
+  </arc>
+  <arc id="e-2E50-6E605-26" source="t-2E50-6E4ED-12" target="p-2E50-6E48F-4">
+  </arc>
+  <arc id="e-2E50-6E607-27" source="p-2E50-6E466-2" target="t-2E50-6E4D7-10">
+  </arc>
+  <arc id="e-2E50-6E609-28" source="t-2E50-6E4D7-10" target="p-2E50-6E489-3">
+  </arc>
+  <arc id="e-2E50-6E60D-29" source="p-2E50-6E489-3" target="t-2E50-6E4ED-12">
+  </arc>
+  <arc id="e-2E50-6E60E-30" source="t-2E50-6E4D7-10" target="p-2E50-6E4CE-9">
+  </arc>
+  <arc id="e-2E50-6E610-31" source="t-2E50-6E4E4-11" target="p-2E50-6E496-5">
+  </arc>
+  <arc id="e-2E50-6E611-32" source="t-2E50-6E5E8-18" target="p-2E50-6E48F-4">
+  </arc>
+  <arc id="e-2E50-6E613-33" source="p-2E50-6E499-6" target="t-2E50-6E5E8-18">
+  </arc>
+  <arc id="e-2E50-6E615-34" source="t-2E50-6E5D8-16" target="p-2E50-6E499-6">
+  </arc>
+  <arc id="e-2E50-6E617-35" source="p-2E50-6E48F-4" target="t-2E50-6E5D8-16">
+  </arc>
+  <arc id="e-2E50-6E61B-36" source="p-2E50-6E499-6" target="t-2E50-6E5E1-17">
+  </arc>
+  <arc id="e-2E50-6E61D-37" source="t-2E50-6E5E1-17" target="p-2E50-6E4CA-8">
+  </arc>
+  <arc id="e-2E50-6E61E-38" source="p-2E50-6E4C0-7" target="t-2E50-6E5E1-17">
+  </arc>
+ </page>
+ </net>
+</pnml>

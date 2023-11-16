@@ -9,8 +9,8 @@ class PetriNet():
         self.places.append(Place(id, name, tokens))
         return self
 
-    def add_transition(self, id, name, label):
-        self.transitions.append(Transition(id, name, label))
+    def add_transition(self, id, name, label, delay_lower_limit, delay_upper_limit):
+        self.transitions.append(Transition(id, name, label, delay_lower_limit, delay_upper_limit))
         return self
 
     def add_arc(self, id, source, target):
@@ -83,10 +83,12 @@ class Place():
         self.tokens = tokens
 
 class Transition():
-    def __init__(self, id, name, label):
+    def __init__(self, id, name, label, delay_lower_limit, delay_upper_limit):
         self.id = id
         self.name = name
         self.label = label
+        self.delay_lower_limit = delay_lower_limit
+        self.delay_upper_limit = delay_upper_limit
 
 class Arc():
     def __init__(self, id, source, target):

@@ -1,46 +1,59 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
 import requests
 import json
-print("Proof for the independence of the backend.\n")
-response = requests.get("http://localhost:8080/api/system/ping")
+import pm4py
+import pandas as pd
 
-print(response.text)
+ENVIRONMENT_PATH = "floorplan.json"
+INSTRUCTIONS_PATH = "input.json"
+SETTINGS_PATH = "simulator.json"
 
-f = open('floorplan.json',)
-floorplan = json.load(f)
-f.close()
+def run_simulation(environment, agent_instructions, simulator_settings):
+    # Test connection 
+    print("Sending ping for connection test:")
+    response = requests.get("http://localhost:8080/api/system/ping")
+    print(response.text)
 
-url1 = "http://localhost:8080/api/roomConfig/floorplan"
+    # Send environment
+    f = open(environment)
+    floorplan = json.load(f)
+    f.close()
+    url1 = "http://localhost:8080/api/roomConfig/floorplan"
+    print("\nSending environment:")
+    floorplanreq = requests.post(url1, json = floorplan)
+    print(floorplanreq.text)
 
-floorplanreq = requests.post(url1, json = floorplan)
-print("\nsending floorplan: ")
-print(floorplanreq.text)
+    # Send agent instructions
+    f = open(agent_instructions)
+    inputFile = json.load(f)
+    f.close()
+    url2 = "http://localhost:8080/api/simulation/input"
+    print("\nSending agent instructions:")
+    inputreq = requests.post(url2, json = inputFile)
+    print(inputreq.text)
 
-f = open('input.json',)
-inputFile = json.load(f)
-f.close()
+    # Send simulator settings
+    f = open(simulator_settings)
+    simulator = json.load(f)
+    f.close()
+    url3 = "http://localhost:8080/api/simulation/simulator"
+    
+    print("\nSending simulator settings:")
+    simulatorreq = requests.post(url3, json = simulator)
+    print(simulatorreq.text)
 
-url2 = "http://localhost:8080/api/simulation/input"
+# Main code
+if __name__ == "__main__":
+    run_simulation(ENVIRONMENT_PATH, INSTRUCTIONS_PATH, SETTINGS_PATH)
 
-inputreq = requests.post(url2, json = inputFile)
-print("\nsending inputs: ")
-print(inputreq.text)
+    # Specify your CSV file path
+    csv_file_path = 'eventlog.csv'
 
+    # Load CSV log
+    dataframe = pd.read_csv(csv_file_path, sep=',')
+    dataframe.columns = ['case:concept:name', 'time:timestamp', 'concept:name', 'name', 'state']
+    event_log = pm4py.convert_to_event_log(dataframe)
 
-f = open('simulator.json',)
-simulator = json.load(f)
-f.close()
+    pm4py.write_xes(event_log, 'exported.xes')
 
-url3 = "http://localhost:8080/api/simulation/simulator"
-
-simulatorreq = requests.post(url3, json = simulator)
-print("\nsending simulator info: ")
-print(simulatorreq.text)
 
 

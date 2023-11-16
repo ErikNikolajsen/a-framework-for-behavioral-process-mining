@@ -23,7 +23,7 @@ def add_repetitive_behavior(petri_net, petri_net_modified, degree,):
         transition = original_transitions[i] # pick random transition
         #print("Picked transition: "+transition.id) # test
         new_transition_id = str(uuid.uuid4()).replace("-", "")[:15]
-        petri_net_modified.add_transition(new_transition_id, "rt"+str(repetitive_name_counter), f"repeat {transition.name}") # TODO change label to ""
+        petri_net_modified.add_transition(new_transition_id, "rt"+str(repetitive_name_counter), f"repeat {transition.name}", 0, 0) # TODO change label to ""
         repetitive_name_counter += 1
         outgoing_arcs = []
         incoming_arcs = []
@@ -52,7 +52,7 @@ def add_wandering_behavior(petri_net, petri_net_modified, degree):
             if arc.id == random_arc.id:
                 petri_net_modified.arcs.remove(arc)
         new_transition_id = str(uuid.uuid4()).replace("-", "")[:15]
-        petri_net_modified.add_transition(new_transition_id, "wt"+str(wandering_name_counter), f"goto({random.randint(0, 10)},{random.randint(0, 10)})") # TODO make label go to random walkable tile 
+        petri_net_modified.add_transition(new_transition_id, "wt"+str(wandering_name_counter), f"goto({random.randint(0, 10)},{random.randint(0, 10)})", 0, 0) # TODO make label go to random walkable tile 
         wandering_name_counter += 1
         new_place_id = str(uuid.uuid4()).replace("-", "")[:15]
         petri_net_modified.add_place(new_place_id, "wp"+str(wandering_name_counter), 0)

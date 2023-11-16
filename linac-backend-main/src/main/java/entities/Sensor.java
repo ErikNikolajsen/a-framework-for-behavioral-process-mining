@@ -53,7 +53,7 @@ public abstract class Sensor extends Entity{
 
 		if (Resources.getSimulator().getCsvOutput() == true) {
 
-			Resources.getLog().writeToFile(Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.nnnnnnnnn")).toString()+","+getClass().getSimpleName()+","+getName()+","+hashMapToCustomString(state));
+			Resources.getLog().writeToFile(Resources.getSimulator().getCaseID()+","+Resources.getSimulator().getClock().format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.nnnnnnnnn")).toString()+","+getClass().getSimpleName()+","+getName()+","+hashMapToCustomString(state));
 			
 			}
 	}

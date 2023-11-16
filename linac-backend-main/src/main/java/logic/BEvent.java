@@ -15,6 +15,7 @@ public class BEvent {
 	private SensorActive sensor;
 	private String command;
 	private String output;
+	private int caseID;
 	
 	// Movement constructor
 	public BEvent(BEventType eventType, LocalDateTime eventDateTime, Agent agent, AStarNode node) {
@@ -43,6 +44,13 @@ public class BEvent {
 	public BEvent(BEventType eventType, LocalDateTime eventDateTime) {
 		this.eventType = eventType;
 		this.eventDateTime = eventDateTime;
+	}
+
+	// Case constructor
+	public BEvent(BEventType eventType, LocalDateTime eventDateTime, int caseID) {
+		this.eventType = eventType;
+		this.eventDateTime = eventDateTime;
+		this.caseID = caseID;
 	}
 	
 	// Default constructor
@@ -103,6 +111,14 @@ public class BEvent {
 
 	public void setOutput(String output) {
 		this.output = output;
+	}
+
+	public int getCaseID() {
+		return caseID;
+	}
+
+	public void setOutput(int caseID) {
+		this.caseID = caseID;
 	}
 	
 	

@@ -24,7 +24,8 @@ public class Input {
 	@JsonIgnore private final Pattern gotoEntityPattern = Pattern.compile("\\s*goto\\(\\s*(\\w+)\\s*\\)\\s*"); //gotoEntityPattern that accepts name of Entity or SensorActive
 	@JsonIgnore private final Pattern interactPattern = Pattern.compile("\\s*interact\\(\\s*(\\w+),(\\w+)\\s*\\)\\s*"); //interactPattern that accepts sensorName and command
 	@JsonIgnore private final Pattern waitPattern = Pattern.compile("\\s*wait\\(\\s*(\\d+)\\s*\\)\\s*"); //waitPattern that accepts integer
-	@JsonIgnore private final Pattern emptyPattern = Pattern.compile("\\s*"); //empty statement and whitespace at end of input string 
+	@JsonIgnore private final Pattern emptyPattern = Pattern.compile("\\s*"); //empty statement and whitespace at end of input string
+	@JsonIgnore private final Pattern casePattern = Pattern.compile("\\s*case-(\\d+)\\s*"); //casePattern 
 	
 	@JsonIgnore private final Pattern commentLinePattern = Pattern.compile("//.*");
 	@JsonIgnore private final Pattern commentBlockPattern = Pattern.compile("/\\*[\\s\\S]*\\*/");
@@ -121,6 +122,10 @@ public class Input {
 			if (waitPattern.matcher(inputArray[i]).matches()) {
 				continue;
 			}
+
+			if (casePattern.matcher(inputArray[i]).matches()) {
+				continue;
+			}
 			
 			if (gotoEntityPattern.matcher(inputArray[i]).matches()) {
 				// parse input
@@ -215,6 +220,8 @@ public class Input {
 		return gotoEntityPattern;
 	}
 	
-	
+	public Pattern getCasepattern() {
+		return casePattern;
+	}
 	
 }

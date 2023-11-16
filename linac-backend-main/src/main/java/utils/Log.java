@@ -14,6 +14,16 @@ public class Log {
 	}
 	
 	public void createFile() {
+		/* 
+		try {
+			File myObj = new File(fileName+".csv");
+			myObj.createNewFile();
+			System.out.println("File created: " + myObj.getName());
+		  } catch (IOException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		  }
+		  */
 	}
 	
 	public void writeToFile(String output) {
@@ -26,22 +36,22 @@ public class Log {
 	}
 	
 	public void openFileWriter() {
-
+ 		// Gemmas
 		try {
-
 			   File myfile = new File(fileName+".csv");
-
 			   myWriter = new FileWriter(myfile,true);
-
-			  
-
 		} catch (IOException e) {
-
 			   // TODO Auto-generated catch block
-
 			   e.printStackTrace();
-
 		}
+/* 
+		try {
+			myWriter = new FileWriter(fileName+".csv");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		*/
 
  }
 	

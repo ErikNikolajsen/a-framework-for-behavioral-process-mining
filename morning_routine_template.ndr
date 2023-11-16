@@ -1,0 +1,158 @@
+p 4900.0 700.0 end 0 n
+p 560.0 660.0 p1 0 n
+p 2920.0 580.0 p10 0 n
+p 2640.0 710.0 p11 0 n
+p 2910.0 710.0 p12 0 n
+p 3140.0 700.0 p13 0 n
+p 2260.0 840.0 p14 0 n
+p 2640.0 860.0 p15 0 n
+p 2910.0 860.0 p16 0 n
+p 3340.0 700.0 p17 0 n
+p 3340.0 780.0 p18 0 n
+p 1480.0 750.0 p19 0 n
+p 560.0 750.0 p2 0 n
+p 1740.0 680.0 p20 0 n
+p 1720.0 820.0 p21 0 n
+p 1990.0 660.0 p22 0 n
+p 1980.0 850.0 p23 0 n
+p 3660.0 760.0 p24 0 n
+p 4250.0 640.0 p25 0 n
+p 4260.0 850.0 p26 0 n
+p 4620.0 700.0 p27 0 n
+p 4000.0 740.0 p28 0 n
+p 4140.0 260.0 p29 0 n
+p 560.0 860.0 p3 0 n
+p 760.0 850.0 p31 0 n
+p 970.0 860.0 p32 0 n
+p 1150.0 750.0 p4 0 n
+p 1150.0 640.0 p5 0 n
+p 1150.0 870.0 p6 0 n
+p 300.0 780.0 p7 0 n
+p 2260.0 690.0 p8 0 n
+p 2650.0 580.0 p9 0 n
+t 140.0 780.0 sleep c 5 60 n {goto(bed)} ne
+p 30.0 790.0 start 1 n
+t 660.0 640.0 t0 c 180 420 n {goto(shower)} ne
+t 660.0 750.0 t1 c 60 300 n {goto(toilet)} ne
+t 2740.0 580.0 t10 c 0 w n {goto(refrigerator)} ne
+t 3250.0 660.0 t11 c 0 w n {goto(kitchenTable)} nw
+t 2440.0 720.0 t13 c 0 w n {goto(kitchenDrawers)} ne
+t 2740.0 710.0 t14 c 0 w n {goto(refrigerator)} ne
+t 3060.0 700.0 t15 c 0 w n {goto(hob)} nw
+t 2440.0 860.0 t17 c 0 w n {goto(kitchenDrawers)} ne
+t 2740.0 860.0 t18 c 0 w n {goto(kitchenFaucet)} ne
+t 3250.0 860.0 t19 c 0 w n {goto(kitchenTable)} nw
+t 3520.0 660.0 t20 c 0 w n {goto(kitchenChair1)} nw
+t 3520.0 860.0 t21 c 0 w n {goto(kitchenChair3)} nw
+t 3520.0 760.0 t22 c 0 w n {goto(kitchenChair2)} nw
+t 1630.0 750.0 t23 c 0 w n {goto(bedroomDrawers)} nw
+t 1880.0 660.0 t26 c 0 w n {goto(closet1)} nw
+t 1870.0 840.0 t27 c 0 w n {goto(closet2)} nw
+t 2120.0 760.0 t28 c 0 w n {goto(kitchen)} nw
+t 4140.0 640.0 t29 c 0 w n {goto(television)} nw
+t 4410.0 540.0 t30 c 0 w n {goto(livingRoomChair)} nw
+t 4410.0 640.0 t32 c 0 w n {goto(sofa)} nw
+t 4150.0 850.0 t33 c 0 w n {goto(livingRoomTable))} nw
+t 4420.0 760.0 t34 c 0 w n {goto(livingRoomChair)} nw
+t 4420.0 850.0 t35 c 0 w n {goto(sofa)} nw
+t 3860.0 750.0 t36 c 0 w n {goto(livingroom)} nw
+t 4030.0 260.0 t37 c 0 w n {goto(terrace)} nw
+t 4330.0 310.0 t40 c 0 w n {goto(terraceChair2)} nw
+t 4320.0 190.0 t41 c 0 w n {goto(terraceChair1)} nw
+t 4320.0 50.0 t42 c 0 w n {goto(terrace)} nw
+t 4770.0 650.0 t43 c 0 w n {goto(8,0)} nw
+t 4770.0 770.0 t44 c 0 w n {goto(9,0)} nw
+t 650.0 860.0 t45 c 0 w n {goto(cabinet)} ne
+t 880.0 850.0 t46 c 0 w n {goto(bathroomFaucet)} ne
+t 1060.0 860.0 t47 c 0 w n {goto(cabinet)} ne
+t 1320.0 750.0 t5 c 0 w n {goto(bedroom)} ne
+t 400.0 780.0 t6 c 0 w n {goto(bathroom)} ne
+t 2450.0 580.0 t7 c 0 w n {goto(kitchenDrawers)} ne
+e p27 t44 1 n
+e start sleep 1 n
+e p1 t0 1 n
+e p2 t1 1 n
+e t0 p5 1 n
+e t1 p4 1 n
+e p5 t5 1 n
+e t44 end 1 n
+e p4 t5 1 n
+e p6 t5 1 n
+e sleep p7 1 n
+e p7 t6 1 n
+e t6 p1 1 n
+e t6 p2 1 n
+e t6 p3 1 n
+e p8 t7 1 n
+e t7 p9 1 n
+e p9 t10 1 n
+e t43 end 1 n
+e t10 p10 1 n
+e t14 p12 1 n
+e p11 t14 1 n
+e t13 p11 1 n
+e p8 t13 1 n
+e p12 t15 1 n
+e t15 p13 1 n
+e p10 t11 1 n
+e p13 t11 1 n
+e t18 p16 1 n
+e p3 t45 1 n
+e p15 t18 1 n
+e t17 p15 1 n
+e p16 t19 1 n
+e t11 p17 1 n
+e p14 t17 1 n
+e p17 t20 1 n
+e p17 t21 1 n
+e p17 t22 1 n
+e p18 t22 1 n
+e p18 t21 1 n
+e t45 p31 1 n
+e p18 t20 1 n
+e t19 p18 1 n
+e p19 t23 1 n
+e t23 p20 1 n
+e t23 p21 1 n
+e p20 t26 1 n
+e p21 t27 1 n
+e t5 p19 1 n
+e t26 p22 1 n
+e t27 p23 1 n
+e p31 t46 1 n
+e p22 t28 1 n
+e p23 t28 1 n
+e t28 p8 1 n
+e t28 p14 1 n
+e t20 p24 1 n
+e t22 p24 1 n
+e t21 p24 1 n
+e p25 t32 1 n
+e p25 t30 1 n
+e t29 p25 1 n
+e t46 p32 1 n
+e t33 p26 1 n
+e p26 t34 1 n
+e p26 t35 1 n
+e t30 p27 1 n
+e t32 p27 1 n
+e t34 p27 1 n
+e t35 p27 1 n
+e p24 t36 1 n
+e t36 p28 1 n
+e p28 t29 1 n
+e p32 t47 1 n
+e p28 t33 1 n
+e p24 t37 1 n
+e t37 p29 1 n
+e p29 t40 1 n
+e p29 t41 1 n
+e p29 t42 1 n
+e t42 p27 1 n
+e t41 p27 1 n
+e t40 p27 1 n
+e p27 t43 1 n
+e t47 p6 1 n
+h morning_routine_template
+
+

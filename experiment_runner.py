@@ -6,11 +6,11 @@ import routine_instruction_generator
 import os
 import random
 
-ENVIRONMENT_PATH = "morning_routine_floorplan.json"
+ENVIRONMENT_PATH = "morning_routine_floorplan-entitysensors.json"
 INSTRUCTIONS_PATH = "rig-output.json"
 SETTINGS_PATH = "simulator.json"
 CSV_PATH = "linac-backend-main/eventlog.csv"
-ROUTINE_MODEL = "morning_routine_template.pnml"
+ROUTINE_MODEL = "morning_routine_template_entitysensors.pnml"
 ITERATIONS = 1
 
 def run_linac_simulation(environment, agent_instructions, simulator_settings):
@@ -96,4 +96,5 @@ if __name__ == "__main__":
     pm4py.write_xes(event_log, 'exported.xes')
 
     # Cleanup
-    os.remove(CSV_PATH)
+    #os.remove(CSV_PATH)
+    os.remove(INSTRUCTIONS_PATH)

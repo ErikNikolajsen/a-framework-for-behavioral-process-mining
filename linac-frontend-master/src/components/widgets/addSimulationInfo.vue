@@ -174,7 +174,7 @@ export default {
         csvFileName: "test",
       };
       // this.$bvModal.hide('modal-simulation');
-      this.socket = new SockJS("https://localhost:8080");
+      this.socket = new SockJS("http://localhost:8080/websockets");
       this.stompClient = Stomp.over(this.socket);
       this.$store.commit("setVisualSimulation","true");
       this.$root.$emit("visualSimulationUpdated");

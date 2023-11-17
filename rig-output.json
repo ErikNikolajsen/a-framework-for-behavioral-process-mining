@@ -1,3 +1,0 @@
-{
-    "input": "agent(Agent1){ interact(bed,activate); wait(24); goto(bathroom); interact(toilet,activate); wait(188); interact(cabinet,activate); interact(shower,activate); wait(252); interact(bathroomFaucet,activate); interact(cabinet,activate); goto(bedroom); interact(bedroomDrawers,activate); interact(closet2,activate); interact(closet1,activate); goto(kitchen); interact(kitchenDrawers,activate); interact(kitchenFaucet,activate); interact(kitchenTable,activate); interact(kitchenDrawers,activate); interact(refrigerator,activate); interact(hob,activate) }"
-}

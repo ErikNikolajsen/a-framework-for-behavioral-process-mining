@@ -28,6 +28,6 @@ public class EntitySensor extends SensorActive {
 	
 	// Sensor behavior
 	public void updateState(String command) throws MqttPersistenceException, MqttException {
-		
+		state.put("activated", "true");
 	}
 }

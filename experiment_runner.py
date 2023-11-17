@@ -6,11 +6,11 @@ import routine_instruction_generator
 import os
 import random
 
-ENVIRONMENT_PATH = "morning_routine_floorplan-entitysensors.json"
+ENVIRONMENT_PATH = "morning_routine_floorplan_floor.json"
 INSTRUCTIONS_PATH = "rig-output.json"
 SETTINGS_PATH = "simulator.json"
 CSV_PATH = "linac-backend-main/eventlog.csv"
-ROUTINE_MODEL = "morning_routine_template_entitysensors.pnml"
+ROUTINE_MODEL = "morning_routine_template_floor.pnml"
 ITERATIONS = 1
 
 def run_linac_simulation(environment, agent_instructions, simulator_settings):
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     for x in range(ITERATIONS):
 
         # Generate routine instructions by running RIG
-        routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), 0.0, "invisible", ["repetitiveness"], "rig-output.json")
+        routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), 0.0, "invisible", ["wandering"], "rig-output.json")
 
         # Send agent instructions
         f = open(INSTRUCTIONS_PATH)
@@ -91,10 +91,10 @@ if __name__ == "__main__":
     dataframe.columns = ['case:concept:name', 'time:timestamp', 'concept:name', 'sensor:name', 'sensor:reading']
     dataframe['case_id'] = dataframe['case:concept:name']
     dataframe['activity'] = dataframe['concept:name']
-    dataframe = pm4py.format_dataframe(dataframe, case_id='case:concept:name', activity_key='concept:name', timestamp_key='time:timestamp')
+    dataframe = pm4py.format_dataframe(dataframe, case_id='case:concept:name', activity_key='sensor:reading', timestamp_key='time:timestamp')
     event_log = pm4py.convert_to_event_log(dataframe)
     pm4py.write_xes(event_log, 'exported.xes')
 
     # Cleanup
-    #os.remove(CSV_PATH)
+    os.remove(CSV_PATH)
     os.remove(INSTRUCTIONS_PATH)

@@ -28,11 +28,11 @@ public abstract class SensorActive extends Sensor {
 	// Methods 
 	// Outputs sensor reading if the interaction leads to a different sensor state
 	public void interact(String command) throws MqttPersistenceException, MqttException, JsonProcessingException {
-		HashMap<String, Object> initialState = new HashMap<>(state);
+		//HashMap<String, Object> initialState = new HashMap<>(state);
 		updateState(command);
-		if (!state.equals(initialState)) {
+		//if (!state.equals(initialState)) {
 			outputSensorReading();
-		}
+		//}
 	}
 	
 	// Abstract methods that must be implemented by active sensors

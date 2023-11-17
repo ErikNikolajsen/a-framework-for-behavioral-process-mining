@@ -87,7 +87,8 @@ class ControllerTest {
 			"smarthome",
 			false,
 			"test_simulation",
-			7357L
+			7357L,
+			0
 		);
 		
 		assertEquals("ERROR: no instructions input has been instantiated",simulationController.postSimulator(simulator));
@@ -222,7 +223,8 @@ class ControllerTest {
 				"smarthome",
 				false,
 				"test_simulation",
-				7357L
+				7357L,
+				0
 				);
 		
 		assertEquals("ERROR: \"relativeTime\" has not been defined or has its value defined as zero",simulationController.postSimulator(simulator));
@@ -263,7 +265,8 @@ class ControllerTest {
 				"smarthome",
 				false,
 				"test_simulation",
-				7357L
+				7357L,
+				0
 				);
 		
 		assertEquals("consumed",simulationController.postSimulator(simulator));
@@ -304,7 +307,8 @@ class ControllerTest {
 				"smarthome",
 				false,
 				"test_simulation",
-				7357L
+				7357L,
+				0
 				);
 		simulationController.postSimulator(simulator);
 		

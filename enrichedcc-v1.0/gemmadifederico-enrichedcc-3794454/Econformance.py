@@ -64,7 +64,7 @@ def execall(path_logA, path_logB):
         ccdcr = float(line)
     f.close()
     print("Done")
-
+    '''
     # Conformance of frequency
     print("Conformance of frequency...")
     ccfreq_ev, ccfreq_traces, ccfreq = get_freq_fitness(logA, logB)
@@ -79,7 +79,7 @@ def execall(path_logA, path_logB):
     print("Absolute time comparison...")
     cctime_act, cctime = get_time_fitness(logA, logB)
     print("Done")
-
+    '''
     # ccfreq 
     # ccdur 
     # ccheu
@@ -87,8 +87,12 @@ def execall(path_logA, path_logB):
     # ccdcr
     # ccdecl
 
-    header = ["logA", "logB", "ccheu", "ccind", "ccdcr", "ccfreq", "ccdur", "cctime"]
-    values = [path_logA, path_logB, ccheu, ccind, ccdcr, ccfreq, ccdur, cctime]
+    header = ["logA", "logB", "ccheu", "ccind", "ccdcr"]
+    values = [path_logA, path_logB, ccheu, ccind, ccdcr]
+
+    #header = ["logA", "logB", "ccheu", "ccind", "ccdcr", "ccfreq", "ccdur", "cctime"]
+    #values = [path_logA, path_logB, ccheu, ccind, ccdcr, ccfreq, ccdur, cctime]
+
     print("Writing the results...")
     # open the file in the write mode
 

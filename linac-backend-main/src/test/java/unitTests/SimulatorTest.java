@@ -146,7 +146,8 @@ class SimulatorTest {
 			"smarthome",
 			false,
 			"test_simulation",
-			7357L
+			7357L,
+			0
 		);
 		
 		simulationController.postSimulator(simulator);	
@@ -170,7 +171,8 @@ class SimulatorTest {
 			"smarthome",
 			false,
 			"test_simulation",
-			null
+			null,
+			0
 		);
 		simulationController.postSimulator(simulator);	
 	}
@@ -192,7 +194,8 @@ class SimulatorTest {
 			"smarthome",
 			false,
 			"test_simulation",
-			null
+			null,
+			0
 		);
 		assertEquals("ERROR: \"relativeTime\" has not been defined or has its value defined as zero",simulationController.postSimulator(simulator));
 	}
@@ -214,7 +217,8 @@ class SimulatorTest {
 			"smarthome",
 			false,
 			"test_simulation",
-			null
+			null,
+			0
 		);
 		assertEquals("ERROR: \"relativeTime\" has been defined as a negative integer",simulationController.postSimulator(simulator));
 	}
@@ -236,7 +240,8 @@ class SimulatorTest {
 			"smarthome",
 			false,
 			"test_simulation",
-			null
+			null,
+			0
 		);
 		assertEquals("ERROR: \"qualityOfService\" has not been defined as either 0, 1, or 2",simulationController.postSimulator(simulator));
 	}

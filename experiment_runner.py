@@ -61,7 +61,9 @@ if __name__ == "__main__":
 
 
     for x in range(ITERATIONS):
-        routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), 0.0, "invisible", [], "rig-output.json")
+
+        # Generate routine instructions by running RIG
+        routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), 0.0, "invisible", ["repetitiveness"], "rig-output.json")
 
         # Send agent instructions
         f = open(INSTRUCTIONS_PATH)

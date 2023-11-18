@@ -8,13 +8,13 @@ import random
 import warnings
 
 #EP
-OUTPUT_XES = "normal_10000_2.xes"
+OUTPUT_XES = "normal_1000_2.xes"
 OUTPUT_MODE = "normal" # possible values: debug, normal, invisible
+EP_SEED = None # None value makes it based on system time 
 
 #RIG
 ROUTINE_MODEL = "morning_routine_template_entitysensors.pnml"
-ITERATIONS = 5
-RIG_SEED = random.random()
+ITERATIONS = 1000
 DEGREE = 0.0
 MODE = "invisible"
 SYMPTOMS = ["repetitiveness"]
@@ -72,6 +72,9 @@ if __name__ == "__main__":
           
 Experiment Platform""")
 
+    # Set seed
+    random.seed(EP_SEED)
+
     # Send environment
     f = open(ENVIRONMENT_PATH)
     floorplan = json.load(f)
@@ -87,11 +90,11 @@ Experiment Platform""")
     for x in range(ITERATIONS):
         if OUTPUT_MODE in ("debug", "normal"):
             print(f"* Iteration {x}")
-            
+
         # Generate routine instructions by running RIG
         if OUTPUT_MODE in ("debug"):
             print("Generate agent instructions\n")
-        routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, RIG_SEED, DEGREE, MODE, SYMPTOMS, INSTRUCTIONS_PATH)
+        routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), DEGREE, MODE, SYMPTOMS, INSTRUCTIONS_PATH)
 
         # Send agent instructions
         f = open(INSTRUCTIONS_PATH)

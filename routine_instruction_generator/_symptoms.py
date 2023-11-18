@@ -7,7 +7,8 @@ def add_repetitive_behavior(petri_net, petri_net_modified, degree,):
     original_transitions = petri_net.transitions.copy()
     
     # Remove deadend transitions
-    for transition in original_transitions:
+    for transition in petri_net.transitions:
+        #print(transition.name)
         deadend_transition = True
         for arc in petri_net_modified.arcs:
             if arc.source == transition.id:

@@ -5,14 +5,26 @@ import pandas as pd
 import routine_instruction_generator
 import os
 import random
+import warnings
 
-ENVIRONMENT_PATH = "morning_routine_floorplan_floor.json"
+#EP
+OUTPUT_XES = "normal_10000_2.xes"
+OUTPUT_MODE = "normal" # possible values: debug, normal, invisible
+
+#RIG
+ROUTINE_MODEL = "morning_routine_template_entitysensors.pnml"
+ITERATIONS = 5
+RIG_SEED = random.random()
+DEGREE = 0.0
+MODE = "invisible"
+SYMPTOMS = ["repetitiveness"]
 INSTRUCTIONS_PATH = "rig-output.json"
+
+#Linac
+ENVIRONMENT_PATH = "morning_routine_floorplan_entitysensors.json"
 SETTINGS_PATH = "simulator.json"
 CSV_PATH = "linac-backend-main/eventlog.csv"
-ROUTINE_MODEL = "morning_routine_template_floor.pnml"
-ITERATIONS = 1
-
+"""
 def run_linac_simulation(environment, agent_instructions, simulator_settings):
     # Test connection 
     print("Sending ping for connection test:")
@@ -24,7 +36,7 @@ def run_linac_simulation(environment, agent_instructions, simulator_settings):
     floorplan = json.load(f)
     f.close()
     url1 = "http://localhost:8080/api/roomConfig/floorplan"
-    print("\nSending environment:")
+    print("Sending environment:")
     floorplanreq = requests.post(url1, json = floorplan)
     print(floorplanreq.text)
 
@@ -33,7 +45,7 @@ def run_linac_simulation(environment, agent_instructions, simulator_settings):
     inputFile = json.load(f)
     f.close()
     url2 = "http://localhost:8080/api/simulation/input"
-    print("\nSending agent instructions:")
+    print("Sending agent instructions:")
     inputreq = requests.post(url2, json = inputFile)
     print(inputreq.text)
 
@@ -42,58 +54,78 @@ def run_linac_simulation(environment, agent_instructions, simulator_settings):
     simulator = json.load(f)
     f.close()
     url3 = "http://localhost:8080/api/simulation/simulator"
-    print("\nSending simulator settings:")
+    print("Sending simulator settings:")
     simulatorreq = requests.post(url3, json = simulator)
     print(simulatorreq.text)
-
+"""
 # Main code
 if __name__ == "__main__":
-    #run_linac_simulation(ENVIRONMENT_PATH, INSTRUCTIONS_PATH, SETTINGS_PATH)
+    print("""                                                                                    
+8888888888 8888888b.  
+888        888   Y88b 
+888        888    888 
+8888888    888   d88P 
+888        8888888P"  
+888        888        
+888        888        
+8888888888 888
+          
+Experiment Platform""")
 
     # Send environment
     f = open(ENVIRONMENT_PATH)
     floorplan = json.load(f)
     f.close()
     url1 = "http://localhost:8080/api/roomConfig/floorplan"
-    print("\nSending environment:")
+    if OUTPUT_MODE in ("debug"):
+        print("\nSending floorplan")
     floorplanreq = requests.post(url1, json = floorplan)
-    print(floorplanreq.text)
+    if OUTPUT_MODE in ("debug"):
+        print(floorplanreq.text+"\n")
 
 
     for x in range(ITERATIONS):
-
+        if OUTPUT_MODE in ("debug", "normal"):
+            print(f"* Iteration {x}")
+            
         # Generate routine instructions by running RIG
-        routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), 0.0, "invisible", ["wandering"], "rig-output.json")
+        if OUTPUT_MODE in ("debug"):
+            print("Generate agent instructions\n")
+        routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, RIG_SEED, DEGREE, MODE, SYMPTOMS, INSTRUCTIONS_PATH)
 
         # Send agent instructions
         f = open(INSTRUCTIONS_PATH)
         inputFile = json.load(f)
         f.close()
         url2 = "http://localhost:8080/api/simulation/input"
-        print("\nSending agent instructions:")
+        if OUTPUT_MODE in ("debug"):
+            print("Sending agent instructions")
         inputreq = requests.post(url2, json = inputFile)
-        print(inputreq.text)
+        if OUTPUT_MODE in ("debug"):
+            print(inputreq.text+"\n")
 
         # change caseID and send simulator settings
         f = open(SETTINGS_PATH)
         simulator = json.load(f)
         f.close()
-
         simulator["caseID"] = x
-
+        if OUTPUT_MODE in ("debug"):
+            print("sending simulator settings")
         simulatorreq = requests.post("http://localhost:8080/api/simulation/simulator", json = simulator)
-        print(simulatorreq)
-        print("\nsending simulator settings: ")
-        print(simulatorreq.text+"\n")
+        if OUTPUT_MODE in ("debug"):
+            print(simulatorreq.text+"\n")
 
     # Convert CSV to XES
     dataframe = pd.read_csv(CSV_PATH, sep=',', header=None)
     dataframe.columns = ['case:concept:name', 'time:timestamp', 'concept:name', 'sensor:name', 'sensor:reading']
+    dataframe['time:timestamp'] = pd.to_datetime(dataframe['time:timestamp'])
     dataframe['case_id'] = dataframe['case:concept:name']
     dataframe['activity'] = dataframe['concept:name']
-    dataframe = pm4py.format_dataframe(dataframe, case_id='case:concept:name', activity_key='sensor:reading', timestamp_key='time:timestamp')
-    event_log = pm4py.convert_to_event_log(dataframe)
-    pm4py.write_xes(event_log, 'exported.xes')
+    dataframe = pm4py.format_dataframe(dataframe, case_id='case:concept:name', activity_key='sensor:name', timestamp_key='time:timestamp', timest_format = '%Y-%m-%dT%H:%M:%S.%f%z')
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        event_log = pm4py.convert_to_event_log(dataframe)
+    pm4py.write_xes(event_log, OUTPUT_XES)
 
     # Cleanup
     os.remove(CSV_PATH)

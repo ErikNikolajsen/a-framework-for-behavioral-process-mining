@@ -113,7 +113,7 @@ ____________________________\n""")
             elif element.tag.endswith("arc"):
                 petri_net.add_arc(element.get("id"), element.get("source"), element.get("target"))
     
-    if mode in ("debug", "normal"):
+    if mode in ("debug"):
         print("***Loading PNML into internal Petri net model:")
         print_petri_net(petri_net)
 
@@ -178,8 +178,6 @@ ____________________________\n""")
     data = {
         "input": instruction_string
     }
-
-    print(data)
 
     # Write the data dictionary to the JSON file
     with open(output, "w") as json_file:

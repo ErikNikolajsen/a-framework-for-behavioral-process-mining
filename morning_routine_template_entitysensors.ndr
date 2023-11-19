@@ -1,9 +1,7 @@
 p 4900.0 700.0 end 0 n
 p 560.0 660.0 p1 0 n
-p 2920.0 580.0 p10 0 n
 p 2640.0 710.0 p11 0 n
 p 2910.0 710.0 p12 0 n
-p 3140.0 700.0 p13 0 n
 p 2260.0 840.0 p14 0 n
 p 2640.0 860.0 p15 0 n
 p 2910.0 860.0 p16 0 n
@@ -35,7 +33,6 @@ p 30.0 790.0 start 1 n
 t 660.0 640.0 t0 c 180 420 n {interact(shower,activate)} ne
 t 660.0 750.0 t1 c 60 300 n {interact(toilet,activate)} ne
 t 2740.0 580.0 t10 c 0 w n {interact(refrigerator,activate)} ne
-t 3250.0 660.0 t11 c 0 w n {interact(kitchenTable,activate)} nw
 t 2440.0 720.0 t13 c 0 w n {interact(kitchenDrawers,activate)} ne
 t 2740.0 710.0 t14 c 0 w n {interact(refrigerator,activate)} ne
 t 3060.0 700.0 t15 c 0 w n {interact(hob,activate)} nw
@@ -50,7 +47,7 @@ t 1880.0 660.0 t26 c 0 w n {interact(closet1,activate)} nw
 t 1870.0 840.0 t27 c 0 w n {interact(closet2,activate)} nw
 t 2120.0 760.0 t28 c 0 w n {goto(kitchen)} nw
 t 4140.0 640.0 t29 c 0 w n {interact(television,activate)} nw
-t 4410.0 540.0 t30 c 0 w n {interact(licingRoomChair,activate)} nw
+t 4410.0 540.0 t30 c 0 w n {interact(livingRoomChair,activate)} nw
 t 4410.0 640.0 t32 c 0 w n {interact(sofa,activate)} nw
 t 4150.0 850.0 t33 c 0 w n {interact(livingRoomTable,activate)} nw
 t 4420.0 760.0 t34 c 0 w n {interact(licingRoomChair,activate)} nw
@@ -68,91 +65,92 @@ t 1060.0 860.0 t47 c 0 w n {interact(cabinet,activate)} ne
 t 1320.0 750.0 t5 c 0 w n {goto(bedroom)} ne
 t 400.0 780.0 t6 c 0 w n {goto(bathroom)} ne
 t 2450.0 580.0 t7 c 0 w n {interact(kitchenDrawers,activate)} ne
-e p4 t5 1 n
-e t47 p6 1 n
-e p27 t43 1 n
-e t40 p27 1 n
-e t41 p27 1 n
-e t42 p27 1 n
-e p29 t42 1 n
-e t44 end 1 n
+p 3155.0 680.0 p13 0 n
+t 3255.0 650.0 t11 c 0 w n {interact(kitchenTable,activate)} nw
+e t10 p13 1 n
 e p29 t41 1 n
-e p29 t40 1 n
-e t37 p29 1 n
-e p24 t37 1 n
-e p28 t33 1 n
-e p32 t47 1 n
-e p28 t29 1 n
-e t36 p28 1 n
-e p24 t36 1 n
-e t35 p27 1 n
-e p5 t5 1 n
-e t34 p27 1 n
-e t32 p27 1 n
-e t30 p27 1 n
-e p26 t35 1 n
-e p26 t34 1 n
-e t33 p26 1 n
-e t46 p32 1 n
-e t29 p25 1 n
-e p25 t30 1 n
-e p25 t32 1 n
-e t1 p4 1 n
-e t21 p24 1 n
-e t22 p24 1 n
-e t20 p24 1 n
-e t28 p14 1 n
-e t28 p8 1 n
-e p23 t28 1 n
-e p22 t28 1 n
-e p31 t46 1 n
-e t27 p23 1 n
-e t26 p22 1 n
-e t0 p5 1 n
-e t5 p19 1 n
-e p21 t27 1 n
-e p20 t26 1 n
-e t23 p21 1 n
-e t23 p20 1 n
-e p19 t23 1 n
-e t19 p18 1 n
-e p18 t20 1 n
-e t45 p31 1 n
-e p18 t21 1 n
-e p2 t1 1 n
-e p18 t22 1 n
-e p17 t22 1 n
-e p17 t21 1 n
-e p17 t20 1 n
-e p14 t17 1 n
-e t11 p17 1 n
-e p16 t19 1 n
-e t17 p15 1 n
-e p15 t18 1 n
-e p3 t45 1 n
-e p1 t0 1 n
-e t18 p16 1 n
-e p13 t11 1 n
-e p10 t11 1 n
-e t15 p13 1 n
-e p12 t15 1 n
-e p8 t13 1 n
-e t13 p11 1 n
-e p11 t14 1 n
-e t14 p12 1 n
-e t10 p10 1 n
-e start sleep 1 n
-e t43 end 1 n
-e p9 t10 1 n
-e t7 p9 1 n
-e p8 t7 1 n
-e t6 p3 1 n
-e t6 p2 1 n
-e t6 p1 1 n
-e p7 t6 1 n
-e sleep p7 1 n
-e p6 t5 1 n
 e p27 t44 1 n
+e p6 t5 1 n
+e sleep p7 1 n
+e p7 t6 1 n
+e t6 p1 1 n
+e t6 p2 1 n
+e t44 end 1 n
+e t6 p3 1 n
+e p8 t7 1 n
+e t7 p9 1 n
+e p9 t10 1 n
+e t43 end 1 n
+e start sleep 1 n
+e t14 p12 1 n
+e p11 t14 1 n
+e t13 p11 1 n
+e p29 t42 1 n
+e p8 t13 1 n
+e p12 t15 1 n
+e t15 p13 1 n
+e p13 t11 1 n
+e t18 p16 1 n
+e p1 t0 1 n
+e p3 t45 1 n
+e p15 t18 1 n
+e t17 p15 1 n
+e t42 p27 1 n
+e p16 t19 1 n
+e t11 p17 1 n
+e p14 t17 1 n
+e p17 t20 1 n
+e p17 t21 1 n
+e p17 t22 1 n
+e p18 t22 1 n
+e p2 t1 1 n
+e p18 t21 1 n
+e t45 p31 1 n
+e t41 p27 1 n
+e p18 t20 1 n
+e t19 p18 1 n
+e p19 t23 1 n
+e t23 p20 1 n
+e t23 p21 1 n
+e p20 t26 1 n
+e p21 t27 1 n
+e t5 p19 1 n
+e t0 p5 1 n
+e t26 p22 1 n
+e t40 p27 1 n
+e t27 p23 1 n
+e p31 t46 1 n
+e p22 t28 1 n
+e p23 t28 1 n
+e t28 p8 1 n
+e t28 p14 1 n
+e t20 p24 1 n
+e t22 p24 1 n
+e t21 p24 1 n
+e t1 p4 1 n
+e p27 t43 1 n
+e p25 t32 1 n
+e p25 t30 1 n
+e t29 p25 1 n
+e t46 p32 1 n
+e t33 p26 1 n
+e p26 t34 1 n
+e p26 t35 1 n
+e t30 p27 1 n
+e t32 p27 1 n
+e t34 p27 1 n
+e t47 p6 1 n
+e p5 t5 1 n
+e t35 p27 1 n
+e p24 t36 1 n
+e t36 p28 1 n
+e p28 t29 1 n
+e p32 t47 1 n
+e p28 t33 1 n
+e p24 t37 1 n
+e t37 p29 1 n
+e p29 t40 1 n
+e p4 t5 1 n
 h morning_routine_template_entitysensors
 
 

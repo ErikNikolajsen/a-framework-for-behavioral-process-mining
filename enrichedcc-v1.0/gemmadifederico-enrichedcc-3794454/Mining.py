@@ -47,13 +47,11 @@ def conformance (logA, logB, alg):
         pn = discovery_heuristic(logA)
     else:
         raise Exception("Discovery algorithm not recognized")
-
     aligned_traces = alignments.apply_log(logB, pn[0], pn[1], pn[2])
     x = 0
     for trace in aligned_traces:
         x =  x + trace["fitness"]
     x = int(x)
-
     aligned_traces_dataframe = alignments.get_diagnostics_dataframe(logA, aligned_traces)
     return aligned_traces_dataframe, x/len(logB)
 

@@ -24,7 +24,7 @@ def add_repetitive_behavior(petri_net, petri_net_modified, degree,):
         transition = original_transitions[i] # pick random transition
         #print("Picked transition: "+transition.id) # test
         new_transition_id = str(uuid.uuid4()).replace("-", "")[:15]
-        petri_net_modified.add_transition(new_transition_id, "rt"+str(repetitive_name_counter), f"repeat {transition.name}", 0, 0) # TODO change label to ""
+        petri_net_modified.add_transition(new_transition_id, "rt"+str(repetitive_name_counter), "", 0, 0) # TODO change label to "" f"repeat {transition.name}"
         repetitive_name_counter += 1
         outgoing_arcs = []
         incoming_arcs = []

@@ -13,6 +13,7 @@ import sys
 import os
 import uuid
 import pandas as pd
+import warnings
 
 
 # ## Log import
@@ -35,7 +36,9 @@ def execall(path_logA, path_logB):
 
     # Conformance checking (alignment) from Inductive
     print("Conformance checking from Inductive...")
-    ccind_traces, ccind = conformance(logA, logB, "Inductive")
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        ccind_traces, ccind = conformance(logA, logB, "Inductive")
     print("Done")
 
     # Conformance checking (alignment) from Heuristic
@@ -64,22 +67,22 @@ def execall(path_logA, path_logB):
         ccdcr = float(line)
     f.close()
     print("Done")
-    '''
+    
     # Conformance of frequency
     print("Conformance of frequency...")
     ccfreq_ev, ccfreq_traces, ccfreq = get_freq_fitness(logA, logB)
     print("Done")
-
+    """
     # Conformance of duration
     print("Conformance of duration...")
     ccdur_ev, ccdur_traces, ccdur = get_duration_fitness(logA, logB)
     print("Done")
-
+    
     # Get fitness of absolute time
     print("Absolute time comparison...")
     cctime_act, cctime = get_time_fitness(logA, logB)
     print("Done")
-    '''
+    """
     # ccfreq 
     # ccdur 
     # ccheu
@@ -87,8 +90,11 @@ def execall(path_logA, path_logB):
     # ccdcr
     # ccdecl
 
-    header = ["logA", "logB", "ccheu", "ccind", "ccdcr"]
-    values = [path_logA, path_logB, ccheu, ccind, ccdcr]
+    #header = ["logA", "logB", "ccheu", "ccind", "ccdcr"]
+    #values = [path_logA, path_logB, ccheu, ccind, ccdcr]
+
+    header = ["logA", "logB", "ccheu", "ccind", "ccdcr", "ccfreq", "ccdur", "cctime"]
+    values = [path_logA, path_logB, ccheu, ccind, ccdcr, ccfreq, "N/A", "N/A"]
 
     #header = ["logA", "logB", "ccheu", "ccind", "ccdcr", "ccfreq", "ccdur", "cctime"]
     #values = [path_logA, path_logB, ccheu, ccind, ccdcr, ccfreq, ccdur, cctime]

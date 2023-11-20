@@ -67,3 +67,12 @@ normal_100_00.xes,repetitiveness_100_02.xes,0.85,0.88,0.0,0.7425128318181818,N/A
 normal_100_00.xes,repetitiveness_100_03.xes,0.78,0.83,0.0,0.6898163181818182,N/A,N/A
 normal_100_00.xes,repetitiveness_100_04.xes,0.74,0.79,0.0,0.6478827863636363,N/A,N/A
 normal_100_00.xes,repetitiveness_100_05.xes,0.68,0.71,0.0,0.5808474,N/A,N/A
+wandering_100_00.xes,wandering_100_00.xes,1.0,1.0,0.0,0.6945293000000001,N/A,N/A
+wandering_100_00.xes,wandering_100_00.xes,1.0,0.7542405169230771
+wandering_100_00_2.xes,wandering_100_00_2.xes,1.0,0.7406440794117648
+wandering_100_00_2.xes,wandering_100_00_2.xes,N/A,N/A,1.0,0.7406440794117648,N/A,N/A
+wandering_100_00_2.xes,wandering_100_00_2.xes,N/A,N/A,1.0,N/A,N/A,N/A
+wandering_100_00_2.xes,wandering_100_01_2.xes,N/A,N/A,0.0,N/A,N/A,N/A
+wandering_100_00_2.xes,wandering_100_02_2.xes,N/A,N/A,0.0,N/A,N/A,N/A
+wandering_100_00_2.xes,wandering_100_00_2.xes,N/A,1.0,N/A,N/A,N/A,N/A
+repetitiveness_100_00.xes,repetitiveness_100_00.xes,N/A,1.0,N/A,N/A,N/A,N/A

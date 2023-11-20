@@ -46,7 +46,7 @@ def print_petri_net(net):
         print(arc.id+", "+arc.source+", "+arc.target)
     print("")
 
-def run_routine_instruction_generator(model, iterations, seed, degree, mode, symptoms, output):
+def run_routine_instruction_generator(model, iterations, seed, degree, mode, symptoms, output, floorplan):
     # Process arguments
     random.seed(seed) # Set random seed value
     symptoms_string = "None"
@@ -129,7 +129,7 @@ ____________________________\n""")
             if "repetitiveness" in symptoms:
                 petri_net_modified = _symptoms.add_repetitive_behavior(petri_net, petri_net_modified, degree)
             if "wandering" in symptoms:
-                petri_net_modified = _symptoms.add_wandering_behavior(petri_net, petri_net_modified, degree)
+                petri_net_modified = _symptoms.add_wandering_behavior(petri_net, petri_net_modified, degree, floorplan)
 
         if mode == "debug":
             print("***Petri net after symptoms have been added:")
@@ -199,9 +199,10 @@ if __name__ == "__main__":
     parser.add_argument("-m", "--mode", type=str, default="normal", help="Output mode (options: debug, normal, fast, invisible) (default: normal)")
     parser.add_argument("-sy", "--symptoms", nargs="+", type=str, help="The symptoms expressed in the routine (options: wandering, repetitiveness)")
     parser.add_argument("-o", "--output", type=str, default="rig-output.json", help="The name of the resulting file (default: rig-output)")
+    parser.add_argument("-f", "--floorplan", type=str, default=None, help="The path of the floorplan file")
     args = parser.parse_args()
 
-    run_routine_instruction_generator(args.model, args.iterations, args.seed, args.degree, args.mode, args.symptoms, args.output)
+    run_routine_instruction_generator(args.model, args.iterations, args.seed, args.degree, args.mode, args.symptoms, args.output, args.floorplan)
 
 
     

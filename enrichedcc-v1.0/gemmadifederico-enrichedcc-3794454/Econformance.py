@@ -43,7 +43,7 @@ def execall(path_logA, path_logB):
 
     # Conformance checking (alignment) from Heuristic
     print("Conformance checking from Heuristic...")
-    ccheu_traces, ccheu = conformance(logA, logB, "Heuristic")
+    #ccheu_traces, ccheu = conformance(logA, logB, "Heuristic")
     print("Done")
 
     # Discovery of DCR
@@ -67,12 +67,12 @@ def execall(path_logA, path_logB):
         ccdcr = float(line)
     f.close()
     print("Done")
-    
+    """
     # Conformance of frequency
     print("Conformance of frequency...")
     ccfreq_ev, ccfreq_traces, ccfreq = get_freq_fitness(logA, logB)
     print("Done")
-    """
+    
     # Conformance of duration
     print("Conformance of duration...")
     ccdur_ev, ccdur_traces, ccdur = get_duration_fitness(logA, logB)
@@ -90,11 +90,11 @@ def execall(path_logA, path_logB):
     # ccdcr
     # ccdecl
 
-    #header = ["logA", "logB", "ccheu", "ccind", "ccdcr"]
-    #values = [path_logA, path_logB, ccheu, ccind, ccdcr]
-
     header = ["logA", "logB", "ccheu", "ccind", "ccdcr", "ccfreq", "ccdur", "cctime"]
-    values = [path_logA, path_logB, ccheu, ccind, ccdcr, ccfreq, "N/A", "N/A"]
+    values = [path_logA, path_logB, "N/A", ccind, "N/A", "N/A", "N/A", "N/A"]
+
+    #header = ["logA", "logB", "ccheu", "ccind", "ccdcr", "ccfreq", "ccdur", "cctime"]
+    #values = [path_logA, path_logB, ccheu, ccind, ccdcr, ccfreq, "N/A", "N/A"]
 
     #header = ["logA", "logB", "ccheu", "ccind", "ccdcr", "ccfreq", "ccdur", "cctime"]
     #values = [path_logA, path_logB, ccheu, ccind, ccdcr, ccfreq, ccdur, cctime]

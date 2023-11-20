@@ -6,22 +6,22 @@ import routine_instruction_generator
 import os
 import random
 import warnings
-for i in range(1):
+for i in range(0,5):
     #EP
-    OUTPUT_XES = f"repetitiveness_100_0{i}.xes"
+    OUTPUT_XES = f"wandering_100_0{i}_2.xes"
     OUTPUT_MODE = "normal" # possible values: debug, normal, invisible
     EP_SEED = None # None value makes it based on system time 
 
     #RIG
-    ROUTINE_MODEL = "morning_routine_template_entitysensors.pnml"
+    ROUTINE_MODEL = "morning_routine_template.pnml"
     ITERATIONS = 100
-    DEGREE = 0.1
+    DEGREE = 0.1*i
     MODE = "invisible"
-    SYMPTOMS = ["repetitiveness"]
+    SYMPTOMS = ["wandering"]
     INSTRUCTIONS_PATH = "rig-output.json"
 
     #Linac
-    ENVIRONMENT_PATH = "morning_routine_floorplan_entitysensors.json"
+    ENVIRONMENT_PATH = "morning_routine_floorplan_floor.json"
     SETTINGS_PATH = "simulator.json"
     CSV_PATH = "linac-backend-main/eventlog.csv"
     """
@@ -60,17 +60,20 @@ for i in range(1):
     """
     # Main code
     if __name__ == "__main__":
-        print("""                                                                                    
-    8888888888 8888888b.  
-    888        888   Y88b 
-    888        888    888 
-    8888888    888   d88P 
-    888        8888888P"  
-    888        888        
-    888        888        
-    8888888888 888
+        print(f"""                                                                                    
+8888888888 8888888b.  
+888        888   Y88b 
+888        888    888 
+8888888    888   d88P 
+888        8888888P"  
+888        888        
+888        888        
+8888888888 888
             
-    Experiment Platform""")
+--------- Settings ---------
+          
+Output:      {OUTPUT_XES}
+____________________________\n""")
 
         # Cleanup
         if os.path.exists(CSV_PATH):
@@ -93,12 +96,12 @@ for i in range(1):
 
         for x in range(1,ITERATIONS+1):
             if OUTPUT_MODE in ("debug", "normal"):
-                print(f"* Iteration {x}")
+                print(f"* Trace {x}")
 
             # Generate routine instructions by running RIG
             if OUTPUT_MODE in ("debug"):
                 print("Generate agent instructions\n")
-            routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), DEGREE, MODE, SYMPTOMS, INSTRUCTIONS_PATH)
+            routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), DEGREE, MODE, SYMPTOMS, INSTRUCTIONS_PATH, ENVIRONMENT_PATH)
 
             # Send agent instructions
             f = open(INSTRUCTIONS_PATH)
@@ -126,8 +129,20 @@ for i in range(1):
         dataframe = pd.read_csv(CSV_PATH, sep=',', header=None)
         dataframe.columns = ['case:concept:name', 'time:timestamp', 'concept:name', 'sensor:name', 'sensor:reading']
         dataframe['time:timestamp'] = pd.to_datetime(dataframe['time:timestamp'])
-        dataframe['case_id'] = dataframe['case:concept:name']
-        dataframe['activity'] = dataframe['concept:name']
+        #dataframe['case_id'] = dataframe['case:concept:name']
+        #dataframe['activity'] = dataframe['concept:name']
+        
+        """
+        # Add a new column 'previous_sensor_reading' to track the previous sensor reading
+        dataframe['previous_sensor_reading'] = dataframe['sensor:reading'].shift(1)
+
+        # Filter out rows where the sensor reading is the same as the previous reading
+        dataframe = dataframe[dataframe['sensor:reading'] != dataframe['previous_sensor_reading']]
+
+        # Drop the 'previous_sensor_reading' column if not needed
+        dataframe = dataframe.drop(columns='previous_sensor_reading')
+        """
+
         dataframe = pm4py.format_dataframe(dataframe, case_id='case:concept:name', activity_key='sensor:name', timestamp_key='time:timestamp', timest_format = '%Y-%m-%dT%H:%M:%S.%f%z')
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")

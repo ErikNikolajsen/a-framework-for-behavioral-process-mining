@@ -14,6 +14,7 @@ import os
 import uuid
 import pandas as pd
 import warnings
+from pm4py.algo.conformance.tokenreplay import factory as token_replay_factory
 
 
 # ## Log import

@@ -14,31 +14,31 @@
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:01:08.899494934" />
-			<string key="sensor:name" value="toilet" />
-			<string key="sensor:reading" value="{activated=toilet}" />
-			<string key="concept:name" value="{activated=toilet}" />
+			<date key="time:timestamp" value="2020-01-01T00:01:59.740115356" />
+			<string key="sensor:name" value="shower" />
+			<string key="sensor:reading" value="{activated=shower}" />
+			<string key="concept:name" value="{activated=shower}" />
 			<int key="@@index" value="1" />
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:02:16.899494934" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:06:12.154328918" />
+			<string key="sensor:name" value="toilet" />
+			<string key="sensor:reading" value="{activated=toilet}" />
+			<string key="concept:name" value="{activated=toilet}" />
 			<int key="@@index" value="2" />
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:02:19.727922058" />
-			<string key="sensor:name" value="shower" />
-			<string key="sensor:reading" value="{activated=shower}" />
-			<string key="concept:name" value="{activated=shower}" />
+			<date key="time:timestamp" value="2020-01-01T00:08:08.154328918" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
 			<int key="@@index" value="3" />
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:47.142135620" />
+			<date key="time:timestamp" value="2020-01-01T00:09:01.438600158" />
 			<string key="sensor:name" value="bathroomFaucet" />
 			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
 			<string key="concept:name" value="{activated=bathroomFaucet}" />
@@ -46,7 +46,7 @@
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:48.142135620" />
+			<date key="time:timestamp" value="2020-01-01T00:10:33.350288390" />
 			<string key="sensor:name" value="cabinet" />
 			<string key="sensor:reading" value="{activated=cabinet}" />
 			<string key="concept:name" value="{activated=cabinet}" />
@@ -54,7 +54,7 @@
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:51.556349182" />
+			<date key="time:timestamp" value="2020-01-01T00:10:43.421356200" />
 			<string key="sensor:name" value="bedroomDrawers" />
 			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
 			<string key="concept:name" value="{activated=bedroomDrawers}" />
@@ -62,7 +62,7 @@
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:54.384776306" />
+			<date key="time:timestamp" value="2020-01-01T00:10:59.078210448" />
 			<string key="sensor:name" value="closet2" />
 			<string key="sensor:reading" value="{activated=closet2}" />
 			<string key="concept:name" value="{activated=closet2}" />
@@ -70,7 +70,7 @@
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:57.384776306" />
+			<date key="time:timestamp" value="2020-01-01T00:11:55.362481688" />
 			<string key="sensor:name" value="closet1" />
 			<string key="sensor:reading" value="{activated=closet1}" />
 			<string key="concept:name" value="{activated=closet1}" />
@@ -78,7 +78,7 @@
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:11.870057678" />
+			<date key="time:timestamp" value="2020-01-01T00:12:37.646752928" />
 			<string key="sensor:name" value="kitchenDrawers" />
 			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
 			<string key="concept:name" value="{activated=kitchenDrawers}" />
@@ -86,82 +86,82 @@
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:18.112698364" />
-			<string key="sensor:name" value="kitchenFaucet" />
-			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
-			<string key="concept:name" value="{activated=kitchenFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:14.274169920" />
+			<string key="sensor:name" value="refrigerator" />
+			<string key="sensor:reading" value="{activated=refrigerator}" />
+			<string key="concept:name" value="{activated=refrigerator}" />
 			<int key="@@index" value="10" />
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:20.112698364" />
-			<string key="sensor:name" value="refrigerator" />
-			<string key="sensor:reading" value="{activated=refrigerator}" />
-			<string key="concept:name" value="{activated=refrigerator}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:54.144227598" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="11" />
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:23.526911926" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:16.700576780" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="12" />
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:25.941125488" />
-			<string key="sensor:name" value="kitchenChair3" />
-			<string key="sensor:reading" value="{activated=kitchenChair3}" />
-			<string key="concept:name" value="{activated=kitchenChair3}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:32.014285276" />
+			<string key="sensor:name" value="kitchenFaucet" />
+			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
+			<string key="concept:name" value="{activated=kitchenFaucet}" />
 			<int key="@@index" value="13" />
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:35.012193298" />
-			<string key="sensor:name" value="livingRoomTable" />
-			<string key="sensor:reading" value="{activated=livingRoomTable}" />
-			<string key="concept:name" value="{activated=livingRoomTable}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:35.428498838" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="14" />
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:38.426406860" />
-			<string key="sensor:name" value="sofa" />
-			<string key="sensor:reading" value="{activated=sofa}" />
-			<string key="concept:name" value="{activated=sofa}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:35.428498838" />
+			<string key="sensor:name" value="kitchenChair1" />
+			<string key="sensor:reading" value="{activated=kitchenChair1}" />
+			<string key="concept:name" value="{activated=kitchenChair1}" />
 			<int key="@@index" value="15" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:15:38.097546384" />
+			<string key="sensor:name" value="terraceChair2" />
+			<string key="sensor:reading" value="{activated=terraceChair2}" />
+			<string key="concept:name" value="{activated=terraceChair2}" />
+			<int key="@@index" value="16" />
 			<int key="@@case_index" value="0" />
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="10" />
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:02" />
+			<date key="time:timestamp" value="2020-01-01T00:00:22.213203430" />
 			<string key="sensor:name" value="bed" />
 			<string key="sensor:reading" value="{activated=bed}" />
 			<string key="concept:name" value="{activated=bed}" />
-			<int key="@@index" value="16" />
-			<int key="@@case_index" value="1" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:41.656854248" />
-			<string key="sensor:name" value="toilet" />
-			<string key="sensor:reading" value="{activated=toilet}" />
-			<string key="concept:name" value="{activated=toilet}" />
 			<int key="@@index" value="17" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:05:14.485281372" />
-			<string key="sensor:name" value="shower" />
-			<string key="sensor:reading" value="{activated=shower}" />
-			<string key="concept:name" value="{activated=shower}" />
+			<date key="time:timestamp" value="2020-01-01T00:01:25.769552612" />
+			<string key="sensor:name" value="toilet" />
+			<string key="sensor:reading" value="{activated=toilet}" />
+			<string key="concept:name" value="{activated=toilet}" />
 			<int key="@@index" value="18" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:39.899494934" />
+			<date key="time:timestamp" value="2020-01-01T00:06:27.396969604" />
 			<string key="sensor:name" value="cabinet" />
 			<string key="sensor:reading" value="{activated=cabinet}" />
 			<string key="concept:name" value="{activated=cabinet}" />
@@ -169,178 +169,178 @@
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:40.899494934" />
-			<string key="sensor:name" value="bathroomFaucet" />
-			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
-			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:07:44.066017150" />
+			<string key="sensor:name" value="shower" />
+			<string key="sensor:reading" value="{activated=shower}" />
+			<string key="concept:name" value="{activated=shower}" />
 			<int key="@@index" value="20" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:41.899494934" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:38.480230712" />
+			<string key="sensor:name" value="bathroomFaucet" />
+			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
+			<string key="concept:name" value="{activated=bathroomFaucet}" />
 			<int key="@@index" value="21" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:55.384776306" />
-			<string key="sensor:name" value="bedroomDrawers" />
-			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
-			<string key="concept:name" value="{activated=bedroomDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:15:23.421356200" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
 			<int key="@@index" value="22" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:57.798989868" />
-			<string key="sensor:name" value="closet2" />
-			<string key="sensor:reading" value="{activated=closet2}" />
-			<string key="concept:name" value="{activated=closet2}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:21.362481688" />
+			<string key="sensor:name" value="bedroomDrawers" />
+			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
+			<string key="concept:name" value="{activated=bedroomDrawers}" />
 			<int key="@@index" value="23" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:11:01.627416992" />
-			<string key="sensor:name" value="closet1" />
-			<string key="sensor:reading" value="{activated=closet1}" />
-			<string key="concept:name" value="{activated=closet1}" />
+			<date key="time:timestamp" value="2020-01-01T00:17:26.617315672" />
+			<string key="sensor:name" value="closet2" />
+			<string key="sensor:reading" value="{activated=closet2}" />
+			<string key="concept:name" value="{activated=closet2}" />
 			<int key="@@index" value="24" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:11:13.112698364" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:18:55.256925962" />
+			<string key="sensor:name" value="closet1" />
+			<string key="sensor:reading" value="{activated=closet1}" />
+			<string key="concept:name" value="{activated=closet1}" />
 			<int key="@@index" value="25" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:11:16.112698364" />
-			<string key="sensor:name" value="kitchenFaucet" />
-			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
-			<string key="concept:name" value="{activated=kitchenFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:19:13.984848020" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="26" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:11:22.769552612" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
+			<date key="time:timestamp" value="2020-01-01T00:19:46.369624326" />
+			<string key="sensor:name" value="refrigerator" />
+			<string key="sensor:reading" value="{activated=refrigerator}" />
+			<string key="concept:name" value="{activated=refrigerator}" />
 			<int key="@@index" value="27" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:11:26.597979736" />
-			<string key="sensor:name" value="refrigerator" />
-			<string key="sensor:reading" value="{activated=refrigerator}" />
-			<string key="concept:name" value="{activated=refrigerator}" />
+			<date key="time:timestamp" value="2020-01-01T00:19:48.369624326" />
+			<string key="sensor:name" value="kitchenFaucet" />
+			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
+			<string key="concept:name" value="{activated=kitchenFaucet}" />
 			<int key="@@index" value="28" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:11:27.597979736" />
-			<string key="sensor:name" value="hob" />
-			<string key="sensor:reading" value="{activated=hob}" />
-			<string key="concept:name" value="{activated=hob}" />
+			<date key="time:timestamp" value="2020-01-01T00:19:49.783837888" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="29" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:11:30.012193298" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
+			<date key="time:timestamp" value="2020-01-01T00:20:32.239682004" />
+			<string key="sensor:name" value="kitchenChair3" />
+			<string key="sensor:reading" value="{activated=kitchenChair3}" />
+			<string key="concept:name" value="{activated=kitchenChair3}" />
 			<int key="@@index" value="30" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:11:31.012193298" />
-			<string key="sensor:name" value="kitchenChair3" />
-			<string key="sensor:reading" value="{activated=kitchenChair3}" />
-			<string key="concept:name" value="{activated=kitchenChair3}" />
+			<date key="time:timestamp" value="2020-01-01T00:20:46.310749814" />
+			<string key="sensor:name" value="livingRoomTable" />
+			<string key="sensor:reading" value="{activated=livingRoomTable}" />
+			<string key="concept:name" value="{activated=livingRoomTable}" />
 			<int key="@@index" value="31" />
 			<int key="@@case_index" value="1" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:11:39.840620422" />
-			<string key="sensor:name" value="livingRoomTable" />
-			<string key="sensor:reading" value="{activated=livingRoomTable}" />
-			<string key="concept:name" value="{activated=livingRoomTable}" />
-			<int key="@@index" value="32" />
-			<int key="@@case_index" value="1" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:11:44.669047546" />
+			<date key="time:timestamp" value="2020-01-01T00:21:27.109739682" />
 			<string key="sensor:name" value="livingRoomChair" />
 			<string key="sensor:reading" value="{activated=livingRoomChair}" />
 			<string key="concept:name" value="{activated=livingRoomChair}" />
-			<int key="@@index" value="33" />
+			<int key="@@index" value="32" />
 			<int key="@@case_index" value="1" />
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="2" />
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:01" />
+			<date key="time:timestamp" value="2020-01-01T00:00:26.384776306" />
 			<string key="sensor:name" value="bed" />
 			<string key="sensor:reading" value="{activated=bed}" />
 			<string key="concept:name" value="{activated=bed}" />
+			<int key="@@index" value="33" />
+			<int key="@@case_index" value="2" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:01:47.083261108" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
 			<int key="@@index" value="34" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:35.242640686" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:02:07.396969604" />
+			<string key="sensor:name" value="bathroomFaucet" />
+			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
+			<string key="concept:name" value="{activated=bathroomFaucet}" />
 			<int key="@@index" value="35" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:39.071067810" />
-			<string key="sensor:name" value="shower" />
-			<string key="sensor:reading" value="{activated=shower}" />
-			<string key="concept:name" value="{activated=shower}" />
+			<date key="time:timestamp" value="2020-01-01T00:02:08.396969604" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
 			<int key="@@index" value="36" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:05:34.899494934" />
-			<string key="sensor:name" value="toilet" />
-			<string key="sensor:reading" value="{activated=toilet}" />
-			<string key="concept:name" value="{activated=toilet}" />
+			<date key="time:timestamp" value="2020-01-01T00:02:21.468037414" />
+			<string key="sensor:name" value="shower" />
+			<string key="sensor:reading" value="{activated=shower}" />
+			<string key="concept:name" value="{activated=shower}" />
 			<int key="@@index" value="37" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:36.727922058" />
-			<string key="sensor:name" value="bathroomFaucet" />
-			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
-			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:06:05.438600158" />
+			<string key="sensor:name" value="toilet" />
+			<string key="sensor:reading" value="{activated=toilet}" />
+			<string key="concept:name" value="{activated=toilet}" />
 			<int key="@@index" value="38" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:37.727922058" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:08.592929076" />
+			<string key="sensor:name" value="bedroomDrawers" />
+			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
+			<string key="concept:name" value="{activated=bedroomDrawers}" />
 			<int key="@@index" value="39" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:48.213203430" />
-			<string key="sensor:name" value="bedroomDrawers" />
-			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
-			<string key="concept:name" value="{activated=bedroomDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:12.421356200" />
+			<string key="sensor:name" value="closet2" />
+			<string key="sensor:reading" value="{activated=closet2}" />
+			<string key="concept:name" value="{activated=closet2}" />
 			<int key="@@index" value="40" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:54.870057678" />
+			<date key="time:timestamp" value="2020-01-01T00:12:40.977705382" />
 			<string key="sensor:name" value="closet1" />
 			<string key="sensor:reading" value="{activated=closet1}" />
 			<string key="concept:name" value="{activated=closet1}" />
@@ -348,98 +348,98 @@
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:58.698484802" />
-			<string key="sensor:name" value="closet2" />
-			<string key="sensor:reading" value="{activated=closet2}" />
-			<string key="concept:name" value="{activated=closet2}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:29.747257994" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="42" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:11.769552612" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:33.575685118" />
+			<string key="sensor:name" value="refrigerator" />
+			<string key="sensor:reading" value="{activated=refrigerator}" />
+			<string key="concept:name" value="{activated=refrigerator}" />
 			<int key="@@index" value="43" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:15.597979736" />
-			<string key="sensor:name" value="kitchenFaucet" />
-			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
-			<string key="concept:name" value="{activated=kitchenFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:02.132034300" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="44" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:17.597979736" />
-			<string key="sensor:name" value="refrigerator" />
-			<string key="sensor:reading" value="{activated=refrigerator}" />
-			<string key="concept:name" value="{activated=refrigerator}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:03.132034300" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="45" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:17.597979736" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:09.960461424" />
+			<string key="sensor:name" value="kitchenFaucet" />
+			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
+			<string key="concept:name" value="{activated=kitchenFaucet}" />
 			<int key="@@index" value="46" />
 			<int key="@@case_index" value="2" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:18.597979736" />
-			<string key="sensor:name" value="hob" />
-			<string key="sensor:reading" value="{activated=hob}" />
-			<string key="concept:name" value="{activated=hob}" />
-			<int key="@@index" value="47" />
-			<int key="@@case_index" value="2" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:22.012193298" />
+			<date key="time:timestamp" value="2020-01-01T00:14:55.073159788" />
 			<string key="sensor:name" value="kitchenTable" />
 			<string key="sensor:reading" value="{activated=kitchenTable}" />
 			<string key="concept:name" value="{activated=kitchenTable}" />
-			<int key="@@index" value="48" />
-			<int key="@@case_index" value="2" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:25.840620422" />
-			<string key="sensor:name" value="kitchenChair1" />
-			<string key="sensor:reading" value="{activated=kitchenChair1}" />
-			<string key="concept:name" value="{activated=kitchenChair1}" />
-			<int key="@@index" value="49" />
-			<int key="@@case_index" value="2" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:37.740115356" />
-			<string key="sensor:name" value="television" />
-			<string key="sensor:reading" value="{activated=television}" />
-			<string key="concept:name" value="{activated=television}" />
-			<int key="@@index" value="50" />
-			<int key="@@case_index" value="2" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:41.982756042" />
-			<string key="sensor:name" value="sofa" />
-			<string key="sensor:reading" value="{activated=sofa}" />
-			<string key="concept:name" value="{activated=sofa}" />
-			<int key="@@index" value="51" />
+			<int key="@@index" value="47" />
 			<int key="@@case_index" value="2" />
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="3" />
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:01" />
+			<date key="time:timestamp" value="2020-01-01T00:00:46.112698364" />
 			<string key="sensor:name" value="bed" />
 			<string key="sensor:reading" value="{activated=bed}" />
 			<string key="concept:name" value="{activated=bed}" />
+			<int key="@@index" value="48" />
+			<int key="@@case_index" value="3" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:01:57.053823852" />
+			<string key="sensor:name" value="toilet" />
+			<string key="sensor:reading" value="{activated=toilet}" />
+			<string key="concept:name" value="{activated=toilet}" />
+			<int key="@@index" value="49" />
+			<int key="@@case_index" value="3" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:06:25.468037414" />
+			<string key="sensor:name" value="shower" />
+			<string key="sensor:reading" value="{activated=shower}" />
+			<string key="concept:name" value="{activated=shower}" />
+			<int key="@@index" value="50" />
+			<int key="@@case_index" value="3" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:11:49.752308654" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
+			<int key="@@index" value="51" />
+			<int key="@@case_index" value="3" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:12:37.622366332" />
+			<string key="sensor:name" value="bathroomFaucet" />
+			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
+			<string key="concept:name" value="{activated=bathroomFaucet}" />
 			<int key="@@index" value="52" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:31.656854248" />
+			<date key="time:timestamp" value="2020-01-01T00:13:08.421356200" />
 			<string key="sensor:name" value="cabinet" />
 			<string key="sensor:reading" value="{activated=cabinet}" />
 			<string key="concept:name" value="{activated=cabinet}" />
@@ -447,409 +447,377 @@
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:34.656854248" />
-			<string key="sensor:name" value="toilet" />
-			<string key="sensor:reading" value="{activated=toilet}" />
-			<string key="concept:name" value="{activated=toilet}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:20.078210448" />
+			<string key="sensor:name" value="bedroomDrawers" />
+			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
+			<string key="concept:name" value="{activated=bedroomDrawers}" />
 			<int key="@@index" value="54" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:03:04.071067810" />
-			<string key="sensor:name" value="shower" />
-			<string key="sensor:reading" value="{activated=shower}" />
-			<string key="concept:name" value="{activated=shower}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:22.906637572" />
+			<string key="sensor:name" value="closet2" />
+			<string key="sensor:reading" value="{activated=closet2}" />
+			<string key="concept:name" value="{activated=closet2}" />
 			<int key="@@index" value="55" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:27.485281372" />
-			<string key="sensor:name" value="bathroomFaucet" />
-			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
-			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:37.806132506" />
+			<string key="sensor:name" value="closet1" />
+			<string key="sensor:reading" value="{activated=closet1}" />
+			<string key="concept:name" value="{activated=closet1}" />
 			<int key="@@index" value="56" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:28.485281372" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:14.433549498" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="57" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:33.313708496" />
-			<string key="sensor:name" value="bedroomDrawers" />
-			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
-			<string key="concept:name" value="{activated=bedroomDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:15:52.516810606" />
+			<string key="sensor:name" value="kitchenFaucet" />
+			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
+			<string key="concept:name" value="{activated=kitchenFaucet}" />
 			<int key="@@index" value="58" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:39.142135620" />
-			<string key="sensor:name" value="closet1" />
-			<string key="sensor:reading" value="{activated=closet1}" />
-			<string key="concept:name" value="{activated=closet1}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:31.972654722" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="59" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:41.970562744" />
-			<string key="sensor:name" value="closet2" />
-			<string key="sensor:reading" value="{activated=closet2}" />
-			<string key="concept:name" value="{activated=closet2}" />
+			<date key="time:timestamp" value="2020-01-01T00:17:19.085353086" />
+			<string key="sensor:name" value="refrigerator" />
+			<string key="sensor:reading" value="{activated=refrigerator}" />
+			<string key="concept:name" value="{activated=refrigerator}" />
 			<int key="@@index" value="60" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:51.627416992" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:18:19.097546384" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="61" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:56.455844116" />
-			<string key="sensor:name" value="kitchenFaucet" />
-			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
-			<string key="concept:name" value="{activated=kitchenFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:18:54.310749814" />
+			<string key="sensor:name" value="kitchenChair2" />
+			<string key="sensor:reading" value="{activated=kitchenChair2}" />
+			<string key="concept:name" value="{activated=kitchenChair2}" />
 			<int key="@@index" value="62" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:00.455844116" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:19:34.595021054" />
+			<string key="sensor:name" value="livingRoomTable" />
+			<string key="sensor:reading" value="{activated=livingRoomTable}" />
+			<string key="concept:name" value="{activated=livingRoomTable}" />
 			<int key="@@index" value="63" />
 			<int key="@@case_index" value="3" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:04.284271240" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
+			<date key="time:timestamp" value="2020-01-01T00:21:33.447834774" />
+			<string key="sensor:name" value="sofa" />
+			<string key="sensor:reading" value="{activated=sofa}" />
+			<string key="concept:name" value="{activated=sofa}" />
 			<int key="@@index" value="64" />
-			<int key="@@case_index" value="3" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:08.112698364" />
-			<string key="sensor:name" value="refrigerator" />
-			<string key="sensor:reading" value="{activated=refrigerator}" />
-			<string key="concept:name" value="{activated=refrigerator}" />
-			<int key="@@index" value="65" />
-			<int key="@@case_index" value="3" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:09.112698364" />
-			<string key="sensor:name" value="hob" />
-			<string key="sensor:reading" value="{activated=hob}" />
-			<string key="concept:name" value="{activated=hob}" />
-			<int key="@@index" value="66" />
-			<int key="@@case_index" value="3" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:09.112698364" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
-			<int key="@@index" value="67" />
-			<int key="@@case_index" value="3" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:11.112698364" />
-			<string key="sensor:name" value="kitchenChair2" />
-			<string key="sensor:reading" value="{activated=kitchenChair2}" />
-			<string key="concept:name" value="{activated=kitchenChair2}" />
-			<int key="@@index" value="68" />
-			<int key="@@case_index" value="3" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:18.355339050" />
-			<string key="sensor:name" value="television" />
-			<string key="sensor:reading" value="{activated=television}" />
-			<string key="concept:name" value="{activated=television}" />
-			<int key="@@index" value="69" />
-			<int key="@@case_index" value="3" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:20.769552612" />
-			<string key="sensor:name" value="livingRoomChair" />
-			<string key="sensor:reading" value="{activated=livingRoomChair}" />
-			<string key="concept:name" value="{activated=livingRoomChair}" />
-			<int key="@@index" value="70" />
 			<int key="@@case_index" value="3" />
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="4" />
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:02.414213562" />
+			<date key="time:timestamp" value="2020-01-01T00:00:24.970562744" />
 			<string key="sensor:name" value="bed" />
 			<string key="sensor:reading" value="{activated=bed}" />
 			<string key="concept:name" value="{activated=bed}" />
+			<int key="@@index" value="65" />
+			<int key="@@case_index" value="4" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:01:18.698484802" />
+			<string key="sensor:name" value="shower" />
+			<string key="sensor:reading" value="{activated=shower}" />
+			<string key="concept:name" value="{activated=shower}" />
+			<int key="@@index" value="66" />
+			<int key="@@case_index" value="4" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:04:53.526911926" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
+			<int key="@@index" value="67" />
+			<int key="@@case_index" value="4" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:05:20.911688232" />
+			<string key="sensor:name" value="bathroomFaucet" />
+			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
+			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<int key="@@index" value="68" />
+			<int key="@@case_index" value="4" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:05:22.911688232" />
+			<string key="sensor:name" value="toilet" />
+			<string key="sensor:reading" value="{activated=toilet}" />
+			<string key="concept:name" value="{activated=toilet}" />
+			<int key="@@index" value="69" />
+			<int key="@@case_index" value="4" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:07:59.882250976" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
+			<int key="@@index" value="70" />
+			<int key="@@case_index" value="4" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:10:24.048773192" />
+			<string key="sensor:name" value="bedroomDrawers" />
+			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
+			<string key="concept:name" value="{activated=bedroomDrawers}" />
 			<int key="@@index" value="71" />
 			<int key="@@case_index" value="4" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:50.656854248" />
-			<string key="sensor:name" value="shower" />
-			<string key="sensor:reading" value="{activated=shower}" />
-			<string key="concept:name" value="{activated=shower}" />
+			<date key="time:timestamp" value="2020-01-01T00:10:29.877200316" />
+			<string key="sensor:name" value="closet1" />
+			<string key="sensor:reading" value="{activated=closet1}" />
+			<string key="concept:name" value="{activated=closet1}" />
 			<int key="@@index" value="72" />
 			<int key="@@case_index" value="4" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:05:40.071067810" />
-			<string key="sensor:name" value="toilet" />
-			<string key="sensor:reading" value="{activated=toilet}" />
-			<string key="concept:name" value="{activated=toilet}" />
+			<date key="time:timestamp" value="2020-01-01T00:10:52.605122374" />
+			<string key="sensor:name" value="closet2" />
+			<string key="sensor:reading" value="{activated=closet2}" />
+			<string key="concept:name" value="{activated=closet2}" />
 			<int key="@@index" value="73" />
 			<int key="@@case_index" value="4" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:59.899494934" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:08.859956358" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="74" />
 			<int key="@@case_index" value="4" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:00.899494934" />
-			<string key="sensor:name" value="bathroomFaucet" />
-			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
-			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:18.931024168" />
+			<string key="sensor:name" value="refrigerator" />
+			<string key="sensor:reading" value="{activated=refrigerator}" />
+			<string key="concept:name" value="{activated=refrigerator}" />
 			<int key="@@index" value="75" />
 			<int key="@@case_index" value="4" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:01.899494934" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:19.931024168" />
+			<string key="sensor:name" value="hob" />
+			<string key="sensor:reading" value="{activated=hob}" />
+			<string key="concept:name" value="{activated=hob}" />
 			<int key="@@index" value="76" />
 			<int key="@@case_index" value="4" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:11.970562744" />
-			<string key="sensor:name" value="bedroomDrawers" />
-			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
-			<string key="concept:name" value="{activated=bedroomDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:53.144227598" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="77" />
 			<int key="@@case_index" value="4" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:14.384776306" />
-			<string key="sensor:name" value="closet2" />
-			<string key="sensor:reading" value="{activated=closet2}" />
-			<string key="concept:name" value="{activated=closet2}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:07.215295408" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="78" />
 			<int key="@@case_index" value="4" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:18.213203430" />
-			<string key="sensor:name" value="closet1" />
-			<string key="sensor:reading" value="{activated=closet1}" />
-			<string key="concept:name" value="{activated=closet1}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:12.043722532" />
+			<string key="sensor:name" value="kitchenFaucet" />
+			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
+			<string key="concept:name" value="{activated=kitchenFaucet}" />
 			<int key="@@index" value="79" />
 			<int key="@@case_index" value="4" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:35.526911926" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:14.457936094" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="80" />
-			<int key="@@case_index" value="4" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:40.355339050" />
-			<string key="sensor:name" value="kitchenFaucet" />
-			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
-			<string key="concept:name" value="{activated=kitchenFaucet}" />
-			<int key="@@index" value="81" />
-			<int key="@@case_index" value="4" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:43.355339050" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
-			<int key="@@index" value="82" />
-			<int key="@@case_index" value="4" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:45.769552612" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
-			<int key="@@index" value="83" />
-			<int key="@@case_index" value="4" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:48.597979736" />
-			<string key="sensor:name" value="refrigerator" />
-			<string key="sensor:reading" value="{activated=refrigerator}" />
-			<string key="concept:name" value="{activated=refrigerator}" />
-			<int key="@@index" value="84" />
-			<int key="@@case_index" value="4" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:49.597979736" />
-			<string key="sensor:name" value="hob" />
-			<string key="sensor:reading" value="{activated=hob}" />
-			<string key="concept:name" value="{activated=hob}" />
-			<int key="@@index" value="85" />
-			<int key="@@case_index" value="4" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:53.426406860" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
-			<int key="@@index" value="86" />
-			<int key="@@case_index" value="4" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:55.840620422" />
-			<string key="sensor:name" value="kitchenChair2" />
-			<string key="sensor:reading" value="{activated=kitchenChair2}" />
-			<string key="concept:name" value="{activated=kitchenChair2}" />
-			<int key="@@index" value="87" />
-			<int key="@@case_index" value="4" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:08.740115356" />
-			<string key="sensor:name" value="terraceChair2" />
-			<string key="sensor:reading" value="{activated=terraceChair2}" />
-			<string key="concept:name" value="{activated=terraceChair2}" />
-			<int key="@@index" value="88" />
 			<int key="@@case_index" value="4" />
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="5" />
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:03.414213562" />
+			<date key="time:timestamp" value="2020-01-01T00:00:10.071067810" />
 			<string key="sensor:name" value="bed" />
 			<string key="sensor:reading" value="{activated=bed}" />
 			<string key="concept:name" value="{activated=bed}" />
+			<int key="@@index" value="81" />
+			<int key="@@case_index" value="5" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:01:29.526911926" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
+			<int key="@@index" value="82" />
+			<int key="@@case_index" value="5" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:01:57.497474670" />
+			<string key="sensor:name" value="toilet" />
+			<string key="sensor:reading" value="{activated=toilet}" />
+			<string key="concept:name" value="{activated=toilet}" />
+			<int key="@@index" value="83" />
+			<int key="@@case_index" value="5" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:04:51.911688232" />
+			<string key="sensor:name" value="shower" />
+			<string key="sensor:reading" value="{activated=shower}" />
+			<string key="concept:name" value="{activated=shower}" />
+			<int key="@@index" value="84" />
+			<int key="@@case_index" value="5" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:09:56.639610290" />
+			<string key="sensor:name" value="bathroomFaucet" />
+			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
+			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<int key="@@index" value="85" />
+			<int key="@@case_index" value="5" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:09:57.639610290" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
+			<int key="@@index" value="86" />
+			<int key="@@case_index" value="5" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:11:20.066017150" />
+			<string key="sensor:name" value="bedroomDrawers" />
+			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
+			<string key="concept:name" value="{activated=bedroomDrawers}" />
+			<int key="@@index" value="87" />
+			<int key="@@case_index" value="5" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:11:26.722871398" />
+			<string key="sensor:name" value="closet1" />
+			<string key="sensor:reading" value="{activated=closet1}" />
+			<string key="concept:name" value="{activated=closet1}" />
+			<int key="@@index" value="88" />
+			<int key="@@case_index" value="5" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:12:26.906637572" />
+			<string key="sensor:name" value="closet2" />
+			<string key="sensor:reading" value="{activated=closet2}" />
+			<string key="concept:name" value="{activated=closet2}" />
 			<int key="@@index" value="89" />
 			<int key="@@case_index" value="5" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:01:10.828427124" />
-			<string key="sensor:name" value="shower" />
-			<string key="sensor:reading" value="{activated=shower}" />
-			<string key="concept:name" value="{activated=shower}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:07.362481688" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="90" />
 			<int key="@@case_index" value="5" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:06:58.656854248" />
-			<string key="sensor:name" value="toilet" />
-			<string key="sensor:reading" value="{activated=toilet}" />
-			<string key="concept:name" value="{activated=toilet}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:29.918830870" />
+			<string key="sensor:name" value="refrigerator" />
+			<string key="sensor:reading" value="{activated=refrigerator}" />
+			<string key="concept:name" value="{activated=refrigerator}" />
 			<int key="@@index" value="91" />
 			<int key="@@case_index" value="5" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:34.656854248" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:10.717820738" />
+			<string key="sensor:name" value="hob" />
+			<string key="sensor:reading" value="{activated=hob}" />
+			<string key="concept:name" value="{activated=hob}" />
 			<int key="@@index" value="92" />
 			<int key="@@case_index" value="5" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:35.656854248" />
-			<string key="sensor:name" value="bathroomFaucet" />
-			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
-			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:13.132034300" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="93" />
 			<int key="@@case_index" value="5" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:36.656854248" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:06.256925962" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="94" />
 			<int key="@@case_index" value="5" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:39.485281372" />
-			<string key="sensor:name" value="bedroomDrawers" />
-			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
-			<string key="concept:name" value="{activated=bedroomDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:10.085353086" />
+			<string key="sensor:name" value="kitchenFaucet" />
+			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
+			<string key="concept:name" value="{activated=kitchenFaucet}" />
 			<int key="@@index" value="95" />
 			<int key="@@case_index" value="5" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:42.313708496" />
-			<string key="sensor:name" value="closet2" />
-			<string key="sensor:reading" value="{activated=closet2}" />
-			<string key="concept:name" value="{activated=closet2}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:15.327993772" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="96" />
 			<int key="@@case_index" value="5" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:44.313708496" />
-			<string key="sensor:name" value="closet1" />
-			<string key="sensor:reading" value="{activated=closet1}" />
-			<string key="concept:name" value="{activated=closet1}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:18.156420896" />
+			<string key="sensor:name" value="kitchenChair3" />
+			<string key="sensor:reading" value="{activated=kitchenChair3}" />
+			<string key="concept:name" value="{activated=kitchenChair3}" />
 			<int key="@@index" value="97" />
 			<int key="@@case_index" value="5" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:54.798989868" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:17:54.796031186" />
+			<string key="sensor:name" value="television" />
+			<string key="sensor:reading" value="{activated=television}" />
+			<string key="concept:name" value="{activated=television}" />
 			<int key="@@index" value="98" />
 			<int key="@@case_index" value="5" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:55.798989868" />
-			<string key="sensor:name" value="refrigerator" />
-			<string key="sensor:reading" value="{activated=refrigerator}" />
-			<string key="concept:name" value="{activated=refrigerator}" />
+			<date key="time:timestamp" value="2020-01-01T00:17:57.210244748" />
+			<string key="sensor:name" value="livingRoomChair" />
+			<string key="sensor:reading" value="{activated=livingRoomChair}" />
+			<string key="concept:name" value="{activated=livingRoomChair}" />
 			<int key="@@index" value="99" />
-			<int key="@@case_index" value="5" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:58.627416992" />
-			<string key="sensor:name" value="kitchenFaucet" />
-			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
-			<string key="concept:name" value="{activated=kitchenFaucet}" />
-			<int key="@@index" value="100" />
-			<int key="@@case_index" value="5" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:58.627416992" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
-			<int key="@@index" value="101" />
-			<int key="@@case_index" value="5" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:06.698484802" />
-			<string key="sensor:name" value="kitchenChair3" />
-			<string key="sensor:reading" value="{activated=kitchenChair3}" />
-			<string key="concept:name" value="{activated=kitchenChair3}" />
-			<int key="@@index" value="102" />
-			<int key="@@case_index" value="5" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:21.941125488" />
-			<string key="sensor:name" value="terraceChair2" />
-			<string key="sensor:reading" value="{activated=terraceChair2}" />
-			<string key="concept:name" value="{activated=terraceChair2}" />
-			<int key="@@index" value="103" />
 			<int key="@@case_index" value="5" />
 		</event>
 	</trace>
@@ -860,158 +828,190 @@
 			<string key="sensor:name" value="bed" />
 			<string key="sensor:reading" value="{activated=bed}" />
 			<string key="concept:name" value="{activated=bed}" />
+			<int key="@@index" value="100" />
+			<int key="@@case_index" value="6" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:00:50.213203430" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
+			<int key="@@index" value="101" />
+			<int key="@@case_index" value="6" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:01:31.012193298" />
+			<string key="sensor:name" value="toilet" />
+			<string key="sensor:reading" value="{activated=toilet}" />
+			<string key="concept:name" value="{activated=toilet}" />
+			<int key="@@index" value="102" />
+			<int key="@@case_index" value="6" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:06:29.379725646" />
+			<string key="sensor:name" value="bathroomFaucet" />
+			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
+			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<int key="@@index" value="103" />
+			<int key="@@case_index" value="6" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:06:31.793939208" />
+			<string key="sensor:name" value="shower" />
+			<string key="sensor:reading" value="{activated=shower}" />
+			<string key="concept:name" value="{activated=shower}" />
 			<int key="@@index" value="104" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:50.485281372" />
-			<string key="sensor:name" value="toilet" />
-			<string key="sensor:reading" value="{activated=toilet}" />
-			<string key="concept:name" value="{activated=toilet}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:14.208152770" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
 			<int key="@@index" value="105" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:04:49.899494934" />
-			<string key="sensor:name" value="shower" />
-			<string key="sensor:reading" value="{activated=shower}" />
-			<string key="concept:name" value="{activated=shower}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:15.634559630" />
+			<string key="sensor:name" value="bedroomDrawers" />
+			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
+			<string key="concept:name" value="{activated=bedroomDrawers}" />
 			<int key="@@index" value="106" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:50.727922058" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:19.462986754" />
+			<string key="sensor:name" value="closet1" />
+			<string key="sensor:reading" value="{activated=closet1}" />
+			<string key="concept:name" value="{activated=closet1}" />
 			<int key="@@index" value="107" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:51.727922058" />
-			<string key="sensor:name" value="bathroomFaucet" />
-			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
-			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:15:58.516810606" />
+			<string key="sensor:name" value="closet2" />
+			<string key="sensor:reading" value="{activated=closet2}" />
+			<string key="concept:name" value="{activated=closet2}" />
 			<int key="@@index" value="108" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:52.727922058" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:08.002091978" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="109" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:04.213203430" />
-			<string key="sensor:name" value="bedroomDrawers" />
-			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
-			<string key="concept:name" value="{activated=bedroomDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:46.629508970" />
+			<string key="sensor:name" value="kitchenFaucet" />
+			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
+			<string key="concept:name" value="{activated=kitchenFaucet}" />
 			<int key="@@index" value="110" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:10.041630554" />
-			<string key="sensor:name" value="closet1" />
-			<string key="sensor:reading" value="{activated=closet1}" />
-			<string key="concept:name" value="{activated=closet1}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:51.457936094" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="111" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:11.041630554" />
-			<string key="sensor:name" value="closet2" />
-			<string key="sensor:reading" value="{activated=closet2}" />
-			<string key="concept:name" value="{activated=closet2}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:54.872149656" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="112" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:19.698484802" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:17:59.055915830" />
+			<string key="sensor:name" value="refrigerator" />
+			<string key="sensor:reading" value="{activated=refrigerator}" />
+			<string key="concept:name" value="{activated=refrigerator}" />
 			<int key="@@index" value="113" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:22.698484802" />
-			<string key="sensor:name" value="kitchenFaucet" />
-			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
-			<string key="concept:name" value="{activated=kitchenFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:18:00.055915830" />
+			<string key="sensor:name" value="hob" />
+			<string key="sensor:reading" value="{activated=hob}" />
+			<string key="concept:name" value="{activated=hob}" />
 			<int key="@@index" value="114" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:24.698484802" />
-			<string key="sensor:name" value="refrigerator" />
-			<string key="sensor:reading" value="{activated=refrigerator}" />
-			<string key="concept:name" value="{activated=refrigerator}" />
+			<date key="time:timestamp" value="2020-01-01T00:19:08.624458310" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="115" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:28.526911926" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
+			<date key="time:timestamp" value="2020-01-01T00:20:07.394010922" />
+			<string key="sensor:name" value="kitchenChair2" />
+			<string key="sensor:reading" value="{activated=kitchenChair2}" />
+			<string key="concept:name" value="{activated=kitchenChair2}" />
 			<int key="@@index" value="116" />
 			<int key="@@case_index" value="6" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:33.355339050" />
-			<string key="sensor:name" value="hob" />
-			<string key="sensor:reading" value="{activated=hob}" />
-			<string key="concept:name" value="{activated=hob}" />
+			<date key="time:timestamp" value="2020-01-01T00:21:02.920922848" />
+			<string key="sensor:name" value="terraceChair1" />
+			<string key="sensor:reading" value="{activated=terraceChair1}" />
+			<string key="concept:name" value="{activated=terraceChair1}" />
 			<int key="@@index" value="117" />
-			<int key="@@case_index" value="6" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:33.355339050" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
-			<int key="@@index" value="118" />
-			<int key="@@case_index" value="6" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:34.769552612" />
-			<string key="sensor:name" value="kitchenChair3" />
-			<string key="sensor:reading" value="{activated=kitchenChair3}" />
-			<string key="concept:name" value="{activated=kitchenChair3}" />
-			<int key="@@index" value="119" />
-			<int key="@@case_index" value="6" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:42.012193298" />
-			<string key="sensor:name" value="television" />
-			<string key="sensor:reading" value="{activated=television}" />
-			<string key="concept:name" value="{activated=television}" />
-			<int key="@@index" value="120" />
-			<int key="@@case_index" value="6" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:44.426406860" />
-			<string key="sensor:name" value="livingRoomChair" />
-			<string key="sensor:reading" value="{activated=livingRoomChair}" />
-			<string key="concept:name" value="{activated=livingRoomChair}" />
-			<int key="@@index" value="121" />
 			<int key="@@case_index" value="6" />
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="7" />
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:01" />
+			<date key="time:timestamp" value="2020-01-01T00:00:02" />
 			<string key="sensor:name" value="bed" />
 			<string key="sensor:reading" value="{activated=bed}" />
 			<string key="concept:name" value="{activated=bed}" />
+			<int key="@@index" value="118" />
+			<int key="@@case_index" value="7" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:01:42.284271240" />
+			<string key="sensor:name" value="shower" />
+			<string key="sensor:reading" value="{activated=shower}" />
+			<string key="concept:name" value="{activated=shower}" />
+			<int key="@@index" value="119" />
+			<int key="@@case_index" value="7" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:05:23.325901794" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
+			<int key="@@index" value="120" />
+			<int key="@@case_index" value="7" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:05:26.325901794" />
+			<string key="sensor:name" value="toilet" />
+			<string key="sensor:reading" value="{activated=toilet}" />
+			<string key="concept:name" value="{activated=toilet}" />
+			<int key="@@index" value="121" />
+			<int key="@@case_index" value="7" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:10:54.267027282" />
+			<string key="sensor:name" value="bathroomFaucet" />
+			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
+			<string key="concept:name" value="{activated=bathroomFaucet}" />
 			<int key="@@index" value="122" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:35.656854248" />
+			<date key="time:timestamp" value="2020-01-01T00:11:12.580735778" />
 			<string key="sensor:name" value="cabinet" />
 			<string key="sensor:reading" value="{activated=cabinet}" />
 			<string key="concept:name" value="{activated=cabinet}" />
@@ -1019,253 +1019,253 @@
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:36.656854248" />
-			<string key="sensor:name" value="bathroomFaucet" />
-			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
-			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:11:53.450793456" />
+			<string key="sensor:name" value="bedroomDrawers" />
+			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
+			<string key="concept:name" value="{activated=bedroomDrawers}" />
 			<int key="@@index" value="124" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:40.071067810" />
-			<string key="sensor:name" value="shower" />
-			<string key="sensor:reading" value="{activated=shower}" />
-			<string key="concept:name" value="{activated=shower}" />
+			<date key="time:timestamp" value="2020-01-01T00:11:59.279220580" />
+			<string key="sensor:name" value="closet1" />
+			<string key="sensor:reading" value="{activated=closet1}" />
+			<string key="concept:name" value="{activated=closet1}" />
 			<int key="@@index" value="125" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:04:54.899494934" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:10.764501952" />
+			<string key="sensor:name" value="closet2" />
+			<string key="sensor:reading" value="{activated=closet2}" />
+			<string key="concept:name" value="{activated=closet2}" />
 			<int key="@@index" value="126" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:04:58.727922058" />
-			<string key="sensor:name" value="toilet" />
-			<string key="sensor:reading" value="{activated=toilet}" />
-			<string key="concept:name" value="{activated=toilet}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:16.546247862" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="127" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:01.556349182" />
-			<string key="sensor:name" value="bedroomDrawers" />
-			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
-			<string key="concept:name" value="{activated=bedroomDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:15:02.416305540" />
+			<string key="sensor:name" value="refrigerator" />
+			<string key="sensor:reading" value="{activated=refrigerator}" />
+			<string key="concept:name" value="{activated=refrigerator}" />
 			<int key="@@index" value="128" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:08.213203430" />
-			<string key="sensor:name" value="closet1" />
-			<string key="sensor:reading" value="{activated=closet1}" />
-			<string key="concept:name" value="{activated=closet1}" />
+			<date key="time:timestamp" value="2020-01-01T00:15:31.457936094" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="129" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:12.041630554" />
-			<string key="sensor:name" value="closet2" />
-			<string key="sensor:reading" value="{activated=closet2}" />
-			<string key="concept:name" value="{activated=closet2}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:13.327993772" />
+			<string key="sensor:name" value="kitchenFaucet" />
+			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
+			<string key="concept:name" value="{activated=kitchenFaucet}" />
 			<int key="@@index" value="130" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:19.698484802" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:16:59.955410764" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="131" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:20.698484802" />
-			<string key="sensor:name" value="refrigerator" />
-			<string key="sensor:reading" value="{activated=refrigerator}" />
-			<string key="concept:name" value="{activated=refrigerator}" />
+			<date key="time:timestamp" value="2020-01-01T00:17:14.854905698" />
+			<string key="sensor:name" value="kitchenChair2" />
+			<string key="sensor:reading" value="{activated=kitchenChair2}" />
+			<string key="concept:name" value="{activated=kitchenChair2}" />
 			<int key="@@index" value="132" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:23.526911926" />
-			<string key="sensor:name" value="kitchenFaucet" />
-			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
-			<string key="concept:name" value="{activated=kitchenFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:17:59.967604062" />
+			<string key="sensor:name" value="livingRoomTable" />
+			<string key="sensor:reading" value="{activated=livingRoomTable}" />
+			<string key="concept:name" value="{activated=livingRoomTable}" />
 			<int key="@@index" value="133" />
 			<int key="@@case_index" value="7" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:24.526911926" />
-			<string key="sensor:name" value="hob" />
-			<string key="sensor:reading" value="{activated=hob}" />
-			<string key="concept:name" value="{activated=hob}" />
+			<date key="time:timestamp" value="2020-01-01T00:18:25.867098996" />
+			<string key="sensor:name" value="livingRoomChair" />
+			<string key="sensor:reading" value="{activated=livingRoomChair}" />
+			<string key="concept:name" value="{activated=livingRoomChair}" />
 			<int key="@@index" value="134" />
-			<int key="@@case_index" value="7" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:28.355339050" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
-			<int key="@@index" value="135" />
-			<int key="@@case_index" value="7" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:31.183766174" />
-			<string key="sensor:name" value="kitchenChair1" />
-			<string key="sensor:reading" value="{activated=kitchenChair1}" />
-			<string key="concept:name" value="{activated=kitchenChair1}" />
-			<int key="@@index" value="136" />
-			<int key="@@case_index" value="7" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:46.497474670" />
-			<string key="sensor:name" value="terraceChair1" />
-			<string key="sensor:reading" value="{activated=terraceChair1}" />
-			<string key="concept:name" value="{activated=terraceChair1}" />
-			<int key="@@index" value="137" />
 			<int key="@@case_index" value="7" />
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="8" />
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:02.414213562" />
+			<date key="time:timestamp" value="2020-01-01T00:00:02.828427124" />
 			<string key="sensor:name" value="bed" />
 			<string key="sensor:reading" value="{activated=bed}" />
 			<string key="concept:name" value="{activated=bed}" />
+			<int key="@@index" value="135" />
+			<int key="@@case_index" value="8" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:01:32.112698364" />
+			<string key="sensor:name" value="toilet" />
+			<string key="sensor:reading" value="{activated=toilet}" />
+			<string key="concept:name" value="{activated=toilet}" />
+			<int key="@@index" value="136" />
+			<int key="@@case_index" value="8" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:04:35.781745910" />
+			<string key="sensor:name" value="shower" />
+			<string key="sensor:reading" value="{activated=shower}" />
+			<string key="concept:name" value="{activated=shower}" />
+			<int key="@@index" value="137" />
+			<int key="@@case_index" value="8" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:09:13.338095092" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
 			<int key="@@index" value="138" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:01:05.071067810" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:10:10.036579894" />
+			<string key="sensor:name" value="bathroomFaucet" />
+			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
+			<string key="concept:name" value="{activated=bathroomFaucet}" />
 			<int key="@@index" value="139" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:01:06.071067810" />
-			<string key="sensor:name" value="bathroomFaucet" />
-			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
-			<string key="concept:name" value="{activated=bathroomFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:10:28.350288390" />
+			<string key="sensor:name" value="cabinet" />
+			<string key="sensor:reading" value="{activated=cabinet}" />
+			<string key="concept:name" value="{activated=cabinet}" />
 			<int key="@@index" value="140" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:01:07.071067810" />
-			<string key="sensor:name" value="cabinet" />
-			<string key="sensor:reading" value="{activated=cabinet}" />
-			<string key="concept:name" value="{activated=cabinet}" />
+			<date key="time:timestamp" value="2020-01-01T00:11:54.918830870" />
+			<string key="sensor:name" value="bedroomDrawers" />
+			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
+			<string key="concept:name" value="{activated=bedroomDrawers}" />
 			<int key="@@index" value="141" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:01:09.899494934" />
-			<string key="sensor:name" value="shower" />
-			<string key="sensor:reading" value="{activated=shower}" />
-			<string key="concept:name" value="{activated=shower}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:48.859956358" />
+			<string key="sensor:name" value="closet1" />
+			<string key="sensor:reading" value="{activated=closet1}" />
+			<string key="concept:name" value="{activated=closet1}" />
 			<int key="@@index" value="142" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:05:00.313708496" />
-			<string key="sensor:name" value="toilet" />
-			<string key="sensor:reading" value="{activated=toilet}" />
-			<string key="concept:name" value="{activated=toilet}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:49.859956358" />
+			<string key="sensor:name" value="closet2" />
+			<string key="sensor:reading" value="{activated=closet2}" />
+			<string key="concept:name" value="{activated=closet2}" />
 			<int key="@@index" value="143" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:24.213203430" />
-			<string key="sensor:name" value="bedroomDrawers" />
-			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
-			<string key="concept:name" value="{activated=bedroomDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:13:31.386868284" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="144" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:29.041630554" />
-			<string key="sensor:name" value="closet1" />
-			<string key="sensor:reading" value="{activated=closet1}" />
-			<string key="concept:name" value="{activated=closet1}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:11.499566648" />
+			<string key="sensor:name" value="refrigerator" />
+			<string key="sensor:reading" value="{activated=refrigerator}" />
+			<string key="concept:name" value="{activated=refrigerator}" />
 			<int key="@@index" value="145" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:30.041630554" />
-			<string key="sensor:name" value="closet2" />
-			<string key="sensor:reading" value="{activated=closet2}" />
-			<string key="concept:name" value="{activated=closet2}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:29.984848020" />
+			<string key="sensor:name" value="kitchenFaucet" />
+			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
+			<string key="concept:name" value="{activated=kitchenFaucet}" />
 			<int key="@@index" value="146" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:43.526911926" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:30.984848020" />
+			<string key="sensor:name" value="hob" />
+			<string key="sensor:reading" value="{activated=hob}" />
+			<string key="concept:name" value="{activated=hob}" />
 			<int key="@@index" value="147" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:44.526911926" />
-			<string key="sensor:name" value="refrigerator" />
-			<string key="sensor:reading" value="{activated=refrigerator}" />
-			<string key="concept:name" value="{activated=refrigerator}" />
+			<date key="time:timestamp" value="2020-01-01T00:14:30.984848020" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="148" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:46.526911926" />
-			<string key="sensor:name" value="kitchenFaucet" />
-			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
-			<string key="concept:name" value="{activated=kitchenFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:15:45.482322690" />
+			<string key="sensor:name" value="kitchenChair1" />
+			<string key="sensor:reading" value="{activated=kitchenChair1}" />
+			<string key="concept:name" value="{activated=kitchenChair1}" />
 			<int key="@@index" value="149" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:52.941125488" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
+			<date key="time:timestamp" value="2020-01-01T00:15:50.724963376" />
+			<string key="sensor:name" value="livingRoomTable" />
+			<string key="sensor:reading" value="{activated=livingRoomTable}" />
+			<string key="concept:name" value="{activated=livingRoomTable}" />
 			<int key="@@index" value="150" />
 			<int key="@@case_index" value="8" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:55.941125488" />
-			<string key="sensor:name" value="kitchenChair1" />
-			<string key="sensor:reading" value="{activated=kitchenChair1}" />
-			<string key="concept:name" value="{activated=kitchenChair1}" />
+			<date key="time:timestamp" value="2020-01-01T00:15:52.139176938" />
+			<string key="sensor:name" value="livingRoomChair" />
+			<string key="sensor:reading" value="{activated=livingRoomChair}" />
+			<string key="concept:name" value="{activated=livingRoomChair}" />
 			<int key="@@index" value="151" />
-			<int key="@@case_index" value="8" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:08:09.012193298" />
-			<string key="sensor:name" value="terraceChair1" />
-			<string key="sensor:reading" value="{activated=terraceChair1}" />
-			<string key="concept:name" value="{activated=terraceChair1}" />
-			<int key="@@index" value="152" />
 			<int key="@@case_index" value="8" />
 		</event>
 	</trace>
 	<trace>
 		<string key="concept:name" value="9" />
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:01" />
+			<date key="time:timestamp" value="2020-01-01T00:00:02.828427124" />
 			<string key="sensor:name" value="bed" />
 			<string key="sensor:reading" value="{activated=bed}" />
 			<string key="concept:name" value="{activated=bed}" />
+			<int key="@@index" value="152" />
+			<int key="@@case_index" value="9" />
+		</event>
+		<event>
+			<date key="time:timestamp" value="2020-01-01T00:00:39.798989868" />
+			<string key="sensor:name" value="shower" />
+			<string key="sensor:reading" value="{activated=shower}" />
+			<string key="concept:name" value="{activated=shower}" />
 			<int key="@@index" value="153" />
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:56.656854248" />
+			<date key="time:timestamp" value="2020-01-01T00:05:34.740115356" />
 			<string key="sensor:name" value="cabinet" />
 			<string key="sensor:reading" value="{activated=cabinet}" />
 			<string key="concept:name" value="{activated=cabinet}" />
@@ -1273,15 +1273,15 @@
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:00:59.485281372" />
-			<string key="sensor:name" value="shower" />
-			<string key="sensor:reading" value="{activated=shower}" />
-			<string key="concept:name" value="{activated=shower}" />
+			<date key="time:timestamp" value="2020-01-01T00:05:38.568542480" />
+			<string key="sensor:name" value="toilet" />
+			<string key="sensor:reading" value="{activated=toilet}" />
+			<string key="concept:name" value="{activated=toilet}" />
 			<int key="@@index" value="155" />
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:26.899494934" />
+			<date key="time:timestamp" value="2020-01-01T00:07:53.568542480" />
 			<string key="sensor:name" value="bathroomFaucet" />
 			<string key="sensor:reading" value="{activated=bathroomFaucet}" />
 			<string key="concept:name" value="{activated=bathroomFaucet}" />
@@ -1289,7 +1289,7 @@
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:27.899494934" />
+			<date key="time:timestamp" value="2020-01-01T00:08:32.024386596" />
 			<string key="sensor:name" value="cabinet" />
 			<string key="sensor:reading" value="{activated=cabinet}" />
 			<string key="concept:name" value="{activated=cabinet}" />
@@ -1297,91 +1297,75 @@
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:07:30.899494934" />
-			<string key="sensor:name" value="toilet" />
-			<string key="sensor:reading" value="{activated=toilet}" />
-			<string key="concept:name" value="{activated=toilet}" />
+			<date key="time:timestamp" value="2020-01-01T00:08:42.509667968" />
+			<string key="sensor:name" value="bedroomDrawers" />
+			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
+			<string key="concept:name" value="{activated=bedroomDrawers}" />
 			<int key="@@index" value="158" />
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:53.384776306" />
-			<string key="sensor:name" value="bedroomDrawers" />
-			<string key="sensor:reading" value="{activated=bedroomDrawers}" />
-			<string key="concept:name" value="{activated=bedroomDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:08:49.338095092" />
+			<string key="sensor:name" value="closet1" />
+			<string key="sensor:reading" value="{activated=closet1}" />
+			<string key="concept:name" value="{activated=closet1}" />
 			<int key="@@index" value="159" />
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:09:58.213203430" />
-			<string key="sensor:name" value="closet1" />
-			<string key="sensor:reading" value="{activated=closet1}" />
-			<string key="concept:name" value="{activated=closet1}" />
+			<date key="time:timestamp" value="2020-01-01T00:09:38.450793456" />
+			<string key="sensor:name" value="closet2" />
+			<string key="sensor:reading" value="{activated=closet2}" />
+			<string key="concept:name" value="{activated=closet2}" />
 			<int key="@@index" value="160" />
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:00.213203430" />
-			<string key="sensor:name" value="closet2" />
-			<string key="sensor:reading" value="{activated=closet2}" />
-			<string key="concept:name" value="{activated=closet2}" />
+			<date key="time:timestamp" value="2020-01-01T00:10:18.492424010" />
+			<string key="sensor:name" value="kitchenDrawers" />
+			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
+			<string key="concept:name" value="{activated=kitchenDrawers}" />
 			<int key="@@index" value="161" />
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:11.284271240" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:10:50.462986754" />
+			<string key="sensor:name" value="kitchenFaucet" />
+			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
+			<string key="concept:name" value="{activated=kitchenFaucet}" />
 			<int key="@@index" value="162" />
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:12.284271240" />
-			<string key="sensor:name" value="refrigerator" />
-			<string key="sensor:reading" value="{activated=refrigerator}" />
-			<string key="concept:name" value="{activated=refrigerator}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:08.617315672" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="163" />
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:15.112698364" />
-			<string key="sensor:name" value="kitchenDrawers" />
-			<string key="sensor:reading" value="{activated=kitchenDrawers}" />
-			<string key="concept:name" value="{activated=kitchenDrawers}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:11.031529234" />
+			<string key="sensor:name" value="refrigerator" />
+			<string key="sensor:reading" value="{activated=refrigerator}" />
+			<string key="concept:name" value="{activated=refrigerator}" />
 			<int key="@@index" value="164" />
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:19.941125488" />
-			<string key="sensor:name" value="kitchenFaucet" />
-			<string key="sensor:reading" value="{activated=kitchenFaucet}" />
-			<string key="concept:name" value="{activated=kitchenFaucet}" />
+			<date key="time:timestamp" value="2020-01-01T00:12:11.031529234" />
+			<string key="sensor:name" value="kitchenTable" />
+			<string key="sensor:reading" value="{activated=kitchenTable}" />
+			<string key="concept:name" value="{activated=kitchenTable}" />
 			<int key="@@index" value="165" />
 			<int key="@@case_index" value="9" />
 		</event>
 		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:19.941125488" />
-			<string key="sensor:name" value="kitchenTable" />
-			<string key="sensor:reading" value="{activated=kitchenTable}" />
-			<string key="concept:name" value="{activated=kitchenTable}" />
-			<int key="@@index" value="166" />
-			<int key="@@case_index" value="9" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:28.597979736" />
+			<date key="time:timestamp" value="2020-01-01T00:12:12.031529234" />
 			<string key="sensor:name" value="kitchenChair3" />
 			<string key="sensor:reading" value="{activated=kitchenChair3}" />
 			<string key="concept:name" value="{activated=kitchenChair3}" />
-			<int key="@@index" value="167" />
-			<int key="@@case_index" value="9" />
-		</event>
-		<event>
-			<date key="time:timestamp" value="2020-01-01T00:10:45.497474670" />
-			<string key="sensor:name" value="terraceChair1" />
-			<string key="sensor:reading" value="{activated=terraceChair1}" />
-			<string key="concept:name" value="{activated=terraceChair1}" />
-			<int key="@@index" value="168" />
+			<int key="@@index" value="166" />
 			<int key="@@case_index" value="9" />
 		</event>
 	</trace>

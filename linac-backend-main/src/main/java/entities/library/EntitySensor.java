@@ -23,11 +23,11 @@ public class EntitySensor extends SensorActive {
 	}
 	
 	public void defineDefaultState() {
-		state.put("activated", "true"); 
+		state.put("activated", this.getName()); 
 	}
 	
 	// Sensor behavior
 	public void updateState(String command) throws MqttPersistenceException, MqttException {
-		state.put("activated", "true");
+		state.put("activated", this.getName());
 	}
 }

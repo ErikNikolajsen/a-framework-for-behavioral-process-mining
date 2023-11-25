@@ -1,0 +1,3 @@
+{
+    "input": "agent(Agent1){ goto(bed); wait(59); goto(bathroom); goto(shower); wait(316); goto(cabinet); goto(toilet); wait(128); goto(bathroomFaucet); goto(cabinet); goto(bedroom); goto(bedroomDrawers); goto(closet1); goto(closet2); goto(kitchen); goto(kitchenDrawers); goto(refrigerator); goto(kitchenDrawers); goto(kitchenFaucet); goto(kitchenTable) }"
+}

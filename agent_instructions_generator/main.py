@@ -69,6 +69,12 @@ def run_routine_instruction_generator(model, iterations, seed, degree, mode, sym
         print(f"Error: the iteration '{iterations}' is less than 1")
         print("Halting program\n")
         sys.exit(1)
+    if "wandering" in symptoms:
+        if floorplan == None:
+            print(f"Error: a floorplan needs to be specified with the specified symptoms")
+            print("Halting program\n")
+            sys.exit(1)
+
     
     if mode != "invisible":
         print(f"""

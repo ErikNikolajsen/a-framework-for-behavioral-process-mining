@@ -2,26 +2,26 @@ import requests
 import json
 import pm4py
 import pandas as pd
-import routine_instruction_generator
+import agent_instructions_generator
 import os
 import random
 import warnings
-for i in range(0,5):
+for i in range(0,1):
     #EP
-    OUTPUT_XES = f"wandering_100_0{i}_2.xes"
+    OUTPUT_XES = f"repetitiveness_100_0{i}_2.xes"
     OUTPUT_MODE = "normal" # possible values: debug, normal, invisible
     EP_SEED = None # None value makes it based on system time 
 
     #RIG
-    ROUTINE_MODEL = "morning_routine_template.pnml"
-    ITERATIONS = 100
+    ROUTINE_MODEL = "morning_routine_template_entitysensors.pnml"
+    ITERATIONS = 10
     DEGREE = 0.1*i
     MODE = "invisible"
-    SYMPTOMS = ["wandering"]
+    SYMPTOMS = ["repetitiveness"]
     INSTRUCTIONS_PATH = "rig-output.json"
 
     #Linac
-    ENVIRONMENT_PATH = "morning_routine_floorplan_floor.json"
+    ENVIRONMENT_PATH = "morning_routine_floorplan_entitysensors.json"
     SETTINGS_PATH = "simulator.json"
     CSV_PATH = "linac-backend-main/eventlog.csv"
     """
@@ -71,8 +71,11 @@ for i in range(0,5):
 8888888888 888
             
 --------- Settings ---------
-          
+
+Experiment Runner
 Output:      {OUTPUT_XES}
+Mode:        {OUTPUT_MODE}
+Seed:        {EP_SEED}
 ____________________________\n""")
 
         # Cleanup
@@ -101,7 +104,7 @@ ____________________________\n""")
             # Generate routine instructions by running RIG
             if OUTPUT_MODE in ("debug"):
                 print("Generate agent instructions\n")
-            routine_instruction_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), DEGREE, MODE, SYMPTOMS, INSTRUCTIONS_PATH, ENVIRONMENT_PATH)
+            agent_instructions_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), DEGREE, MODE, SYMPTOMS, INSTRUCTIONS_PATH, ENVIRONMENT_PATH)
 
             # Send agent instructions
             f = open(INSTRUCTIONS_PATH)

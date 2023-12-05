@@ -2,7 +2,7 @@ import random
 import uuid
 import json
 
-def add_repetitive_behavior(petri_net, petri_net_modified, degree,):
+def add_repetitiveness_1(petri_net, petri_net_modified, degree,):
     #print("*Added repetitive behavior") #test
     repetitive_name_counter = 0
     original_transitions = petri_net.transitions.copy()
@@ -42,7 +42,44 @@ def add_repetitive_behavior(petri_net, petri_net_modified, degree,):
         
     return petri_net_modified
 
-def add_wandering_behavior(petri_net, petri_net_modified, degree, floorplan):
+def add_repetitiveness_2(petri_net, petri_net_modified, degree,):
+    #print("*Added repetitive behavior") #test
+    repetitive_name_counter = 0
+    original_transitions = petri_net.transitions.copy()
+    
+    # Remove deadend transitions
+    for transition in petri_net.transitions:
+        #print(transition.name)
+        deadend_transition = True
+        for arc in petri_net_modified.arcs:
+            if arc.source == transition.id:
+                for arc2 in petri_net_modified.arcs:
+                    if arc.target == arc2.source:
+                        deadend_transition = False
+        if deadend_transition == True:
+            original_transitions.remove(transition)
+            #print(f"Removed deadend transition: {transition.name}") #test
+        
+    random.shuffle(original_transitions)
+    for i in range(round(len(original_transitions)*degree)):
+        transition = original_transitions[i] # pick random transition
+        #print("Picked transition: "+transition.id) # test
+        new_transition_id = str(uuid.uuid4()).replace("-", "")[:15]
+        petri_net_modified.add_transition(new_transition_id, "rt"+str(repetitive_name_counter), transition.label, transition.delay_lower_limit, transition.delay_upper_limit)
+        repetitive_name_counter += 1
+        #Find all place targets of outgoing arcs from picked transition
+        target_places_IDs = []
+        for arc in petri_net_modified.arcs:
+            if arc.source == transition.id:
+                target_places_IDs.append(arc.target)
+        #Add new arcs to new transition
+        for place_ID in target_places_IDs:
+            petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], place_ID, new_transition_id)
+            petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], new_transition_id, place_ID)
+        
+    return petri_net_modified
+
+def add_wandering(petri_net, petri_net_modified, degree, floorplan):
     
     # Load in floorplan to determine walkable coordinates 
     with open(floorplan) as f:

@@ -53,7 +53,7 @@ def run_routine_instruction_generator(model, iterations, seed, degree, mode, sym
     if symptoms != None:
         symptoms_string = ",\n            ".join(symptoms)
         for symptom in symptoms:
-            if symptom not in ("wandering", "repetitiveness"):
+            if symptom not in ("wandering", "repetitiveness_1", "repetitiveness_2"):
                 print(f"Error: the symptom '{symptom}' is not an option")
                 print("Halting program\n")
                 sys.exit(1)
@@ -132,10 +132,12 @@ ______________________________\n""")
 
         # Express symptoms in the routine model    
         if symptoms != None:
-            if "repetitiveness" in symptoms:
-                petri_net_modified = _symptoms.add_repetitive_behavior(petri_net, petri_net_modified, degree)
+            if "repetitiveness_1" in symptoms:
+                petri_net_modified = _symptoms.add_repetitiveness_1(petri_net, petri_net_modified, degree)
+            if "repetitiveness_2" in symptoms:
+                petri_net_modified = _symptoms.add_repetitiveness_2(petri_net, petri_net_modified, degree)
             if "wandering" in symptoms:
-                petri_net_modified = _symptoms.add_wandering_behavior(petri_net, petri_net_modified, degree, floorplan)
+                petri_net_modified = _symptoms.add_wandering(petri_net, petri_net_modified, degree, floorplan)
 
         if mode == "debug":
             print("***Petri net after symptoms have been added:")

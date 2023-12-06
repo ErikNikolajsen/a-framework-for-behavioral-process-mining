@@ -2,7 +2,7 @@ import random
 import uuid
 import json
 
-def add_repetitiveness_1(petri_net, petri_net_modified, degree,):
+def add_repetitiveness_1(petri_net, petri_net_modified, degree):
     #print("*Added repetitive behavior") #test
     repetitive_name_counter = 0
     original_transitions = petri_net.transitions.copy()
@@ -42,7 +42,7 @@ def add_repetitiveness_1(petri_net, petri_net_modified, degree,):
         
     return petri_net_modified
 
-def add_repetitiveness_2(petri_net, petri_net_modified, degree,):
+def add_repetitiveness_2(petri_net, petri_net_modified, degree):
     #print("*Added repetitive behavior") #test
     repetitive_name_counter = 0
     original_transitions = petri_net.transitions.copy()
@@ -140,4 +140,20 @@ def add_wandering(petri_net, petri_net_modified, degree, floorplan):
             petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], source, new_place_id)
             petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], new_place_id, new_transition_id)
             petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], new_transition_id, target)
+    return petri_net_modified
+
+def add_forgetfulness(petri_net, petri_net_modified, degree):
+    original_transitions = petri_net.transitions.copy()
+        
+    random.shuffle(original_transitions)
+    for i in range(round((len(original_transitions)*degree)/4)):
+        picked_transition = original_transitions[i] # pick random transition
+        #print("Picked transition: "+picked_transition.label) # test
+        #transform picked transition into dummy transition
+        for transition in petri_net_modified.transitions:
+            if transition.id == picked_transition.id:
+                transition.label = ""
+                transition.delay_lower_limit = 0
+                transition.delay_upper_limit = 0
+        
     return petri_net_modified

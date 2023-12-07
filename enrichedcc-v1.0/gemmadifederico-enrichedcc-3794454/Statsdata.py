@@ -530,11 +530,12 @@ def get_freq_hour_normalized(log):
 
     res = {}
     for a in attr_list:
-        res[a] = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0, 19: 0, 20: 0, 21: 0, 22: 0, 23: 0, 24: 0}
+        #res[a] = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0, 16: 0, 17: 0, 18: 0, 19: 0, 20: 0, 21: 0, 22: 0, 23: 0, 24: 0}
+        res[a] = {i: 0 for i in range(61)}
 
     for trace in log:
         for event in trace:
-            res[event.get("concept:name")][event.get("start_timestamp").hour] += 1
+            res[event.get("concept:name")][event.get("start_timestamp").minute] += 1
 
     for activity, values in res.items():
         maxres = max(values.values())

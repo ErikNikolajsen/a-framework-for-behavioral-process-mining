@@ -125,7 +125,7 @@ def activity_time(log, attr):
 
 def get_activity_start_complete_time(log):
     activity_start_time = activity_time(log, "start_timestamp")
-    activity_completion_time = activity_time(log, "time:timestamp")
+    activity_completion_time = activity_time(log, "complete_time")
 
     x= {}
     y= {}
@@ -153,7 +153,7 @@ def get_activity_start_complete_time(log):
 
 # Function to get the avg duration of each activity identifier in a log
 def get_activity_duration(log):
-    soj_time = soj_time_get.apply(log, parameters={soj_time_get.Parameters.TIMESTAMP_KEY: "time:timestamp", soj_time_get.Parameters.START_TIMESTAMP_KEY: "start_timestamp"})
+    soj_time = soj_time_get.apply(log, parameters={soj_time_get.Parameters.TIMESTAMP_KEY: "complete_time", soj_time_get.Parameters.START_TIMESTAMP_KEY: "start_timestamp"})
     return soj_time
 
 
@@ -161,10 +161,10 @@ def get_activity_duration(log):
 
 
 def get_activity_duration_stats(log, minutes: bool = False):
-    dmean = soj_time_get.apply(log, parameters={soj_time_get.Parameters.TIMESTAMP_KEY: "time:timestamp", soj_time_get.Parameters.START_TIMESTAMP_KEY: "start_timestamp", soj_time_get.Parameters.AGGREGATION_MEASURE: 'mean'})
-    dmedian = soj_time_get.apply(log, parameters={soj_time_get.Parameters.TIMESTAMP_KEY: "time:timestamp", soj_time_get.Parameters.START_TIMESTAMP_KEY: "start_timestamp", soj_time_get.Parameters.AGGREGATION_MEASURE: 'median'})
-    dmin = soj_time_get.apply(log, parameters={soj_time_get.Parameters.TIMESTAMP_KEY: "time:timestamp", soj_time_get.Parameters.START_TIMESTAMP_KEY: "start_timestamp", soj_time_get.Parameters.AGGREGATION_MEASURE: 'min'})
-    dmax = soj_time_get.apply(log, parameters={soj_time_get.Parameters.TIMESTAMP_KEY: "time:timestamp", soj_time_get.Parameters.START_TIMESTAMP_KEY: "start_timestamp", soj_time_get.Parameters.AGGREGATION_MEASURE: 'max'})
+    dmean = soj_time_get.apply(log, parameters={soj_time_get.Parameters.TIMESTAMP_KEY: "complete_time", soj_time_get.Parameters.START_TIMESTAMP_KEY: "start_timestamp", soj_time_get.Parameters.AGGREGATION_MEASURE: 'mean'})
+    dmedian = soj_time_get.apply(log, parameters={soj_time_get.Parameters.TIMESTAMP_KEY: "complete_time", soj_time_get.Parameters.START_TIMESTAMP_KEY: "start_timestamp", soj_time_get.Parameters.AGGREGATION_MEASURE: 'median'})
+    dmin = soj_time_get.apply(log, parameters={soj_time_get.Parameters.TIMESTAMP_KEY: "complete_time", soj_time_get.Parameters.START_TIMESTAMP_KEY: "start_timestamp", soj_time_get.Parameters.AGGREGATION_MEASURE: 'min'})
+    dmax = soj_time_get.apply(log, parameters={soj_time_get.Parameters.TIMESTAMP_KEY: "complete_time", soj_time_get.Parameters.START_TIMESTAMP_KEY: "start_timestamp", soj_time_get.Parameters.AGGREGATION_MEASURE: 'max'})
     dstdev = get_dur_stdev(log)
     if(minutes == True):
         for act, val in dmean.items():
@@ -197,7 +197,7 @@ def get_dur_minmax(log):
         d[act] = []
     for trace in log:
         for event in trace:
-            end = event.get("time:timestamp")
+            end = event.get("complete_time")
             start = event.get("start_timestamp")
             duration = end - start    
             duration_in_s = round(duration.total_seconds())
@@ -223,7 +223,7 @@ def get_dur_stdev(log):
         d[act] = []
     for trace in log:
         for event in trace:
-            end = event.get("time:timestamp")
+            end = event.get("complete_time")
             start = event.get("start_timestamp")
             duration = end - start    
             duration_in_s = round(duration.total_seconds())
@@ -248,7 +248,7 @@ def get_dur_median(log):
         d[act] = []
     for trace in log:
         for event in trace:
-            end = event.get("time:timestamp")
+            end = event.get("complete_time")
             start = event.get("start_timestamp")
             duration = end - start    
             duration_in_s = round(duration.total_seconds())
@@ -336,7 +336,7 @@ def get_duration_fitness(logNormal, logComp):
         ddict = {}
         fitness = []
         for event in trace:
-            end = event.get("time:timestamp")
+            end = event.get("complete_time")
             start = event.get("start_timestamp")
             duration = end - start    
             duration_in_s = round(duration.total_seconds())

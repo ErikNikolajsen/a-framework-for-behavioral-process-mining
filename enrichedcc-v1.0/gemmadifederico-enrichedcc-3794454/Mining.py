@@ -48,10 +48,12 @@ def conformance (logA, logB, alg):
     else:
         raise Exception("Discovery algorithm not recognized")
     aligned_traces = alignments.apply_log(logB, pn[0], pn[1], pn[2])
+    #aligned_traces = pm4py.fitness_token_based_replay(logB, pn[0], pn[1], pn[2])
     x = 0
     for trace in aligned_traces:
         x =  x + trace["fitness"]
     x = int(x)
     aligned_traces_dataframe = alignments.get_diagnostics_dataframe(logA, aligned_traces)
     return aligned_traces_dataframe, x/len(logB)
+    #return "test", aligned_traces["average_trace_fitness"] #dict_keys(['perc_fit_traces', 'average_trace_fitness', 'log_fitness', 'percentage_of_fitting_traces'])
 

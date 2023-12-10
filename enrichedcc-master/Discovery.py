@@ -1,11 +1,9 @@
-# %%
 from pm4py.objects.log.importer.xes import importer as xes_importer
-import import_ipynb
 from Statsdata import (get_freq_fitness, get_duration_fitness, get_time_fitness, get_activity_freq_stats, get_activity_duration_stats, 
 get_freq_hour_normalized, get_freq_position_normalized, get_position_fitness, get_trace_length_stats, get_length_fitness)
 from Mining import discovery_inductive, discovery_heuristic
 import subprocess
-import csv
+#import csv
 import sys
 import os
 import uuid
@@ -13,8 +11,6 @@ import pandas as pd
 import json
 from prettytable import PrettyTable as pt
 
-
-# %%
 def writeTable(stats, title, f):
         # Creating object
         tt = pt([""])
@@ -32,10 +28,6 @@ def writeTable(stats, title, f):
         
         f.write(tt.get_string(title=title, header=False) + "\n")
 
-# %% [markdown]
-# ## Log import
-
-# %%
 def execall(path_logA, path_discovered_model):
     logA = xes_importer.apply(path_logA+".xes")
     uuidstr = str(uuid.uuid4())
@@ -116,7 +108,6 @@ def execall(path_logA, path_discovered_model):
 
     # f.close()
 
-# %%
 if __name__ == "__main__":
     # Discover.bat logs\discovery\discovery-log models\discovered-model
     A = sys.argv[1]

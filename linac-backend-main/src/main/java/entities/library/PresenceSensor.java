@@ -16,18 +16,18 @@ public class PresenceSensor extends SensorPassive {
 	}
 	
 	public void defineDefaultState() {
-		state.put("triggered", false);
+		state.put("location", false);
 	}
 	
 	// Trigger behavior 
 	public boolean updateState() {
 		for (Agent agent : Resources.getFloorplan().getAgents()) {
 			if (getInteractArea().contains(agent.getPosition())) {
-				state.put("triggered", true);
+				state.put("location", this.getName());
 				return true;
 			}
 		}
-		state.put("triggered", false);
+		state.put("location", false);
 		return false;
 	}
 }

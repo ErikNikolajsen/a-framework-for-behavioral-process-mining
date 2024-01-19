@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--created Sun Dec 10 15:40:56 2023 by ndrio version 3.7.5-->
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-5278-F05F9-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>morning_routine_template_entitysensors_delay</text>
+  </name>
+ <page id="g-5278-F0648-1">
+  <place id="p-5278-F064E-2">
+  <name>
+   <text>end</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4900" y="700"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0669-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="560" y="660"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F066D-4">
+  <name>
+   <text>p11</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2640" y="710"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0670-5">
+  <name>
+   <text>p12</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2910" y="710"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0672-6">
+  <name>
+   <text>p13</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="3155" y="680"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0673-7">
+  <name>
+   <text>p14</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2260" y="840"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0676-8">
+  <name>
+   <text>p15</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2640" y="860"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0678-9">
+  <name>
+   <text>p16</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2910" y="860"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F067A-10">
+  <name>
+   <text>p17</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="3340" y="700"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F067C-11">
+  <name>
+   <text>p18</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="3340" y="780"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F067D-12">
+  <name>
+   <text>p19</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1480" y="750"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0680-13">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="560" y="750"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0682-14">
+  <name>
+   <text>p20</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1740" y="680"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0685-15">
+  <name>
+   <text>p21</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1720" y="820"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0687-16">
+  <name>
+   <text>p22</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1990" y="660"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0689-17">
+  <name>
+   <text>p23</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1980" y="850"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F068B-18">
+  <name>
+   <text>p24</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="3660" y="760"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F068C-19">
+  <name>
+   <text>p25</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4250" y="640"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0690-20">
+  <name>
+   <text>p26</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4260" y="850"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0752-21">
+  <name>
+   <text>p27</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4620" y="700"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0757-22">
+  <name>
+   <text>p28</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4000" y="740"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0759-23">
+  <name>
+   <text>p29</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4140" y="260"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F075C-24">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="560" y="860"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F075D-25">
+  <name>
+   <text>p31</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="760" y="850"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0760-26">
+  <name>
+   <text>p32</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="970" y="860"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0762-27">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1150" y="750"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0763-28">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1150" y="640"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0766-29">
+  <name>
+   <text>p6</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1150" y="870"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F0768-30">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="300" y="780"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F076B-31">
+  <name>
+   <text>p8</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2260" y="690"/>
+   </graphics>
+  </place>
+  <place id="p-5278-F076C-32">
+  <name>
+   <text>p9</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2650" y="580"/>
+   </graphics>
+  </place>
+  <transition id="t-5278-F076D-33">
+  <name>
+   <text>sleep</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(bed,activate,5,60)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>5</cn>
+     <cn>60</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="140" y="780"/>
+   </graphics>
+  </transition>
+  <place id="p-5278-F0777-34">
+  <name>
+   <text>start</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="30" y="790"/>
+   </graphics>
+  </place>
+  <transition id="t-5278-F077B-35">
+  <name>
+   <text>t0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(shower,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>180</cn>
+     <cn>420</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="660" y="640"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0783-36">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(toilet,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>300</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="660" y="750"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F07CD-37">
+  <name>
+   <text>t10</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(refrigerator,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="2740" y="580"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F07D2-38">
+  <name>
+   <text>t11</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenTable,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="3255" y="650"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F07D9-39">
+  <name>
+   <text>t13</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenDrawers,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="2440" y="720"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F07DD-40">
+  <name>
+   <text>t14</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(refrigerator,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="2740" y="710"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F07E3-41">
+  <name>
+   <text>t15</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(hob,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="3060" y="700"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F07E7-42">
+  <name>
+   <text>t17</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenDrawers,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="2440" y="860"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F07EC-43">
+  <name>
+   <text>t18</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenFaucet,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="2740" y="860"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F07F0-44">
+  <name>
+   <text>t19</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenTable,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="3250" y="860"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F07F6-45">
+  <name>
+   <text>t20</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenChair1,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="3520" y="660"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F07FA-46">
+  <name>
+   <text>t21</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenChair3,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="3520" y="860"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0801-47">
+  <name>
+   <text>t22</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenChair2,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="3520" y="760"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0824-48">
+  <name>
+   <text>t23</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(bedroomDrawers,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="1630" y="750"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0829-49">
+  <name>
+   <text>t26</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(closet1,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="1880" y="660"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F082F-50">
+  <name>
+   <text>t27</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(closet2,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="1870" y="840"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0834-51">
+  <name>
+   <text>t28</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(kitchen)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="2120" y="760"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0837-52">
+  <name>
+   <text>t29</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(television,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4140" y="640"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F083E-53">
+  <name>
+   <text>t30</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(livingRoomChair,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4410" y="540"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0842-54">
+  <name>
+   <text>t32</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(sofa,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4410" y="640"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0847-55">
+  <name>
+   <text>t33</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(livingRoomTable,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4150" y="850"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F084D-56">
+  <name>
+   <text>t34</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(livingRoomChair,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4420" y="760"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0851-57">
+  <name>
+   <text>t35</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(sofa,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4420" y="850"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0855-58">
+  <name>
+   <text>t36</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(livingroom)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="3860" y="750"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F0859-59">
+  <name>
+   <text>t37</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(terrace)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4030" y="260"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08B1-60">
+  <name>
+   <text>t40</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(terraceChair2,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4330" y="310"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08B8-61">
+  <name>
+   <text>t41</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(terraceChair1,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4320" y="190"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08BD-62">
+  <name>
+   <text>t42</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(terrace)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4320" y="50"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08C1-63">
+  <name>
+   <text>t43</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(8,0)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4770" y="650"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08C5-64">
+  <name>
+   <text>t44</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(9,0)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4770" y="770"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08C8-65">
+  <name>
+   <text>t45</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(cabinet,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="650" y="860"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08CD-66">
+  <name>
+   <text>t46</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(bathroomFaucet,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="880" y="850"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08D1-67">
+  <name>
+   <text>t47</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(cabinet,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="1060" y="860"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08D5-68">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(bedroom)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="1320" y="750"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08D9-69">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(bathroom)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="400" y="780"/>
+   </graphics>
+  </transition>
+  <transition id="t-5278-F08DD-70">
+  <name>
+   <text>t7</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenDrawers,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="2450" y="580"/>
+   </graphics>
+  </transition>
+  <arc id="e-5278-F08E7-71" source="t-5278-F07CD-37" target="p-5278-F0672-6">
+  </arc>
+  <arc id="e-5278-F08EA-72" source="t-5278-F08D9-69" target="p-5278-F075C-24">
+  </arc>
+  <arc id="e-5278-F08EC-73" source="p-5278-F076B-31" target="t-5278-F08DD-70">
+  </arc>
+  <arc id="e-5278-F08ED-74" source="t-5278-F08DD-70" target="p-5278-F076C-32">
+  </arc>
+  <arc id="e-5278-F090C-75" source="p-5278-F076C-32" target="t-5278-F07CD-37">
+  </arc>
+  <arc id="e-5278-F090D-76" source="t-5278-F08C1-63" target="p-5278-F064E-2">
+  </arc>
+  <arc id="e-5278-F090E-77" source="p-5278-F0777-34" target="t-5278-F076D-33">
+  </arc>
+  <arc id="e-5278-F090F-78" source="t-5278-F07DD-40" target="p-5278-F0670-5">
+  </arc>
+  <arc id="e-5278-F0913-79" source="p-5278-F066D-4" target="t-5278-F07DD-40">
+  </arc>
+  <arc id="e-5278-F0914-80" source="t-5278-F07D9-39" target="p-5278-F066D-4">
+  </arc>
+  <arc id="e-5278-F0915-81" source="p-5278-F0759-23" target="t-5278-F08BD-62">
+  </arc>
+  <arc id="e-5278-F0916-82" source="p-5278-F0759-23" target="t-5278-F08B8-61">
+  </arc>
+  <arc id="e-5278-F0917-83" source="p-5278-F076B-31" target="t-5278-F07D9-39">
+  </arc>
+  <arc id="e-5278-F0918-84" source="p-5278-F0670-5" target="t-5278-F07E3-41">
+  </arc>
+  <arc id="e-5278-F0918-85" source="t-5278-F07E3-41" target="p-5278-F0672-6">
+  </arc>
+  <arc id="e-5278-F0919-86" source="p-5278-F0672-6" target="t-5278-F07D2-38">
+  </arc>
+  <arc id="e-5278-F091C-87" source="t-5278-F07EC-43" target="p-5278-F0678-9">
+  </arc>
+  <arc id="e-5278-F091D-88" source="p-5278-F0669-3" target="t-5278-F077B-35">
+  </arc>
+  <arc id="e-5278-F091E-89" source="p-5278-F075C-24" target="t-5278-F08C8-65">
+  </arc>
+  <arc id="e-5278-F091F-90" source="p-5278-F0676-8" target="t-5278-F07EC-43">
+  </arc>
+  <arc id="e-5278-F091F-91" source="t-5278-F07E7-42" target="p-5278-F0676-8">
+  </arc>
+  <arc id="e-5278-F0920-92" source="t-5278-F08BD-62" target="p-5278-F0752-21">
+  </arc>
+  <arc id="e-5278-F0921-93" source="p-5278-F0752-21" target="t-5278-F08C5-64">
+  </arc>
+  <arc id="e-5278-F0924-94" source="p-5278-F0678-9" target="t-5278-F07F0-44">
+  </arc>
+  <arc id="e-5278-F0925-95" source="t-5278-F07D2-38" target="p-5278-F067A-10">
+  </arc>
+  <arc id="e-5278-F0926-96" source="p-5278-F0673-7" target="t-5278-F07E7-42">
+  </arc>
+  <arc id="e-5278-F0927-97" source="p-5278-F067A-10" target="t-5278-F07F6-45">
+  </arc>
+  <arc id="e-5278-F0927-98" source="p-5278-F067A-10" target="t-5278-F07FA-46">
+  </arc>
+  <arc id="e-5278-F0928-99" source="p-5278-F067A-10" target="t-5278-F0801-47">
+  </arc>
+  <arc id="e-5278-F0929-100" source="p-5278-F067C-11" target="t-5278-F0801-47">
+  </arc>
+  <arc id="e-5278-F092A-101" source="p-5278-F0680-13" target="t-5278-F0783-36">
+  </arc>
+  <arc id="e-5278-F092D-102" source="p-5278-F067C-11" target="t-5278-F07FA-46">
+  </arc>
+  <arc id="e-5278-F092D-103" source="t-5278-F08C8-65" target="p-5278-F075D-25">
+  </arc>
+  <arc id="e-5278-F092E-104" source="p-5278-F0766-29" target="t-5278-F08D5-68">
+  </arc>
+  <arc id="e-5278-F092F-105" source="t-5278-F08B8-61" target="p-5278-F0752-21">
+  </arc>
+  <arc id="e-5278-F0930-106" source="p-5278-F067C-11" target="t-5278-F07F6-45">
+  </arc>
+  <arc id="e-5278-F0931-107" source="t-5278-F07F0-44" target="p-5278-F067C-11">
+  </arc>
+  <arc id="e-5278-F0932-108" source="p-5278-F067D-12" target="t-5278-F0824-48">
+  </arc>
+  <arc id="e-5278-F0934-109" source="t-5278-F0824-48" target="p-5278-F0682-14">
+  </arc>
+  <arc id="e-5278-F0935-110" source="t-5278-F0824-48" target="p-5278-F0685-15">
+  </arc>
+  <arc id="e-5278-F0936-111" source="p-5278-F0682-14" target="t-5278-F0829-49">
+  </arc>
+  <arc id="e-5278-F0937-112" source="p-5278-F0685-15" target="t-5278-F082F-50">
+  </arc>
+  <arc id="e-5278-F0938-113" source="t-5278-F08D5-68" target="p-5278-F067D-12">
+  </arc>
+  <arc id="e-5278-F0939-114" source="t-5278-F077B-35" target="p-5278-F0763-28">
+  </arc>
+  <arc id="e-5278-F093A-115" source="t-5278-F076D-33" target="p-5278-F0768-30">
+  </arc>
+  <arc id="e-5278-F093B-116" source="t-5278-F0829-49" target="p-5278-F0687-16">
+  </arc>
+  <arc id="e-5278-F093E-117" source="t-5278-F08B1-60" target="p-5278-F0752-21">
+  </arc>
+  <arc id="e-5278-F093F-118" source="t-5278-F082F-50" target="p-5278-F0689-17">
+  </arc>
+  <arc id="e-5278-F0940-119" source="p-5278-F075D-25" target="t-5278-F08CD-66">
+  </arc>
+  <arc id="e-5278-F0941-120" source="p-5278-F0687-16" target="t-5278-F0834-51">
+  </arc>
+  <arc id="e-5278-F0942-121" source="p-5278-F0689-17" target="t-5278-F0834-51">
+  </arc>
+  <arc id="e-5278-F095F-122" source="t-5278-F0834-51" target="p-5278-F076B-31">
+  </arc>
+  <arc id="e-5278-F0961-123" source="t-5278-F0834-51" target="p-5278-F0673-7">
+  </arc>
+  <arc id="e-5278-F0961-124" source="t-5278-F07F6-45" target="p-5278-F068B-18">
+  </arc>
+  <arc id="e-5278-F0965-125" source="t-5278-F0801-47" target="p-5278-F068B-18">
+  </arc>
+  <arc id="e-5278-F0965-126" source="p-5278-F0768-30" target="t-5278-F08D9-69">
+  </arc>
+  <arc id="e-5278-F0967-127" source="t-5278-F07FA-46" target="p-5278-F068B-18">
+  </arc>
+  <arc id="e-5278-F0967-128" source="t-5278-F0783-36" target="p-5278-F0762-27">
+  </arc>
+  <arc id="e-5278-F0968-129" source="p-5278-F0752-21" target="t-5278-F08C1-63">
+  </arc>
+  <arc id="e-5278-F0969-130" source="p-5278-F068C-19" target="t-5278-F0842-54">
+  </arc>
+  <arc id="e-5278-F096B-131" source="p-5278-F068C-19" target="t-5278-F083E-53">
+  </arc>
+  <arc id="e-5278-F096D-132" source="t-5278-F0837-52" target="p-5278-F068C-19">
+  </arc>
+  <arc id="e-5278-F096E-133" source="t-5278-F08CD-66" target="p-5278-F0760-26">
+  </arc>
+  <arc id="e-5278-F096F-134" source="t-5278-F0847-55" target="p-5278-F0690-20">
+  </arc>
+  <arc id="e-5278-F0970-135" source="p-5278-F0690-20" target="t-5278-F084D-56">
+  </arc>
+  <arc id="e-5278-F0970-136" source="p-5278-F0690-20" target="t-5278-F0851-57">
+  </arc>
+  <arc id="e-5278-F0971-137" source="t-5278-F08D9-69" target="p-5278-F0669-3">
+  </arc>
+  <arc id="e-5278-F0972-138" source="t-5278-F083E-53" target="p-5278-F0752-21">
+  </arc>
+  <arc id="e-5278-F0973-139" source="t-5278-F0842-54" target="p-5278-F0752-21">
+  </arc>
+  <arc id="e-5278-F0975-140" source="t-5278-F084D-56" target="p-5278-F0752-21">
+  </arc>
+  <arc id="e-5278-F0976-141" source="t-5278-F08D1-67" target="p-5278-F0766-29">
+  </arc>
+  <arc id="e-5278-F0977-142" source="p-5278-F0763-28" target="t-5278-F08D5-68">
+  </arc>
+  <arc id="e-5278-F0978-143" source="t-5278-F0851-57" target="p-5278-F0752-21">
+  </arc>
+  <arc id="e-5278-F0979-144" source="p-5278-F068B-18" target="t-5278-F0855-58">
+  </arc>
+  <arc id="e-5278-F097A-145" source="t-5278-F0855-58" target="p-5278-F0757-22">
+  </arc>
+  <arc id="e-5278-F097A-146" source="p-5278-F0757-22" target="t-5278-F0837-52">
+  </arc>
+  <arc id="e-5278-F097B-147" source="p-5278-F0760-26" target="t-5278-F08D1-67">
+  </arc>
+  <arc id="e-5278-F097E-148" source="t-5278-F08D9-69" target="p-5278-F0680-13">
+  </arc>
+  <arc id="e-5278-F097F-149" source="p-5278-F0757-22" target="t-5278-F0847-55">
+  </arc>
+  <arc id="e-5278-F0980-150" source="p-5278-F068B-18" target="t-5278-F0859-59">
+  </arc>
+  <arc id="e-5278-F0981-151" source="t-5278-F0859-59" target="p-5278-F0759-23">
+  </arc>
+  <arc id="e-5278-F0981-152" source="p-5278-F0759-23" target="t-5278-F08B1-60">
+  </arc>
+  <arc id="e-5278-F0982-153" source="p-5278-F0762-27" target="t-5278-F08D5-68">
+  </arc>
+  <arc id="e-5278-F0983-154" source="t-5278-F08C5-64" target="p-5278-F064E-2">
+  </arc>
+ </page>
+ </net>
+</pnml>

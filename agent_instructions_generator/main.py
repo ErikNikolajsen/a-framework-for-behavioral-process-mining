@@ -129,17 +129,25 @@ ______________________________\n""")
     # Start iteration:
     for iteration in range(1,iterations+1):
         petri_net_modified = copy.deepcopy(petri_net)
+        petri_net_temporary = copy.deepcopy(petri_net)
 
         # Express symptoms in the routine model    
         if symptoms != None:
-            if "repetitiveness_1" in symptoms:
-                petri_net_modified = _symptoms.add_repetitiveness_1(petri_net, petri_net_modified, degree)
-            if "repetitiveness_2" in symptoms:
-                petri_net_modified = _symptoms.add_repetitiveness_2(petri_net, petri_net_modified, degree)
             if "wandering" in symptoms:
                 petri_net_modified = _symptoms.add_wandering(petri_net, petri_net_modified, degree, floorplan)
+                petri_net_temporary = copy.deepcopy(petri_net_modified)
             if "forgetfulness" in symptoms:
                 petri_net_modified = _symptoms.add_forgetfulness(petri_net, petri_net_modified, degree)
+                petri_net_temporary = copy.deepcopy(petri_net_modified)
+            if "repetitiveness_1" in symptoms:
+                petri_net_modified = _symptoms.add_repetitiveness_1(petri_net, petri_net_modified, degree)
+                petri_net_temporary = copy.deepcopy(petri_net_modified)
+            if "repetitiveness_2" in symptoms:
+                petri_net_modified = _symptoms.add_repetitiveness_2(petri_net, petri_net_modified, degree)
+                petri_net_temporary = copy.deepcopy(petri_net_modified)
+            
+            
+            
 
         if mode == "debug":
             print("***Petri net after symptoms have been added:")

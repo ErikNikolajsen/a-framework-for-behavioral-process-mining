@@ -10,6 +10,7 @@ public class BEvent {
 	
 	private BEventType eventType;
 	private LocalDateTime eventDateTime;
+	private LocalDateTime eventDateTimeEnd;
 	private Agent agent;
 	private AStarNode node;
 	private SensorActive sensor;
@@ -26,9 +27,10 @@ public class BEvent {
 	}
 	
 	// Sensor activation constructor
-	public BEvent(BEventType eventType, LocalDateTime eventDateTime, SensorActive sensor, String command) {
+	public BEvent(BEventType eventType, LocalDateTime eventDateTime, LocalDateTime eventDateTimeEnd, SensorActive sensor, String command) {
 		this.eventType = eventType;
 		this.eventDateTime = eventDateTime;
+		this.eventDateTimeEnd = eventDateTimeEnd;
 		this.sensor = sensor;
 		this.command = command;
 	}
@@ -67,6 +69,10 @@ public class BEvent {
 
 	public LocalDateTime getEventDateTime() {
 		return eventDateTime;
+	}
+
+	public LocalDateTime getEventDateTimeEnd() {
+		return eventDateTimeEnd;
 	}
 
 	public void setEventDateTime(LocalDateTime eventDateTime) {

@@ -22,7 +22,7 @@ public class Input {
 	
 	@JsonIgnore private final Pattern gotoPattern = Pattern.compile("\\s*goto\\(\\s*(\\d+)\\s*,\\s*(\\d+)\\s*\\)\\s*"); //gotoPattern that accepts coordinates of a tile that is within the boundaries of the specified grid and is walkable
 	@JsonIgnore private final Pattern gotoEntityPattern = Pattern.compile("\\s*goto\\(\\s*(\\w+)\\s*\\)\\s*"); //gotoEntityPattern that accepts name of Entity or SensorActive
-	@JsonIgnore private final Pattern interactPattern = Pattern.compile("\\s*interact\\(\\s*(\\w+),(\\w+)\\s*\\)\\s*"); //interactPattern that accepts sensorName and command
+	@JsonIgnore private final Pattern interactPattern = Pattern.compile("\\s*interact\\(\\s*(\\w+)\\s*,\\s*(\\w+)\\s*,\\s*(\\d+)\\s*,\\s*(\\d+)\\s*\\)\\s*"); //interactPattern that accepts sensorName and command "\\s*interact\\(\\s*(\\w+)\\s*,\\s*(\\w+)\\s*\\)\\s*"
 	@JsonIgnore private final Pattern waitPattern = Pattern.compile("\\s*wait\\(\\s*(\\d+)\\s*\\)\\s*"); //waitPattern that accepts integer
 	@JsonIgnore private final Pattern emptyPattern = Pattern.compile("\\s*"); //empty statement and whitespace at end of input string
 	@JsonIgnore private final Pattern casePattern = Pattern.compile("\\s*case-(\\d+)\\s*"); //casePattern 

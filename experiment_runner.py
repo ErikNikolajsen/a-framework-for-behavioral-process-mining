@@ -10,7 +10,7 @@ import copy
 
 for i in range(0,11):
     #EP
-    OUTPUT_XES = f"repetitiveness_2_100_{i}.xes"
+    OUTPUT_XES = f"wandering_forgetfulness_repetitivesness_2_100_{i}.xes"
     OUTPUT_MODE = "normal" # possible values: debug, normal, invisible
     EP_SEED = None # None value makes seed based on system time 
 
@@ -18,16 +18,20 @@ for i in range(0,11):
     ROUTINE_MODEL = "morning_routine_template_entitysensors.pnml"
     ITERATIONS = 100
     DEGREE = 0.1*i
-    MODE = "invisible"
-    SYMPTOMS = ["repetitiveness_2"]
+    MODE = "invisible" # possible values: debug, normal, invisible
+    SYMPTOMS = ["wandering", "forgetfulness", "repetitiveness_2"]
     INSTRUCTIONS_PATH = "rig-output.json"
 
     #Linac
-    ENVIRONMENT_PATH = "morning_routine_floorplan_entitysensors.json"
+    ENVIRONMENT_PATH = "morning_routine_floorplan_entitysensors_presencesensors.json"
     SETTINGS_PATH = "simulator.json"
     CSV_PATH = "linac-backend-main/eventlog.csv"
 
     # Main code
+
+    if EP_SEED == None:
+        EP_SEED = random.randint(0, 2**32 - 1)
+
     if __name__ == "__main__":
         print(f"""                                                                                    
 8888888888 8888888b.  
@@ -68,7 +72,7 @@ ____________________________\n""")
 
         for x in range(1,ITERATIONS+1):
             if OUTPUT_MODE in ("debug", "normal"):
-                print(f"* Trace {x}", flush=True)
+                print(f"* Degree {DEGREE} - Trace {x}") #, end='\r'
 
             # Generate routine instructions by running RIG
             if OUTPUT_MODE in ("debug"):

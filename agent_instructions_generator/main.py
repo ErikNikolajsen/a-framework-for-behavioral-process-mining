@@ -155,13 +155,12 @@ ______________________________\n""")
         
         ## simulation logic loop
         if mode in ("debug", "normal"):
-            print(f"\n***Simulation {iteration} commenced:")  
+            print(f"\n***Simulation {iteration}")  
         elif mode == "fast":
-            print(f"***Simulation {iteration} commenced")
+            print(f"***Simulation {iteration}")
         if iterations > 1:
             case_id = "case-"+str(iteration)
             instruction_list.append(case_id)
-            if mode in ("debug", "normal"): print(case_id)
 
         if mode == "debug":
             print("\nState:")
@@ -202,7 +201,7 @@ ______________________________\n""")
         json.dump(data, json_file, indent=4)
 
     if mode != "invisible": 
-        print(f"\n***Generated Linac input: {output}\n") 
+        print(f"\n***Generated output file: {output}\n") 
 
         
 # Main code

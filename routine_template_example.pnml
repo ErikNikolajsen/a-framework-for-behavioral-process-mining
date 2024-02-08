@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--created Thu Feb 08 17:14:30 2024 by ndrio version 3.7.5-->
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-2BD8-6E21B-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>routine_template_example</text>
+  </name>
+ <page id="g-2BD8-6E3C7-1">
+  <place id="p-2BD8-6E3CD-2">
+  <name>
+   <text>p0</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="30" y="145"/>
+   </graphics>
+  </place>
+  <place id="p-2BD8-6E7B3-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="240" y="145"/>
+   </graphics>
+  </place>
+  <place id="p-2BD8-6E7B9-4">
+  <name>
+   <text>p2</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="550" y="145"/>
+   </graphics>
+  </place>
+  <place id="p-2BD8-6E7C0-5">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="240" y="250"/>
+   </graphics>
+  </place>
+  <place id="p-2BD8-6E7C1-6">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="550" y="250"/>
+   </graphics>
+  </place>
+  <place id="p-2BD8-6E7C3-7">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="780" y="145"/>
+   </graphics>
+  </place>
+  <transition id="t-2BD8-6E7C7-8">
+  <name>
+   <text>t0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(kitchen)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>0</cn>
+     <cn>60</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="95" y="145"/>
+   </graphics>
+  </transition>
+  <transition id="t-2BD8-6E7CF-9">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(coffeemaker)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>30</cn>
+     <cn>120</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="345" y="50"/>
+   </graphics>
+  </transition>
+  <transition id="t-2BD8-6E7D5-10">
+  <name>
+   <text>t2</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kettle)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>5</cn>
+     <cn>30</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="345" y="145"/>
+   </graphics>
+  </transition>
+  <transition id="t-2BD8-6E7DB-11">
+  <name>
+   <text>t3</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(cupboard)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>10</cn>
+     <cn>40</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="345" y="250"/>
+   </graphics>
+  </transition>
+  <transition id="t-2BD8-6E7E1-12">
+  <name>
+   <text>t4</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(chair)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>120</cn>
+     <cn>1200</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="640" y="145"/>
+   </graphics>
+  </transition>
+  <arc id="e-2BD8-6E88C-13" source="t-2BD8-6E7E1-12" target="p-2BD8-6E7C3-7">
+  </arc>
+  <arc id="e-2BD8-6E891-14" source="p-2BD8-6E7B3-3" target="t-2BD8-6E7CF-9">
+  </arc>
+  <arc id="e-2BD8-6E892-15" source="p-2BD8-6E7B3-3" target="t-2BD8-6E7D5-10">
+  </arc>
+  <arc id="e-2BD8-6E895-16" source="p-2BD8-6E3CD-2" target="t-2BD8-6E7C7-8">
+  </arc>
+  <arc id="e-2BD8-6E896-17" source="p-2BD8-6E7C1-6" target="t-2BD8-6E7E1-12">
+  </arc>
+  <arc id="e-2BD8-6E897-18" source="p-2BD8-6E7B9-4" target="t-2BD8-6E7E1-12">
+  </arc>
+  <arc id="e-2BD8-6E898-19" source="t-2BD8-6E7DB-11" target="p-2BD8-6E7C1-6">
+  </arc>
+  <arc id="e-2BD8-6E899-20" source="p-2BD8-6E7C0-5" target="t-2BD8-6E7DB-11">
+  </arc>
+  <arc id="e-2BD8-6E89A-21" source="t-2BD8-6E7C7-8" target="p-2BD8-6E7B3-3">
+  </arc>
+  <arc id="e-2BD8-6E89B-22" source="t-2BD8-6E7C7-8" target="p-2BD8-6E7C0-5">
+  </arc>
+  <arc id="e-2BD8-6E89C-23" source="t-2BD8-6E7D5-10" target="p-2BD8-6E7B9-4">
+  </arc>
+  <arc id="e-2BD8-6E89E-24" source="t-2BD8-6E7CF-9" target="p-2BD8-6E7B9-4">
+  </arc>
+ </page>
+ </net>
+</pnml>

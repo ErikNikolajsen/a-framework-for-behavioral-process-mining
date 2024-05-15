@@ -1,3 +1,0 @@
-{
-    "input": "agent(Agent1){ case-1; goto(kitchen); wait(38); interact(kettle); wait(17); interact(coffeemaker); wait(80); interact(cupboard); wait(28); interact(coffeemaker); wait(47); interact(coffeemaker); wait(116); interact(chair); wait(290); case-2; goto(kitchen); wait(28); interact(coffeemaker); wait(99); interact(cupboard); wait(37); interact(cupboard); wait(40); interact(chair); wait(556) }"
-}

@@ -26,20 +26,41 @@ public class Main {
     public static void main( String[] args) throws Exception {
 
         // output configuration
-        int numberOfModels = 3;
-        String path = "C:\\Users\\User\\Documents\\GitHub\\a-concretization-of-human-behavior-analysis-via-process-mining\\model-generator\\generated-models\\";
-        int minimumNumberOfTasks = 5;
-        int maximumNumberOfTasks = 30;
-        int minimumNumberOfGateways = 0;
-        int maximumNumberOfGateways = 20;
+        int numberOfModels = 100000;
+        String path = "C:\\Users\\User\\Documents\\GitHub\\a-framework-for-behavioral-process-mining\\model-generator\\generated-models\\";
+        int minimumNumberOfTasks = 30; //5
+        int maximumNumberOfTasks = 30; //30
+        int minimumNumberOfGateways = 1; //0
+        int maximumNumberOfGateways = 100000; //20
         
         // Set random configuration
-        RandomizationConfiguration cfg = RandomizationConfiguration.BASIC_VALUES;
+        //RandomizationConfiguration cfg = RandomizationConfiguration.BASIC_VALUES;
+        RandomizationConfiguration cfg = new RandomizationConfiguration(5, 5, 0.0, 0.2, 0.1, 0.7, 0.3, 0.3, 3, 0.1);
         cfg.setDataObjectProbability(0);
+
+	/**
+	 * 
+	 * @param ANDBranches the maximum number of AND branches (must be > 1)
+	 * @param XORBranches the maximum number of XOR branches (must be > 1)
+	 * @param loopWeight the loop weight (must be in [0, 1])
+	 * @param singleActivityWeight the weight of single activity (must
+	 * be in <tt>[0,1]</tt>)
+	 * @param skupWeight the weight of a skip (must be in <tt>[0,1]</tt>)
+	 * @param sequenceWeight he weight of sequence activity (must be
+	 * in <tt>[0,1]</tt>)
+	 * @param ANDWeight the weight of AND split-join (must be in <tt>[0,1]</tt>)
+	 * @param XORWeight the weight of XOR split-join (must be in <tt>[0,1]</tt>)
+	 * @param emptyPercent the weight of an empty pattern (must be in
+	 * <tt>[0,1]</tt>)
+	 * @param maxDepth the maximum network deep
+	 * @param dataObjectProbability probability to generate data objects
+	 * associated to sequences and events
+	 */
 
         PNMLExporter e = new PNMLExporter();
         int numberOfGeneratedModels = 0;
-        //while (numberOfGeneratedModels != numberOfModels) {
+        //while (numberOfGeneratedModels < numberOfModels) {
+            while (true) {
             // generate a random process
             Process p = generate("process", cfg, minimumNumberOfTasks, maximumNumberOfTasks, minimumNumberOfGateways, maximumNumberOfGateways, null);
             String id = UUID.randomUUID().toString();
@@ -51,13 +72,13 @@ public class Main {
 
             // export process as file
             //if (cfc >= 2 && cfc <= 3) {
-            numberOfGeneratedModels++;
-            maximumNumberOfGateways++;
+            
             //new File(path + id).mkdirs();
             //e.exportModel(p, path + id + "\\model-process-"+cfc+".pnml");
             e.exportModel(p, path + "model-process-"+cfc+".pnml");
+            numberOfGeneratedModels++;
             //}
-        //}
+        }
         
     }
 

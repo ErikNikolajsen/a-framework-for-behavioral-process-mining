@@ -371,7 +371,7 @@ class ControllerTest {
 	
 	@Test
 	void testGetActiveSensors() throws ClassNotFoundException {
-		assertEquals(new ArrayList<String>(Arrays.asList("entities.library.Faucet","entities.library.Television","entities.library.Toilet")),systemController.getActiveSensors());
+		assertEquals(new ArrayList<String>(Arrays.asList("entities.library.EntitySensor","entities.library.Faucet","entities.library.Television","entities.library.Toilet")),systemController.getActiveSensors());
 	}
 	
 	@Test

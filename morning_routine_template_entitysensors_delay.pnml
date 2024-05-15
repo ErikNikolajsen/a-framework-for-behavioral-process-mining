@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--created Sun Dec 10 15:40:56 2023 by ndrio version 3.7.5-->
+<!--created Sun Feb 18 23:32:06 2024 by ndrio version 3.7.5-->
 <pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
- <net id="n-5278-F05F9-0" type ="http://www.laas.fr/tina/tpn">
+ <net id="n-19DC-ED5C0-0" type ="http://www.laas.fr/tina/tpn">
   <name>
    <text>morning_routine_template_entitysensors_delay</text>
   </name>
- <page id="g-5278-F0648-1">
-  <place id="p-5278-F064E-2">
+ <page id="g-19DC-ED773-1">
+  <place id="p-19DC-ED793-2">
   <name>
    <text>end</text>
     <graphics>
@@ -17,7 +17,7 @@
     <position x="4900" y="700"/>
    </graphics>
   </place>
-  <place id="p-5278-F0669-3">
+  <place id="p-19DC-EDA91-3">
   <name>
    <text>p1</text>
     <graphics>
@@ -28,7 +28,7 @@
     <position x="560" y="660"/>
    </graphics>
   </place>
-  <place id="p-5278-F066D-4">
+  <place id="p-19DC-EDA9D-4">
   <name>
    <text>p11</text>
     <graphics>
@@ -39,7 +39,7 @@
     <position x="2640" y="710"/>
    </graphics>
   </place>
-  <place id="p-5278-F0670-5">
+  <place id="p-19DC-EDAA4-5">
   <name>
    <text>p12</text>
     <graphics>
@@ -50,7 +50,7 @@
     <position x="2910" y="710"/>
    </graphics>
   </place>
-  <place id="p-5278-F0672-6">
+  <place id="p-19DC-EDAA7-6">
   <name>
    <text>p13</text>
     <graphics>
@@ -58,10 +58,10 @@
     </graphics>
   </name>
    <graphics>
-    <position x="3155" y="680"/>
+    <position x="3160" y="680"/>
    </graphics>
   </place>
-  <place id="p-5278-F0673-7">
+  <place id="p-19DC-EDAB1-7">
   <name>
    <text>p14</text>
     <graphics>
@@ -72,7 +72,7 @@
     <position x="2260" y="840"/>
    </graphics>
   </place>
-  <place id="p-5278-F0676-8">
+  <place id="p-19DC-EDAB6-8">
   <name>
    <text>p15</text>
     <graphics>
@@ -83,7 +83,7 @@
     <position x="2640" y="860"/>
    </graphics>
   </place>
-  <place id="p-5278-F0678-9">
+  <place id="p-19DC-EDABB-9">
   <name>
    <text>p16</text>
     <graphics>
@@ -94,7 +94,7 @@
     <position x="2910" y="860"/>
    </graphics>
   </place>
-  <place id="p-5278-F067A-10">
+  <place id="p-19DC-EDAC4-10">
   <name>
    <text>p17</text>
     <graphics>
@@ -105,7 +105,7 @@
     <position x="3340" y="700"/>
    </graphics>
   </place>
-  <place id="p-5278-F067C-11">
+  <place id="p-19DC-EDAC7-11">
   <name>
    <text>p18</text>
     <graphics>
@@ -116,7 +116,7 @@
     <position x="3340" y="780"/>
    </graphics>
   </place>
-  <place id="p-5278-F067D-12">
+  <place id="p-19DC-EDACE-12">
   <name>
    <text>p19</text>
     <graphics>
@@ -127,7 +127,7 @@
     <position x="1480" y="750"/>
    </graphics>
   </place>
-  <place id="p-5278-F0680-13">
+  <place id="p-19DC-EDAD1-13">
   <name>
    <text>p2</text>
     <graphics>
@@ -138,7 +138,7 @@
     <position x="560" y="750"/>
    </graphics>
   </place>
-  <place id="p-5278-F0682-14">
+  <place id="p-19DC-EDADB-14">
   <name>
    <text>p20</text>
     <graphics>
@@ -149,7 +149,7 @@
     <position x="1740" y="680"/>
    </graphics>
   </place>
-  <place id="p-5278-F0685-15">
+  <place id="p-19DC-EDAE0-15">
   <name>
    <text>p21</text>
     <graphics>
@@ -160,7 +160,7 @@
     <position x="1720" y="820"/>
    </graphics>
   </place>
-  <place id="p-5278-F0687-16">
+  <place id="p-19DC-EDAE4-16">
   <name>
    <text>p22</text>
     <graphics>
@@ -171,7 +171,7 @@
     <position x="1990" y="660"/>
    </graphics>
   </place>
-  <place id="p-5278-F0689-17">
+  <place id="p-19DC-EDAEE-17">
   <name>
    <text>p23</text>
     <graphics>
@@ -182,7 +182,7 @@
     <position x="1980" y="850"/>
    </graphics>
   </place>
-  <place id="p-5278-F068B-18">
+  <place id="p-19DC-EDAF2-18">
   <name>
    <text>p24</text>
     <graphics>
@@ -193,7 +193,7 @@
     <position x="3660" y="760"/>
    </graphics>
   </place>
-  <place id="p-5278-F068C-19">
+  <place id="p-19DC-EDAFB-19">
   <name>
    <text>p25</text>
     <graphics>
@@ -204,7 +204,7 @@
     <position x="4250" y="640"/>
    </graphics>
   </place>
-  <place id="p-5278-F0690-20">
+  <place id="p-19DC-EDAFF-20">
   <name>
    <text>p26</text>
     <graphics>
@@ -215,7 +215,7 @@
     <position x="4260" y="850"/>
    </graphics>
   </place>
-  <place id="p-5278-F0752-21">
+  <place id="p-19DC-EDC2B-21">
   <name>
    <text>p27</text>
     <graphics>
@@ -226,7 +226,7 @@
     <position x="4620" y="700"/>
    </graphics>
   </place>
-  <place id="p-5278-F0757-22">
+  <place id="p-19DC-EDC30-22">
   <name>
    <text>p28</text>
     <graphics>
@@ -237,7 +237,7 @@
     <position x="4000" y="740"/>
    </graphics>
   </place>
-  <place id="p-5278-F0759-23">
+  <place id="p-19DC-EDC32-23">
   <name>
    <text>p29</text>
     <graphics>
@@ -248,7 +248,7 @@
     <position x="4140" y="260"/>
    </graphics>
   </place>
-  <place id="p-5278-F075C-24">
+  <place id="p-19DC-EDC37-24">
   <name>
    <text>p3</text>
     <graphics>
@@ -259,7 +259,7 @@
     <position x="560" y="860"/>
    </graphics>
   </place>
-  <place id="p-5278-F075D-25">
+  <place id="p-19DC-EDC3A-25">
   <name>
    <text>p31</text>
     <graphics>
@@ -270,7 +270,7 @@
     <position x="760" y="850"/>
    </graphics>
   </place>
-  <place id="p-5278-F0760-26">
+  <place id="p-19DC-EDC3F-26">
   <name>
    <text>p32</text>
     <graphics>
@@ -281,7 +281,7 @@
     <position x="970" y="860"/>
    </graphics>
   </place>
-  <place id="p-5278-F0762-27">
+  <place id="p-19DC-EDC42-27">
   <name>
    <text>p4</text>
     <graphics>
@@ -292,7 +292,7 @@
     <position x="1150" y="750"/>
    </graphics>
   </place>
-  <place id="p-5278-F0763-28">
+  <place id="p-19DC-EDC47-28">
   <name>
    <text>p5</text>
     <graphics>
@@ -303,7 +303,7 @@
     <position x="1150" y="640"/>
    </graphics>
   </place>
-  <place id="p-5278-F0766-29">
+  <place id="p-19DC-EDC4C-29">
   <name>
    <text>p6</text>
     <graphics>
@@ -314,7 +314,7 @@
     <position x="1150" y="870"/>
    </graphics>
   </place>
-  <place id="p-5278-F0768-30">
+  <place id="p-19DC-EDC52-30">
   <name>
    <text>p7</text>
     <graphics>
@@ -325,7 +325,7 @@
     <position x="300" y="780"/>
    </graphics>
   </place>
-  <place id="p-5278-F076B-31">
+  <place id="p-19DC-EDC5C-31">
   <name>
    <text>p8</text>
     <graphics>
@@ -336,7 +336,7 @@
     <position x="2260" y="690"/>
    </graphics>
   </place>
-  <place id="p-5278-F076C-32">
+  <place id="p-19DC-EDC5F-32">
   <name>
    <text>p9</text>
     <graphics>
@@ -347,7 +347,7 @@
     <position x="2650" y="580"/>
    </graphics>
   </place>
-  <transition id="t-5278-F076D-33">
+  <transition id="t-19DC-EDC63-33">
   <name>
    <text>sleep</text>
     <graphics>
@@ -355,15 +355,15 @@
     </graphics>
   </name>
    <label>
-    <text>interact(bed,activate,5,60)</text>
+    <text>interact(bed,activate)</text>
     <graphics>
      <offset x="10" y="-10" />
     </graphics>
    </label>
    <delay>
     <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
-     <cn>5</cn>
-     <cn>60</cn>
+     <cn>30</cn>
+     <cn>300</cn>
     </interval>
     <graphics>
      <offset x="0" y="-10" />
@@ -373,7 +373,7 @@
     <position x="140" y="780"/>
    </graphics>
   </transition>
-  <place id="p-5278-F0777-34">
+  <place id="p-19DC-EDC70-34">
   <name>
    <text>start</text>
     <graphics>
@@ -387,7 +387,7 @@
     <position x="30" y="790"/>
    </graphics>
   </place>
-  <transition id="t-5278-F077B-35">
+  <transition id="t-19DC-EDC7B-35">
   <name>
    <text>t0</text>
     <graphics>
@@ -413,7 +413,7 @@
     <position x="660" y="640"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0783-36">
+  <transition id="t-19DC-EDC83-36">
   <name>
    <text>t1</text>
     <graphics>
@@ -439,7 +439,7 @@
     <position x="660" y="750"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F07CD-37">
+  <transition id="t-19DC-EDD7B-37">
   <name>
    <text>t10</text>
     <graphics>
@@ -452,11 +452,20 @@
      <offset x="10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>30</cn>
+     <cn>360</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="2740" y="580"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F07D2-38">
+  <transition id="t-19DC-EDD90-38">
   <name>
    <text>t11</text>
     <graphics>
@@ -469,11 +478,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>10</cn>
+     <cn>120</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
-    <position x="3255" y="650"/>
+    <position x="3260" y="650"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F07D9-39">
+  <transition id="t-19DC-EDD9B-39">
   <name>
    <text>t13</text>
     <graphics>
@@ -486,11 +504,20 @@
      <offset x="10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>20</cn>
+     <cn>80</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="2440" y="720"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F07DD-40">
+  <transition id="t-19DC-EDDA7-40">
   <name>
    <text>t14</text>
     <graphics>
@@ -503,11 +530,20 @@
      <offset x="10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>30</cn>
+     <cn>360</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="2740" y="710"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F07E3-41">
+  <transition id="t-19DC-EDDB2-41">
   <name>
    <text>t15</text>
     <graphics>
@@ -520,11 +556,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>120</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="3060" y="700"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F07E7-42">
+  <transition id="t-19DC-EDDBC-42">
   <name>
    <text>t17</text>
     <graphics>
@@ -537,11 +582,20 @@
      <offset x="10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>20</cn>
+     <cn>80</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="2440" y="860"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F07EC-43">
+  <transition id="t-19DC-EDDCF-43">
   <name>
    <text>t18</text>
     <graphics>
@@ -554,11 +608,20 @@
      <offset x="10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>5</cn>
+     <cn>60</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="2740" y="860"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F07F0-44">
+  <transition id="t-19DC-EDEF6-44">
   <name>
    <text>t19</text>
     <graphics>
@@ -571,11 +634,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>10</cn>
+     <cn>120</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="3250" y="860"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F07F6-45">
+  <transition id="t-19DC-EDF05-45">
   <name>
    <text>t20</text>
     <graphics>
@@ -588,11 +660,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="3520" y="660"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F07FA-46">
+  <transition id="t-19DC-EDF12-46">
   <name>
    <text>t21</text>
     <graphics>
@@ -605,11 +686,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="3520" y="860"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0801-47">
+  <transition id="t-19DC-EDF63-47">
   <name>
    <text>t22</text>
     <graphics>
@@ -622,11 +712,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="3520" y="760"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0824-48">
+  <transition id="t-19DC-EDF72-48">
   <name>
    <text>t23</text>
     <graphics>
@@ -639,11 +738,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>120</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="1630" y="750"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0829-49">
+  <transition id="t-19DC-EDF7B-49">
   <name>
    <text>t26</text>
     <graphics>
@@ -656,11 +764,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>180</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="1880" y="660"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F082F-50">
+  <transition id="t-19DC-EDF85-50">
   <name>
    <text>t27</text>
     <graphics>
@@ -673,11 +790,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>120</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="1870" y="840"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0834-51">
+  <transition id="t-19DC-EDF8D-51">
   <name>
    <text>t28</text>
     <graphics>
@@ -694,7 +820,7 @@
     <position x="2120" y="760"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0837-52">
+  <transition id="t-19DC-EE0BD-52">
   <name>
    <text>t29</text>
     <graphics>
@@ -707,11 +833,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>10</cn>
+     <cn>120</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="4140" y="640"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F083E-53">
+  <transition id="t-19DC-EE0D2-53">
   <name>
    <text>t30</text>
     <graphics>
@@ -724,11 +859,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>300</cn>
+     <cn>900</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="4410" y="540"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0842-54">
+  <transition id="t-19DC-EE0EB-54">
   <name>
    <text>t32</text>
     <graphics>
@@ -741,11 +885,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>300</cn>
+     <cn>900</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="4410" y="640"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0847-55">
+  <transition id="t-19DC-EE16C-55">
   <name>
    <text>t33</text>
     <graphics>
@@ -758,11 +911,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>10</cn>
+     <cn>60</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="4150" y="850"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F084D-56">
+  <transition id="t-19DC-EE17D-56">
   <name>
    <text>t34</text>
     <graphics>
@@ -775,11 +937,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>300</cn>
+     <cn>900</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="4420" y="760"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0851-57">
+  <transition id="t-19DC-EE187-57">
   <name>
    <text>t35</text>
     <graphics>
@@ -792,11 +963,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>300</cn>
+     <cn>900</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="4420" y="850"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0855-58">
+  <transition id="t-19DC-EE194-58">
   <name>
    <text>t36</text>
     <graphics>
@@ -813,7 +993,7 @@
     <position x="3860" y="750"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F0859-59">
+  <transition id="t-19DC-EE19C-59">
   <name>
    <text>t37</text>
     <graphics>
@@ -830,7 +1010,7 @@
     <position x="4030" y="260"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08B1-60">
+  <transition id="t-19DC-EE2AB-60">
   <name>
    <text>t40</text>
     <graphics>
@@ -843,11 +1023,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>120</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="4330" y="310"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08B8-61">
+  <transition id="t-19DC-EE2BC-61">
   <name>
    <text>t41</text>
     <graphics>
@@ -860,11 +1049,20 @@
      <offset x="-10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>120</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="4320" y="190"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08BD-62">
+  <transition id="t-19DC-EE2CA-62">
   <name>
    <text>t42</text>
     <graphics>
@@ -881,7 +1079,7 @@
     <position x="4320" y="50"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08C1-63">
+  <transition id="t-19DC-EE2CF-63">
   <name>
    <text>t43</text>
     <graphics>
@@ -898,7 +1096,7 @@
     <position x="4770" y="650"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08C5-64">
+  <transition id="t-19DC-EE2D7-64">
   <name>
    <text>t44</text>
     <graphics>
@@ -915,7 +1113,7 @@
     <position x="4770" y="770"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08C8-65">
+  <transition id="t-19DC-EE2DF-65">
   <name>
    <text>t45</text>
     <graphics>
@@ -928,11 +1126,20 @@
      <offset x="10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>5</cn>
+     <cn>30</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="650" y="860"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08CD-66">
+  <transition id="t-19DC-EE2EB-66">
   <name>
    <text>t46</text>
     <graphics>
@@ -945,11 +1152,20 @@
      <offset x="10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>120</cn>
+     <cn>300</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="880" y="850"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08D1-67">
+  <transition id="t-19DC-EE2FA-67">
   <name>
    <text>t47</text>
     <graphics>
@@ -962,11 +1178,20 @@
      <offset x="10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>5</cn>
+     <cn>30</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="1060" y="860"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08D5-68">
+  <transition id="t-19DC-EE30E-68">
   <name>
    <text>t5</text>
     <graphics>
@@ -983,7 +1208,7 @@
     <position x="1320" y="750"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08D9-69">
+  <transition id="t-19DC-EE3C1-69">
   <name>
    <text>t6</text>
     <graphics>
@@ -1000,7 +1225,7 @@
     <position x="400" y="780"/>
    </graphics>
   </transition>
-  <transition id="t-5278-F08DD-70">
+  <transition id="t-19DC-EE3CB-70">
   <name>
    <text>t7</text>
     <graphics>
@@ -1013,177 +1238,186 @@
      <offset x="10" y="-10" />
     </graphics>
    </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>20</cn>
+     <cn>80</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
    <graphics>
     <position x="2450" y="580"/>
    </graphics>
   </transition>
-  <arc id="e-5278-F08E7-71" source="t-5278-F07CD-37" target="p-5278-F0672-6">
+  <arc id="e-19DC-EE3E4-71" source="p-19DC-EDC30-22" target="t-19DC-EE0BD-52">
   </arc>
-  <arc id="e-5278-F08EA-72" source="t-5278-F08D9-69" target="p-5278-F075C-24">
+  <arc id="e-19DC-EE3ED-72" source="t-19DC-EDDA7-40" target="p-19DC-EDAA4-5">
   </arc>
-  <arc id="e-5278-F08EC-73" source="p-5278-F076B-31" target="t-5278-F08DD-70">
+  <arc id="e-19DC-EE3F4-73" source="p-19DC-EDA9D-4" target="t-19DC-EDDA7-40">
   </arc>
-  <arc id="e-5278-F08ED-74" source="t-5278-F08DD-70" target="p-5278-F076C-32">
+  <arc id="e-19DC-EE3FA-74" source="t-19DC-EDD9B-39" target="p-19DC-EDA9D-4">
   </arc>
-  <arc id="e-5278-F090C-75" source="p-5278-F076C-32" target="t-5278-F07CD-37">
+  <arc id="e-19DC-EE3FC-75" source="p-19DC-EDC32-23" target="t-19DC-EE2CA-62">
   </arc>
-  <arc id="e-5278-F090D-76" source="t-5278-F08C1-63" target="p-5278-F064E-2">
+  <arc id="e-19DC-EE3FE-76" source="p-19DC-EDC32-23" target="t-19DC-EE2BC-61">
   </arc>
-  <arc id="e-5278-F090E-77" source="p-5278-F0777-34" target="t-5278-F076D-33">
+  <arc id="e-19DC-EE400-77" source="p-19DC-EDC5C-31" target="t-19DC-EDD9B-39">
   </arc>
-  <arc id="e-5278-F090F-78" source="t-5278-F07DD-40" target="p-5278-F0670-5">
+  <arc id="e-19DC-EE405-78" source="p-19DC-EDAA4-5" target="t-19DC-EDDB2-41">
   </arc>
-  <arc id="e-5278-F0913-79" source="p-5278-F066D-4" target="t-5278-F07DD-40">
+  <arc id="e-19DC-EE407-79" source="t-19DC-EDDB2-41" target="p-19DC-EDAA7-6">
   </arc>
-  <arc id="e-5278-F0914-80" source="t-5278-F07D9-39" target="p-5278-F066D-4">
+  <arc id="e-19DC-EE409-80" source="t-19DC-EE3C1-69" target="p-19DC-EDAD1-13">
   </arc>
-  <arc id="e-5278-F0915-81" source="p-5278-F0759-23" target="t-5278-F08BD-62">
+  <arc id="e-19DC-EE40B-81" source="p-19DC-EDAA7-6" target="t-19DC-EDD90-38">
   </arc>
-  <arc id="e-5278-F0916-82" source="p-5278-F0759-23" target="t-5278-F08B8-61">
+  <arc id="e-19DC-EE40D-82" source="t-19DC-EDD7B-37" target="p-19DC-EDAA7-6">
   </arc>
-  <arc id="e-5278-F0917-83" source="p-5278-F076B-31" target="t-5278-F07D9-39">
+  <arc id="e-19DC-EE40E-83" source="t-19DC-EDDCF-43" target="p-19DC-EDABB-9">
   </arc>
-  <arc id="e-5278-F0918-84" source="p-5278-F0670-5" target="t-5278-F07E3-41">
+  <arc id="e-19DC-EE410-84" source="p-19DC-EDA91-3" target="t-19DC-EDC7B-35">
   </arc>
-  <arc id="e-5278-F0918-85" source="t-5278-F07E3-41" target="p-5278-F0672-6">
+  <arc id="e-19DC-EE415-85" source="p-19DC-EDC37-24" target="t-19DC-EE2DF-65">
   </arc>
-  <arc id="e-5278-F0919-86" source="p-5278-F0672-6" target="t-5278-F07D2-38">
+  <arc id="e-19DC-EE417-86" source="p-19DC-EDAB6-8" target="t-19DC-EDDCF-43">
   </arc>
-  <arc id="e-5278-F091C-87" source="t-5278-F07EC-43" target="p-5278-F0678-9">
+  <arc id="e-19DC-EE419-87" source="t-19DC-EDDBC-42" target="p-19DC-EDAB6-8">
   </arc>
-  <arc id="e-5278-F091D-88" source="p-5278-F0669-3" target="t-5278-F077B-35">
+  <arc id="e-19DC-EE41B-88" source="t-19DC-EE2CA-62" target="p-19DC-EDC2B-21">
   </arc>
-  <arc id="e-5278-F091E-89" source="p-5278-F075C-24" target="t-5278-F08C8-65">
+  <arc id="e-19DC-EE41D-89" source="p-19DC-EDC2B-21" target="t-19DC-EE2D7-64">
   </arc>
-  <arc id="e-5278-F091F-90" source="p-5278-F0676-8" target="t-5278-F07EC-43">
+  <arc id="e-19DC-EE41F-90" source="p-19DC-EDABB-9" target="t-19DC-EDEF6-44">
   </arc>
-  <arc id="e-5278-F091F-91" source="t-5278-F07E7-42" target="p-5278-F0676-8">
+  <arc id="e-19DC-EE421-91" source="t-19DC-EDD90-38" target="p-19DC-EDAC4-10">
   </arc>
-  <arc id="e-5278-F0920-92" source="t-5278-F08BD-62" target="p-5278-F0752-21">
+  <arc id="e-19DC-EE424-92" source="p-19DC-EDC30-22" target="t-19DC-EE16C-55">
   </arc>
-  <arc id="e-5278-F0921-93" source="p-5278-F0752-21" target="t-5278-F08C5-64">
+  <arc id="e-19DC-EE428-93" source="t-19DC-EE3C1-69" target="p-19DC-EDC37-24">
   </arc>
-  <arc id="e-5278-F0924-94" source="p-5278-F0678-9" target="t-5278-F07F0-44">
+  <arc id="e-19DC-EE42A-94" source="p-19DC-EDAB1-7" target="t-19DC-EDDBC-42">
   </arc>
-  <arc id="e-5278-F0925-95" source="t-5278-F07D2-38" target="p-5278-F067A-10">
+  <arc id="e-19DC-EE42C-95" source="p-19DC-EDAC4-10" target="t-19DC-EDF05-45">
   </arc>
-  <arc id="e-5278-F0926-96" source="p-5278-F0673-7" target="t-5278-F07E7-42">
+  <arc id="e-19DC-EE42E-96" source="p-19DC-EDAC4-10" target="t-19DC-EDF12-46">
   </arc>
-  <arc id="e-5278-F0927-97" source="p-5278-F067A-10" target="t-5278-F07F6-45">
+  <arc id="e-19DC-EE430-97" source="p-19DC-EDAC4-10" target="t-19DC-EDF63-47">
   </arc>
-  <arc id="e-5278-F0927-98" source="p-5278-F067A-10" target="t-5278-F07FA-46">
+  <arc id="e-19DC-EE433-98" source="p-19DC-EDAC7-11" target="t-19DC-EDF63-47">
   </arc>
-  <arc id="e-5278-F0928-99" source="p-5278-F067A-10" target="t-5278-F0801-47">
+  <arc id="e-19DC-EE435-99" source="p-19DC-EDAD1-13" target="t-19DC-EDC83-36">
   </arc>
-  <arc id="e-5278-F0929-100" source="p-5278-F067C-11" target="t-5278-F0801-47">
+  <arc id="e-19DC-EE437-100" source="p-19DC-EDAC7-11" target="t-19DC-EDF12-46">
   </arc>
-  <arc id="e-5278-F092A-101" source="p-5278-F0680-13" target="t-5278-F0783-36">
+  <arc id="e-19DC-EE43F-101" source="t-19DC-EE2DF-65" target="p-19DC-EDC3A-25">
   </arc>
-  <arc id="e-5278-F092D-102" source="p-5278-F067C-11" target="t-5278-F07FA-46">
+  <arc id="e-19DC-EE441-102" source="p-19DC-EDC4C-29" target="t-19DC-EE30E-68">
   </arc>
-  <arc id="e-5278-F092D-103" source="t-5278-F08C8-65" target="p-5278-F075D-25">
+  <arc id="e-19DC-EE442-103" source="t-19DC-EE2BC-61" target="p-19DC-EDC2B-21">
   </arc>
-  <arc id="e-5278-F092E-104" source="p-5278-F0766-29" target="t-5278-F08D5-68">
+  <arc id="e-19DC-EE444-104" source="p-19DC-EDC5C-31" target="t-19DC-EE3CB-70">
   </arc>
-  <arc id="e-5278-F092F-105" source="t-5278-F08B8-61" target="p-5278-F0752-21">
+  <arc id="e-19DC-EE446-105" source="p-19DC-EDAF2-18" target="t-19DC-EE19C-59">
   </arc>
-  <arc id="e-5278-F0930-106" source="p-5278-F067C-11" target="t-5278-F07F6-45">
+  <arc id="e-19DC-EE449-106" source="p-19DC-EDAC7-11" target="t-19DC-EDF05-45">
   </arc>
-  <arc id="e-5278-F0931-107" source="t-5278-F07F0-44" target="p-5278-F067C-11">
+  <arc id="e-19DC-EE477-107" source="t-19DC-EDEF6-44" target="p-19DC-EDAC7-11">
   </arc>
-  <arc id="e-5278-F0932-108" source="p-5278-F067D-12" target="t-5278-F0824-48">
+  <arc id="e-19DC-EE47C-108" source="p-19DC-EDACE-12" target="t-19DC-EDF72-48">
   </arc>
-  <arc id="e-5278-F0934-109" source="t-5278-F0824-48" target="p-5278-F0682-14">
+  <arc id="e-19DC-EE47E-109" source="t-19DC-EDF72-48" target="p-19DC-EDADB-14">
   </arc>
-  <arc id="e-5278-F0935-110" source="t-5278-F0824-48" target="p-5278-F0685-15">
+  <arc id="e-19DC-EE481-110" source="t-19DC-EDF72-48" target="p-19DC-EDAE0-15">
   </arc>
-  <arc id="e-5278-F0936-111" source="p-5278-F0682-14" target="t-5278-F0829-49">
+  <arc id="e-19DC-EE484-111" source="p-19DC-EDADB-14" target="t-19DC-EDF7B-49">
   </arc>
-  <arc id="e-5278-F0937-112" source="p-5278-F0685-15" target="t-5278-F082F-50">
+  <arc id="e-19DC-EE487-112" source="p-19DC-EDAE0-15" target="t-19DC-EDF85-50">
   </arc>
-  <arc id="e-5278-F0938-113" source="t-5278-F08D5-68" target="p-5278-F067D-12">
+  <arc id="e-19DC-EE48A-113" source="t-19DC-EE30E-68" target="p-19DC-EDACE-12">
   </arc>
-  <arc id="e-5278-F0939-114" source="t-5278-F077B-35" target="p-5278-F0763-28">
+  <arc id="e-19DC-EE48B-114" source="t-19DC-EDC7B-35" target="p-19DC-EDC47-28">
   </arc>
-  <arc id="e-5278-F093A-115" source="t-5278-F076D-33" target="p-5278-F0768-30">
+  <arc id="e-19DC-EE48E-115" source="t-19DC-EE3CB-70" target="p-19DC-EDC5F-32">
   </arc>
-  <arc id="e-5278-F093B-116" source="t-5278-F0829-49" target="p-5278-F0687-16">
+  <arc id="e-19DC-EE492-116" source="t-19DC-EDC63-33" target="p-19DC-EDC52-30">
   </arc>
-  <arc id="e-5278-F093E-117" source="t-5278-F08B1-60" target="p-5278-F0752-21">
+  <arc id="e-19DC-EE494-117" source="t-19DC-EE19C-59" target="p-19DC-EDC32-23">
   </arc>
-  <arc id="e-5278-F093F-118" source="t-5278-F082F-50" target="p-5278-F0689-17">
+  <arc id="e-19DC-EE496-118" source="t-19DC-EDF7B-49" target="p-19DC-EDAE4-16">
   </arc>
-  <arc id="e-5278-F0940-119" source="p-5278-F075D-25" target="t-5278-F08CD-66">
+  <arc id="e-19DC-EE498-119" source="t-19DC-EE2AB-60" target="p-19DC-EDC2B-21">
   </arc>
-  <arc id="e-5278-F0941-120" source="p-5278-F0687-16" target="t-5278-F0834-51">
+  <arc id="e-19DC-EE49A-120" source="t-19DC-EDF85-50" target="p-19DC-EDAEE-17">
   </arc>
-  <arc id="e-5278-F0942-121" source="p-5278-F0689-17" target="t-5278-F0834-51">
+  <arc id="e-19DC-EE49C-121" source="p-19DC-EDC3A-25" target="t-19DC-EE2EB-66">
   </arc>
-  <arc id="e-5278-F095F-122" source="t-5278-F0834-51" target="p-5278-F076B-31">
+  <arc id="e-19DC-EE49E-122" source="p-19DC-EDAE4-16" target="t-19DC-EDF8D-51">
   </arc>
-  <arc id="e-5278-F0961-123" source="t-5278-F0834-51" target="p-5278-F0673-7">
+  <arc id="e-19DC-EE4A0-123" source="p-19DC-EDAEE-17" target="t-19DC-EDF8D-51">
   </arc>
-  <arc id="e-5278-F0961-124" source="t-5278-F07F6-45" target="p-5278-F068B-18">
+  <arc id="e-19DC-EE4A4-124" source="t-19DC-EDF8D-51" target="p-19DC-EDC5C-31">
   </arc>
-  <arc id="e-5278-F0965-125" source="t-5278-F0801-47" target="p-5278-F068B-18">
+  <arc id="e-19DC-EE4A5-125" source="t-19DC-EDF8D-51" target="p-19DC-EDAB1-7">
   </arc>
-  <arc id="e-5278-F0965-126" source="p-5278-F0768-30" target="t-5278-F08D9-69">
+  <arc id="e-19DC-EE4A7-126" source="p-19DC-EDC5F-32" target="t-19DC-EDD7B-37">
   </arc>
-  <arc id="e-5278-F0967-127" source="t-5278-F07FA-46" target="p-5278-F068B-18">
+  <arc id="e-19DC-EE4A8-127" source="t-19DC-EDF05-45" target="p-19DC-EDAF2-18">
   </arc>
-  <arc id="e-5278-F0967-128" source="t-5278-F0783-36" target="p-5278-F0762-27">
+  <arc id="e-19DC-EE4AA-128" source="t-19DC-EDF63-47" target="p-19DC-EDAF2-18">
   </arc>
-  <arc id="e-5278-F0968-129" source="p-5278-F0752-21" target="t-5278-F08C1-63">
+  <arc id="e-19DC-EE4AC-129" source="p-19DC-EDC32-23" target="t-19DC-EE2AB-60">
   </arc>
-  <arc id="e-5278-F0969-130" source="p-5278-F068C-19" target="t-5278-F0842-54">
+  <arc id="e-19DC-EE4AE-130" source="p-19DC-EDC52-30" target="t-19DC-EE3C1-69">
   </arc>
-  <arc id="e-5278-F096B-131" source="p-5278-F068C-19" target="t-5278-F083E-53">
+  <arc id="e-19DC-EE4B3-131" source="t-19DC-EDF12-46" target="p-19DC-EDAF2-18">
   </arc>
-  <arc id="e-5278-F096D-132" source="t-5278-F0837-52" target="p-5278-F068C-19">
+  <arc id="e-19DC-EE4B4-132" source="t-19DC-EDC83-36" target="p-19DC-EDC42-27">
   </arc>
-  <arc id="e-5278-F096E-133" source="t-5278-F08CD-66" target="p-5278-F0760-26">
+  <arc id="e-19DC-EE4B6-133" source="p-19DC-EDC2B-21" target="t-19DC-EE2CF-63">
   </arc>
-  <arc id="e-5278-F096F-134" source="t-5278-F0847-55" target="p-5278-F0690-20">
+  <arc id="e-19DC-EE4B8-134" source="p-19DC-EDAFB-19" target="t-19DC-EE0EB-54">
   </arc>
-  <arc id="e-5278-F0970-135" source="p-5278-F0690-20" target="t-5278-F084D-56">
+  <arc id="e-19DC-EE4BA-135" source="p-19DC-EDAFB-19" target="t-19DC-EE0D2-53">
   </arc>
-  <arc id="e-5278-F0970-136" source="p-5278-F0690-20" target="t-5278-F0851-57">
+  <arc id="e-19DC-EE4BC-136" source="t-19DC-EE0BD-52" target="p-19DC-EDAFB-19">
   </arc>
-  <arc id="e-5278-F0971-137" source="t-5278-F08D9-69" target="p-5278-F0669-3">
+  <arc id="e-19DC-EE4BD-137" source="p-19DC-EDC3F-26" target="t-19DC-EE2FA-67">
   </arc>
-  <arc id="e-5278-F0972-138" source="t-5278-F083E-53" target="p-5278-F0752-21">
+  <arc id="e-19DC-EE4BF-138" source="t-19DC-EE2EB-66" target="p-19DC-EDC3F-26">
   </arc>
-  <arc id="e-5278-F0973-139" source="t-5278-F0842-54" target="p-5278-F0752-21">
+  <arc id="e-19DC-EE4C4-139" source="t-19DC-EE16C-55" target="p-19DC-EDAFF-20">
   </arc>
-  <arc id="e-5278-F0975-140" source="t-5278-F084D-56" target="p-5278-F0752-21">
+  <arc id="e-19DC-EE4C7-140" source="p-19DC-EDAFF-20" target="t-19DC-EE17D-56">
   </arc>
-  <arc id="e-5278-F0976-141" source="t-5278-F08D1-67" target="p-5278-F0766-29">
+  <arc id="e-19DC-EE4C9-141" source="p-19DC-EDC42-27" target="t-19DC-EE30E-68">
   </arc>
-  <arc id="e-5278-F0977-142" source="p-5278-F0763-28" target="t-5278-F08D5-68">
+  <arc id="e-19DC-EE4CC-142" source="p-19DC-EDAFF-20" target="t-19DC-EE187-57">
   </arc>
-  <arc id="e-5278-F0978-143" source="t-5278-F0851-57" target="p-5278-F0752-21">
+  <arc id="e-19DC-EE4CE-143" source="t-19DC-EE3C1-69" target="p-19DC-EDA91-3">
   </arc>
-  <arc id="e-5278-F0979-144" source="p-5278-F068B-18" target="t-5278-F0855-58">
+  <arc id="e-19DC-EE4D0-144" source="t-19DC-EE0D2-53" target="p-19DC-EDC2B-21">
   </arc>
-  <arc id="e-5278-F097A-145" source="t-5278-F0855-58" target="p-5278-F0757-22">
+  <arc id="e-19DC-EE4D1-145" source="t-19DC-EE0EB-54" target="p-19DC-EDC2B-21">
   </arc>
-  <arc id="e-5278-F097A-146" source="p-5278-F0757-22" target="t-5278-F0837-52">
+  <arc id="e-19DC-EE4D5-146" source="t-19DC-EE17D-56" target="p-19DC-EDC2B-21">
   </arc>
-  <arc id="e-5278-F097B-147" source="p-5278-F0760-26" target="t-5278-F08D1-67">
+  <arc id="e-19DC-EE4D7-147" source="t-19DC-EE2FA-67" target="p-19DC-EDC4C-29">
   </arc>
-  <arc id="e-5278-F097E-148" source="t-5278-F08D9-69" target="p-5278-F0680-13">
+  <arc id="e-19DC-EE4D8-148" source="t-19DC-EE2CF-63" target="p-19DC-ED793-2">
   </arc>
-  <arc id="e-5278-F097F-149" source="p-5278-F0757-22" target="t-5278-F0847-55">
+  <arc id="e-19DC-EE4DA-149" source="p-19DC-EDC47-28" target="t-19DC-EE30E-68">
   </arc>
-  <arc id="e-5278-F0980-150" source="p-5278-F068B-18" target="t-5278-F0859-59">
+  <arc id="e-19DC-EE4DB-150" source="t-19DC-EE187-57" target="p-19DC-EDC2B-21">
   </arc>
-  <arc id="e-5278-F0981-151" source="t-5278-F0859-59" target="p-5278-F0759-23">
+  <arc id="e-19DC-EE4DD-151" source="p-19DC-EDAF2-18" target="t-19DC-EE194-58">
   </arc>
-  <arc id="e-5278-F0981-152" source="p-5278-F0759-23" target="t-5278-F08B1-60">
+  <arc id="e-19DC-EE4DF-152" source="t-19DC-EE194-58" target="p-19DC-EDC30-22">
   </arc>
-  <arc id="e-5278-F0982-153" source="p-5278-F0762-27" target="t-5278-F08D5-68">
+  <arc id="e-19DC-EE50B-153" source="t-19DC-EE2D7-64" target="p-19DC-ED793-2">
   </arc>
-  <arc id="e-5278-F0983-154" source="t-5278-F08C5-64" target="p-5278-F064E-2">
+  <arc id="e-19DC-EE514-154" source="p-19DC-EDC70-34" target="t-19DC-EDC63-33">
   </arc>
  </page>
  </net>

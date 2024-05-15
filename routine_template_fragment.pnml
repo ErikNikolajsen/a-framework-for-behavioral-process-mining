@@ -1,234 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--created Thu Feb 08 18:02:27 2024 by ndrio version 3.7.5-->
-<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
- <net id="n-5E84-2A416-0" type ="http://www.laas.fr/tina/tpn">
-  <name>
-   <text>routine_template_fragment</text>
-  </name>
- <page id="g-5E84-2A449-1">
-  <place id="p-5E84-2A44E-2">
-  <name>
-   <text>p0</text>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-  </name>
-   <initialMarking>
-    <text>1</text>
-   </initialMarking>
-   <graphics>
-    <position x="30" y="145"/>
-   </graphics>
-  </place>
-  <place id="p-5E84-2A469-3">
-  <name>
-   <text>p1</text>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-  </name>
-   <graphics>
-    <position x="240" y="145"/>
-   </graphics>
-  </place>
-  <place id="p-5E84-2A46D-4">
-  <name>
-   <text>p2</text>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-  </name>
-   <graphics>
-    <position x="550" y="145"/>
-   </graphics>
-  </place>
-  <place id="p-5E84-2A470-5">
-  <name>
-   <text>p3</text>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-  </name>
-   <graphics>
-    <position x="240" y="250"/>
-   </graphics>
-  </place>
-  <place id="p-5E84-2A471-6">
-  <name>
-   <text>p4</text>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-  </name>
-   <graphics>
-    <position x="550" y="250"/>
-   </graphics>
-  </place>
-  <place id="p-5E84-2A473-7">
-  <name>
-   <text>p5</text>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-  </name>
-   <graphics>
-    <position x="780" y="145"/>
-   </graphics>
-  </place>
-  <transition id="t-5E84-2A476-8">
-  <name>
-   <text>t0</text>
-    <graphics>
-     <offset x="0" y="0" />
-    </graphics>
-  </name>
-   <label>
-    <text>goto(kitchen)</text>
-    <graphics>
-     <offset x="10" y="-10" />
-    </graphics>
-   </label>
-   <delay>
-    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
-     <cn>0</cn>
-     <cn>60</cn>
-    </interval>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-   </delay>
-   <graphics>
-    <position x="95" y="145"/>
-   </graphics>
-  </transition>
-  <transition id="t-5E84-2A47D-9">
-  <name>
-   <text>t1</text>
-    <graphics>
-     <offset x="0" y="0" />
-    </graphics>
-  </name>
-   <label>
-    <text>interact(coffeemaker)</text>
-    <graphics>
-     <offset x="10" y="-10" />
-    </graphics>
-   </label>
-   <delay>
-    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
-     <cn>30</cn>
-     <cn>120</cn>
-    </interval>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-   </delay>
-   <graphics>
-    <position x="345" y="50"/>
-   </graphics>
-  </transition>
-  <transition id="t-5E84-2A482-10">
-  <name>
-   <text>t2</text>
-    <graphics>
-     <offset x="0" y="0" />
-    </graphics>
-  </name>
-   <label>
-    <text>interact(kettle)</text>
-    <graphics>
-     <offset x="10" y="-10" />
-    </graphics>
-   </label>
-   <delay>
-    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
-     <cn>5</cn>
-     <cn>30</cn>
-    </interval>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-   </delay>
-   <graphics>
-    <position x="345" y="145"/>
-   </graphics>
-  </transition>
-  <transition id="t-5E84-2A487-11">
-  <name>
-   <text>t3</text>
-    <graphics>
-     <offset x="0" y="0" />
-    </graphics>
-  </name>
-   <label>
-    <text>interact(cupboard)</text>
-    <graphics>
-     <offset x="10" y="-10" />
-    </graphics>
-   </label>
-   <delay>
-    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
-     <cn>10</cn>
-     <cn>40</cn>
-    </interval>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-   </delay>
-   <graphics>
-    <position x="345" y="250"/>
-   </graphics>
-  </transition>
-  <transition id="t-5E84-2A48B-12">
-  <name>
-   <text>t4</text>
-    <graphics>
-     <offset x="0" y="0" />
-    </graphics>
-  </name>
-   <label>
-    <text>interact(chair)</text>
-    <graphics>
-     <offset x="10" y="-10" />
-    </graphics>
-   </label>
-   <delay>
-    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
-     <cn>120</cn>
-     <cn>1200</cn>
-    </interval>
-    <graphics>
-     <offset x="0" y="-10" />
-    </graphics>
-   </delay>
-   <graphics>
-    <position x="640" y="145"/>
-   </graphics>
-  </transition>
-  <arc id="e-5E84-2A531-13" source="t-5E84-2A48B-12" target="p-5E84-2A473-7">
-  </arc>
-  <arc id="e-5E84-2A535-14" source="p-5E84-2A469-3" target="t-5E84-2A47D-9">
-  </arc>
-  <arc id="e-5E84-2A536-15" source="p-5E84-2A469-3" target="t-5E84-2A482-10">
-  </arc>
-  <arc id="e-5E84-2A538-16" source="p-5E84-2A44E-2" target="t-5E84-2A476-8">
-  </arc>
-  <arc id="e-5E84-2A539-17" source="p-5E84-2A471-6" target="t-5E84-2A48B-12">
-  </arc>
-  <arc id="e-5E84-2A53A-18" source="p-5E84-2A46D-4" target="t-5E84-2A48B-12">
-  </arc>
-  <arc id="e-5E84-2A53B-19" source="t-5E84-2A487-11" target="p-5E84-2A471-6">
-  </arc>
-  <arc id="e-5E84-2A53C-20" source="p-5E84-2A470-5" target="t-5E84-2A487-11">
-  </arc>
-  <arc id="e-5E84-2A53C-21" source="t-5E84-2A476-8" target="p-5E84-2A469-3">
-  </arc>
-  <arc id="e-5E84-2A53D-22" source="t-5E84-2A476-8" target="p-5E84-2A470-5">
-  </arc>
-  <arc id="e-5E84-2A53F-23" source="t-5E84-2A482-10" target="p-5E84-2A46D-4">
-  </arc>
-  <arc id="e-5E84-2A540-24" source="t-5E84-2A47D-9" target="p-5E84-2A46D-4">
-  </arc>
- </page>
- </net>
-</pnml>
+t 95.0 145.0 t0 c 0 60 n {goto(kitchen)} ne
+p 240.0 145.0 p1 0 n
+p 550.0 145.0 p2 0 n
+t 640.0 145.0 t4 c 120 1200 n {interact(chair)} ne
+t 345.0 250.0 t3 c 10 40 n {interact(cupboard)} ne
+p 550.0 250.0 p4 0 n
+p 240.0 250.0 p3 0 n
+t 345.0 145.0 t2 c 5 30 n {interact(kettle)} ne
+t 345.0 50.0 t1 c 30 120 n {interact(coffeemaker)} ne
+p 30.0 145.0 p0 1 n
+p 780.0 145.0 p5 0 n
+e t4 p5 1 n
+e p4 t4 1 n
+e p2 t4 1 n
+e t3 p4 1 n
+e p3 t3 1 n
+e t0 p1 1 n
+e t0 p3 1 n
+e t2 p2 1 n
+e t1 p2 1 n
+e p1 t1 1 n
+e p1 t2 1 n
+e p0 t0 1 n
+h routine_template_fragment
+
+

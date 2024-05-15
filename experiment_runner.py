@@ -6,16 +6,16 @@ import agent_instructions_generator
 import os
 import random
 import warnings
-import copy
+#import copy
 
 for i in range(0,11):
     #EP
-    OUTPUT_XES = f"wandering_forgetfulness_repetitivesness_2_100_{i}.xes"
+    OUTPUT_XES = f"wandering_forgetfulness_repetitiveness_2_100_{i}.xes"
     OUTPUT_MODE = "normal" # possible values: debug, normal, invisible
     EP_SEED = None # None value makes seed based on system time 
 
     #AIG
-    ROUTINE_MODEL = "morning_routine_template_entitysensors.pnml"
+    ROUTINE_MODEL = "morning_routine_template_entitysensors_delay_4.0.pnml"
     ITERATIONS = 100
     DEGREE = 0.1*i
     MODE = "invisible" # possible values: debug, normal, invisible
@@ -23,7 +23,7 @@ for i in range(0,11):
     INSTRUCTIONS_PATH = "rig-output.json"
 
     #Linac
-    ENVIRONMENT_PATH = "morning_routine_floorplan_entitysensors_presencesensors.json"
+    ENVIRONMENT_PATH = "morning_routine_floorplan_entitysensors.json" #_presencesensors
     SETTINGS_PATH = "simulator.json"
     CSV_PATH = "linac-backend-main/eventlog.csv"
 
@@ -117,7 +117,7 @@ ____________________________\n""")
 
         # Filtering of PresenceSensors
         # Filter redundant PresenceSensor events
-        
+        '''
         rows_to_delete = []
         previous_sensor_name = None
         for index, row in dataframe.iterrows():
@@ -126,6 +126,7 @@ ____________________________\n""")
                     rows_to_delete.append(index)
                 previous_sensor_name = row['sensor:name']
         dataframe = dataframe.drop(rows_to_delete)
+        '''
         """
         # drop all events of sensor type EntitySensor
         for index, row in dataframe.iterrows():

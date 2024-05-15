@@ -3,10 +3,9 @@
 *.pnml
 *.ndr
 
-.vscode/
+**/.vscode/
 __pycache__/
 enrichedcc-v1.0/gemmadifederico-enrichedcc-3794454/Models/*
 model-generator/
 model-translator/
-linac-backend-main-mod/
 linac-frontend/

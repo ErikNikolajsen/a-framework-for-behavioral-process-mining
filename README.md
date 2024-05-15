@@ -1,1 +1,1 @@
-# a-framework-for-behavioral-process-mining
+# A Framework for Behavioral Process Mining

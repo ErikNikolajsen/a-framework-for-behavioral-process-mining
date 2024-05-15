@@ -34,18 +34,16 @@ for i in range(0,11):
 
     if __name__ == "__main__":
         print(f"""                                                                                    
-8888888888 8888888b.  
-888        888   Y88b 
-888        888    888 
-8888888    888   d88P 
-888        8888888P"  
-888        888        
-888        888        
-8888888888 888
+.d88888b   a88888b. 
+88.    "' d8'   `88 
+`Y88888b. 88        
+      `8b 88        
+d8'   .8P Y8.   .88 
+ Y88888P   Y88888P'
             
 --------- Settings ---------
 
-Experiment Runner
+Simulation Coordinator
 Output:      {OUTPUT_XES}
 Mode:        {OUTPUT_MODE}
 Seed:        {EP_SEED}

@@ -5,7 +5,7 @@
 
 **/.vscode/
 __pycache__/
-enrichedcc-v1.0/gemmadifederico-enrichedcc-3794454/Models/*
+enrichedcc-v1.0/Models/*
 model-generator/
 model-translator/
 linac-frontend/

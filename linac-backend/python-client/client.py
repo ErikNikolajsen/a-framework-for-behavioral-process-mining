@@ -2,6 +2,7 @@ import requests
 import json
 import pm4py
 import pandas as pd
+import os
 
 ENVIRONMENT_PATH = "floorplan.json"
 INSTRUCTIONS_PATH = "input.json"
@@ -43,17 +44,22 @@ def run_simulation(environment, agent_instructions, simulator_settings):
 
 # Main code
 if __name__ == "__main__":
+    # Remove old CSV
+    parent_directory = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+    file_path = os.path.join(parent_directory, 'eventlog.csv')
+    CSV_PATH = file_path
+    if os.path.exists(CSV_PATH):
+        os.remove(CSV_PATH)
+
+    # Run simulation
     run_simulation(ENVIRONMENT_PATH, INSTRUCTIONS_PATH, SETTINGS_PATH)
 
-    # Specify your CSV file path
-    csv_file_path = 'eventlog.csv'
-
+    
+    
+    """
     # Load CSV log
-    dataframe = pd.read_csv(csv_file_path, sep=',')
-    dataframe.columns = ['case:concept:name', 'time:timestamp', 'concept:name', 'name', 'state']
+    dataframe = pd.read_csv(CSV_PATH, sep=',')
+    dataframe.columns = ['case:concept:name', 'time:timestamp', 'sensor:type', 'sensor:name', 'sensor:reading']
     event_log = pm4py.convert_to_event_log(dataframe)
-
     pm4py.write_xes(event_log, 'exported.xes')
-
-
-
+    """

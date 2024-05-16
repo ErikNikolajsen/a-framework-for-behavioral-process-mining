@@ -9,3 +9,5 @@ enrichedcc-v1.0/Models/*
 model-generator/
 model-translator/
 linac-frontend/
+
+coral-test.csv

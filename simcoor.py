@@ -17,8 +17,8 @@ NUMBER_OF_EVENT_LOGS = 1 # INPUT: The number of symptomatic event logs produced 
 NUMBER_OF_CASES = 2 # INPUT: The number of cases in each event log (integer >=1)
                                                      
 #SimCoor
-SIMCOOR_SEED = 234 # INPUT: SimCoor seed (Integer or None value (None value makes seed based on system time))
-OUTPUT_XES = "dementia" # OUTPUT: naming of the produced event logs (without file format extension)
+SIMCOOR_SEED = None # INPUT: SimCoor seed (Integer or None value (None value makes seed based on system time))
+OUTPUT_XES = "dementia" # OUTPUT: prefix-naming of the produced event logs (without file format extension)
 
 #AIG
 ROUTINE_MODEL = "morning_routine_template_entitysensors_delay_4.0.pnml" # INPUT: The asymptomatic routine model (PNML)
@@ -51,10 +51,10 @@ print(f"""
  __) | | | | \_ (_) (_) |
             
 --------- Settings --------
-Seed: {SIMCOOR_SEED}
-Event logs: {NUMBER_OF_EVENT_LOGS}
+Event logs: {NUMBER_OF_EVENT_LOGS+1}
 Cases: {NUMBER_OF_CASES}
-
+Seed: {SIMCOOR_SEED}
+Event log prefix: {OUTPUT_XES}
 ___________________________\n""")
 
 degree_increment = 1 / NUMBER_OF_EVENT_LOGS
@@ -166,7 +166,7 @@ while (degree <= 1):
     sys.stderr = original_stderr # used for suppressing pm4py output
 
     if SIMCOOR_MODE in ("debug", "normal"):
-        print(f"Exported event log: \"{OUTPUT_XES}_(C{NUMBER_OF_CASES}_D{degree:.{3}f}).xes\"\n")
+        print(f"Exported event log: \"{OUTPUT_XES}_(C{NUMBER_OF_CASES}-D{degree:.{3}f}).xes\"\n")
 
     # Cleanup
     os.remove(CSV_PATH) # Remove intermediate Linac output

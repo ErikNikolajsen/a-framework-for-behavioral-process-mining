@@ -8,30 +8,44 @@ import random
 import warnings
 #import copy
 
-for i in range(0,11):
-    #EP
-    OUTPUT_XES = f"wandering_forgetfulness_repetitiveness_2_100_{i}.xes"
-    OUTPUT_MODE = "normal" # possible values: debug, normal, invisible
-    EP_SEED = None # None value makes seed based on system time 
+
+# SETTINGS ##################################################################################################################################################
+
+NUMBER_OF_EVENT_LOGS = 11                                                       # INPUT: The number of event logs produced
+EVENT_LOGS = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]            # INPUT: Each element represent the creation of an event log with the value of the element representing the degree of evolution
+
+for i in range(0,NUMBER_OF_EVENT_LOGS):                                                       
+    #SimCoor
+    SIMCOOR_MODE = "normal"                                                     # INPUT: SimCoor print options - possible values: debug, normal, invisible
+    SIMCOOR_SEED = 123                                                          # INPUT: SimCoor seed - None value makes seed based on system time 
+    OUTPUT_XES = f"wandering_forgetfulness_repetitiveness_2_100_{i}.xes"        # OUTPUT: naming of the produced event logs 
 
     #AIG
-    ROUTINE_MODEL = "morning_routine_template_entitysensors_delay_4.0.pnml"
-    ITERATIONS = 100
-    DEGREE = 0.1*i
-    MODE = "invisible" # possible values: debug, normal, invisible
-    SYMPTOMS = ["wandering", "forgetfulness", "repetitiveness_2"]
-    INSTRUCTIONS_PATH = "rig-output.json"
+    ROUTINE_MODEL = "morning_routine_template_entitysensors_delay_4.0.pnml"     # INPUT: The asymptomatic routine model
+    ITERATIONS = 10                                                             # INPUT: The number of cases in each event log
+    DEGREE = 0.1*i                                                              # INPUT: Degree of symptom evolution
+    AIG_MODE = "invisible"                                                      # INPUT: Possible values: debug, normal, fast, invisible
+    SYMPTOMS = ["wandering", "forgetfulness", "repetitiveness_2"]               # INPUT: The set of symptoms that one wants to inject
 
-    #Linac
-    ENVIRONMENT_PATH = "morning_routine_floorplan_entitysensors.json" #_presencesensors
-    SETTINGS_PATH = "simulator.json"
-    CSV_PATH = "linac-backend-main/eventlog.csv"
+    # Linac input file paths
+    FLOORPLAN_PATH = "morning_routine_floorplan_entitysensors.json"             # INPUT: Linac floorplan (JSON)
+    SETTINGS_PATH = "simulator.json"                                            # INPUT: Linac simulation settings (JSON)
+    
 
-    # Main code
+    # MAIN CODE ############################################################################################################################################
 
-    if EP_SEED == None:
-        EP_SEED = random.randint(0, 2**32 - 1)
+    # Static settings
+    CSV_PATH = "linac-backend-main/eventlog.csv"                                # INTERMEDIARY-FILE: Linac sensor readings (CSV)
+    AGENT_INSTRUCTIONS_PATH = "aig-output.json"                                 # INTERMEDIARY-FILE: agent instructions output by the AIG and used as input for Linac (JSON)
 
+    # Make random seed if none is specified
+    if SIMCOOR_SEED == None:
+        SIMCOOR_SEED = random.randint(0, 2**32 - 1)
+
+    # Set SimCoor seed
+        random.seed(SIMCOOR_SEED)
+
+    # Prints when starting the creation of a new event log
     if __name__ == "__main__":
         print(f"""                                                                                    
 .d88888b   a88888b. 
@@ -45,47 +59,46 @@ d8'   .8P Y8.   .88
 
 Simulation Coordinator
 Output:      {OUTPUT_XES}
-Mode:        {OUTPUT_MODE}
-Seed:        {EP_SEED}
+Mode:        {SIMCOOR_MODE}
+Seed:        {SIMCOOR_SEED}
 ____________________________\n""")
 
-        # Cleanup
+        # Cleanup old Linac output CSV file in case of previous SimCoor run halting
         if os.path.exists(CSV_PATH):
-            os.remove(CSV_PATH) # In case of previous experiment not completing
-
-        # Set seed
-        random.seed(EP_SEED)
+            os.remove(CSV_PATH) # Remove intermediate Linac output
+        if os.path.exists(AGENT_INSTRUCTIONS_PATH):
+            os.remove(AGENT_INSTRUCTIONS_PATH) # Remove intermediate AIG output
 
         # Send environment
-        f = open(ENVIRONMENT_PATH)
+        f = open(FLOORPLAN_PATH)
         floorplan = json.load(f)
         f.close()
         url1 = "http://localhost:8080/api/roomConfig/floorplan"
-        if OUTPUT_MODE in ("debug"):
+        if SIMCOOR_MODE in ("debug"):
             print("\nSending floorplan")
         floorplanreq = requests.post(url1, json = floorplan)
-        if OUTPUT_MODE in ("debug"):
+        if SIMCOOR_MODE in ("debug"):
             print(floorplanreq.text+"\n")
 
 
         for x in range(1,ITERATIONS+1):
-            if OUTPUT_MODE in ("debug", "normal"):
+            if SIMCOOR_MODE in ("debug", "normal"):
                 print(f"* Degree {DEGREE} - Trace {x}") #, end='\r'
 
-            # Generate routine instructions by running RIG
-            if OUTPUT_MODE in ("debug"):
+            # Generate routine instructions by running the AIG
+            if SIMCOOR_MODE in ("debug"):
                 print("Generate agent instructions\n")
-            agent_instructions_generator.main.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), DEGREE, MODE, SYMPTOMS, INSTRUCTIONS_PATH, ENVIRONMENT_PATH)
+            agent_instructions_generator.aig.run_routine_instruction_generator(ROUTINE_MODEL, 1, random.random(), DEGREE, AIG_MODE, SYMPTOMS, AGENT_INSTRUCTIONS_PATH, FLOORPLAN_PATH)
 
             # Send agent instructions
-            f = open(INSTRUCTIONS_PATH)
+            f = open(AGENT_INSTRUCTIONS_PATH)
             inputFile = json.load(f)
             f.close()
             url2 = "http://localhost:8080/api/simulation/input"
-            if OUTPUT_MODE in ("debug"):
+            if SIMCOOR_MODE in ("debug"):
                 print("Sending agent instructions")
             inputreq = requests.post(url2, json = inputFile)
-            if OUTPUT_MODE in ("debug"):
+            if SIMCOOR_MODE in ("debug"):
                 print(inputreq.text+"\n")
 
             # change caseID and send simulator settings
@@ -93,10 +106,10 @@ ____________________________\n""")
             simulator = json.load(f)
             f.close()
             simulator["caseID"] = x
-            if OUTPUT_MODE in ("debug"):
+            if SIMCOOR_MODE in ("debug"):
                 print("sending simulator settings")
             simulatorreq = requests.post("http://localhost:8080/api/simulation/simulator", json = simulator)
-            if OUTPUT_MODE in ("debug"):
+            if SIMCOOR_MODE in ("debug"):
                 print(simulatorreq.text+"\n")
 
         # Convert CSV to XES
@@ -144,5 +157,5 @@ ____________________________\n""")
         pm4py.write_xes(event_log, OUTPUT_XES)
 
         # Cleanup
-        os.remove(CSV_PATH)
-        os.remove(INSTRUCTIONS_PATH)
+        os.remove(CSV_PATH) # Remove intermediate Linac output
+        os.remove(AGENT_INSTRUCTIONS_PATH) # Remove intermediate AIG output

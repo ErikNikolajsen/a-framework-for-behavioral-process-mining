@@ -7,7 +7,7 @@
     "mqttHost": "broker.hivemq.com",
     "mqttPort": "1883",
     "rootTopic": "smarthome",
-    "seed": 597681602,
+    "seed": 234,
     "csvOutput": true,
     "csvFileName": "eventlog",
     "caseID": 32

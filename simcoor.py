@@ -17,7 +17,7 @@ NUMBER_OF_EVENT_LOGS = 1 # INPUT: The number of symptomatic event logs produced 
 NUMBER_OF_CASES = 2 # INPUT: The number of cases in each event log (integer >=1)
                                                      
 #SimCoor
-SIMCOOR_SEED = None # INPUT: SimCoor seed (Integer or None value (None value makes seed based on system time))
+SIMCOOR_SEED = 234 # INPUT: SimCoor seed (Integer or None value (None value makes seed based on system time))
 OUTPUT_XES = "dementia" # OUTPUT: naming of the produced event logs (without file format extension)
 
 #AIG
@@ -43,7 +43,6 @@ if SIMCOOR_SEED == None:
 
 # Set SimCoor seed
 random.seed(SIMCOOR_SEED)
-
 
 # Initial print
 print(f"""                                                                              
@@ -109,6 +108,7 @@ while (degree <= 1):
         simulator = json.load(f)
         f.close()
         simulator["caseID"] = x
+        simulator["seed"] = random.random()
         if SIMCOOR_MODE in ("debug"):
             print("sending simulator settings")
         simulatorreq = requests.post("http://localhost:8080/api/simulation/simulator", json = simulator)

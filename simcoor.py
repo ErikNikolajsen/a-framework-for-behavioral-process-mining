@@ -15,11 +15,11 @@ import io # used for pm4py print suppression
 # USER SETTINGS ########################################################################################################################################
 
 NUMBER_OF_EVENT_LOGS = 35 # INPUT: The number of symptomatic event logs produced (integer >=1)
-NUMBER_OF_CASES = 100 # INPUT: The number of cases in each event log (integer >=1)
-SIMCOOR_SEED = None # INPUT: SimCoor seed (Integer or None value (None value makes seed based on system time))
+NUMBER_OF_CASES = 20 # INPUT: The number of cases in each event log (integer >=1)
+SIMCOOR_SEED = 5193 # INPUT: SimCoor seed (Integer or None value (None value makes seed based on system time))
 OUTPUT_XES = "dementia" # OUTPUT: prefix-naming of the produced event logs (without file format extension)
-ROUTINE_MODEL = "morning_routine_template_entitysensors_delay_4.0.pnml" # INPUT: The asymptomatic routine model (PNML)
-SYMPTOMS = ["wandering", "forgetfulness", "repetitiveness_2"] # INPUT: The set of symptoms that one wants to inject (see available options in _Symptoms.py)
+ROUTINE_MODEL = "morning_routine_template_entitysensors_delay.pnml" # INPUT: The asymptomatic routine model (PNML)
+SYMPTOMS = ["repetitiveness_2"] # INPUT: The set of symptoms that one wants to inject (see available options in _Symptoms.py) %["wandering", "forgetfulness", "repetitiveness_2"]
 FLOORPLAN_PATH = "morning_routine_floorplan_entitysensors.json" # INPUT: Linac floorplan (JSON)
 LINAC_SETTINGS_PATH = "simulator.json" # INPUT: Linac simulation settings (JSON)
 
@@ -40,6 +40,10 @@ random.seed(SIMCOOR_SEED) # Set random seed value
 # Derive degree increments
 degree_increment = 1 / NUMBER_OF_EVENT_LOGS
 
+# Instantiate lists for final print
+degrees = []
+files = []
+
 # Initial print
 print(f"""
       ┏┓•   ┏┓           
@@ -55,6 +59,7 @@ ___________________________\n""")
 ### EVENT LOG LOGIC LOOP
 current_event_log = 1
 degree = 0
+first_run = True
 while (degree <= 1):  
 
     # Prints when starting the creation of a new event log
@@ -149,7 +154,6 @@ while (degree <= 1):
     dataframe['complete_time'] = dataframe['time:timestamp'].shift(-1)
     dataframe['complete_time'] = dataframe['complete_time'].fillna(dataframe['time:timestamp'].iloc[-1]) #ensures that any missing values resulting from the shifting operation in the first statement are replaced with the last known timestamp value
 
-
     dataframe = pm4py.format_dataframe(dataframe, case_id='case:concept:name', activity_key='sensor:reading', timestamp_key='time:timestamp', timest_format = '%Y-%m-%dT%H:%M:%S.%f%z')
     
     with warnings.catch_warnings():
@@ -159,11 +163,20 @@ while (degree <= 1):
 
     original_stderr = sys.stderr # used for suppressing pm4py output
     sys.stderr = io.StringIO() # used for suppressing pm4py output
-    pm4py.write_xes(event_log, OUTPUT_XES+f"_({degree}).xes")
+    if first_run == False:
+        xes_name = OUTPUT_XES+f"_(C{NUMBER_OF_CASES}-D{degree:.{3}f}).xes"
+    else:
+        xes_name = OUTPUT_XES+f"_(C{NUMBER_OF_CASES}-asymptomatic).xes"
+    pm4py.write_xes(event_log, xes_name)
     sys.stderr = original_stderr # used for suppressing pm4py output
 
     if SIMCOOR_MODE in ("debug", "normal"):
-        print(f"Exported event log: \"{OUTPUT_XES}_(C{NUMBER_OF_CASES}-D{degree:.{3}f}).xes\"\n")
+        print(f"Exported event log: \"{xes_name}\"\n")
+
+    # save filenames for printing commands
+    if first_run == False:
+        files.append(xes_name)
+        degrees.append(f"{degree:.{3}f}")
 
     ### EVENT LOG LOOP END OPERATIONS
 
@@ -172,6 +185,17 @@ while (degree <= 1):
     os.remove(AGENT_INSTRUCTIONS_PATH) # Remove intermediate AIG output
 
     # update of loop variables
-    current_event_log += 1
-    degree += degree_increment
+    if first_run == False:
+        current_event_log += 1
+        degree += degree_increment
     degree = round(degree, 6)
+    first_run = False
+
+    
+
+for i in degrees:
+    print(i)
+enrichedCC_command = "python Econformance.py " + OUTPUT_XES+f"_(C{NUMBER_OF_CASES}-asymptomatic).xes"
+for i in files:
+    enrichedCC_command = enrichedCC_command + " " + i
+print(enrichedCC_command)

@@ -11,3 +11,4 @@ model-translator/
 linac-frontend/
 
 coral-test.csv
+aig-output.json

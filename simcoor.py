@@ -14,8 +14,8 @@ import io # used for pm4py print suppression
 
 # USER SETTINGS ########################################################################################################################################
 
-NUMBER_OF_EVENT_LOGS = 100 # INPUT: The number of symptomatic event logs produced (integer >=1)
-NUMBER_OF_CASES = 1000 # INPUT: The number of cases in each event log (integer >=1)
+NUMBER_OF_EVENT_LOGS = 35 # INPUT: The number of symptomatic event logs produced (integer >=1)
+NUMBER_OF_CASES = 100 # INPUT: The number of cases in each event log (integer >=1)
 SIMCOOR_SEED = None # INPUT: SimCoor seed (Integer or None value (None value makes seed based on system time))
 OUTPUT_XES = "dementia" # OUTPUT: prefix-naming of the produced event logs (without file format extension)
 ROUTINE_MODEL = "morning_routine_template_entitysensors_delay_4.0.pnml" # INPUT: The asymptomatic routine model (PNML)
@@ -41,19 +41,18 @@ random.seed(SIMCOOR_SEED) # Set random seed value
 degree_increment = 1 / NUMBER_OF_EVENT_LOGS
 
 # Initial print
-print(f"""                                                                              
-  __          _            
- (_  o ._ _  /   _   _  ._ 
- __) | | | | \_ (_) (_) |
-            
---------- Settings --------
+print(f"""
+      ┏┓•   ┏┓           
+      ┗┓┓┏┳┓┃ ┏┓┏┓┏┓     
+      ┗┛┗┛┗┗┗┛┗┛┗┛┛      
+-------- Settings ---------
 Event logs: {NUMBER_OF_EVENT_LOGS+1}
 Cases: {NUMBER_OF_CASES}
 Seed: {SIMCOOR_SEED}
 Event log prefix: {OUTPUT_XES}
 ___________________________\n""")
 
-### EVENT LOGIC LOOP
+### EVENT LOG LOGIC LOOP
 current_event_log = 1
 degree = 0
 while (degree <= 1):  

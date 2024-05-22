@@ -8,7 +8,7 @@ def calculate_spearman(csv_file, col1, col2, start_row, end_row):
     df = pd.read_csv(csv_file, delim_whitespace=True)
 
     # Select specified rows and columns
-    df_subset = df.iloc[start_row:end_row+1, [col1, col2]]
+    df_subset = df.iloc[start_row:end_row, [col1, col2]]
 
     # Calculate Spearman's correlation coefficient and p-value
     spearman_corr, p_value = spearmanr(df_subset.iloc[:, 0], df_subset.iloc[:, 1])
@@ -53,16 +53,16 @@ if __name__ == "__main__":
     # Define command-line arguments
     parser = argparse.ArgumentParser(description="Calculate Spearman's correlation coefficient for two specified columns in a CSV file.")
     parser.add_argument("csv_file", type=str, help="Path to the CSV file")
-    parser.add_argument("col1", type=int, help="Index of the first column (zero-based)")
-    parser.add_argument("col2", type=int, help="Index of the second column (zero-based)")
-    parser.add_argument("start_row", type=int, help="Index of the starting row (zero-based)")
-    parser.add_argument("end_row", type=int, help="Index of the ending row (zero-based)")
+    parser.add_argument("col1", type=int, help="Index of the first column (non-zero-based)")
+    parser.add_argument("col2", type=int, help="Index of the second column (non-zero-based)")
+    parser.add_argument("start_row", type=int, help="Index of the starting row (non-zero-based)")
+    parser.add_argument("end_row", type=int, help="Index of the ending row (non-zero-based)")
 
     # Parse command-line arguments
     args = parser.parse_args()
 
     # Calculate Spearman's correlation coefficient
-    corr_coefficient, p_value, sample_size, df_subset = calculate_spearman(args.csv_file, args.col1, args.col2, args.start_row, args.end_row)
+    corr_coefficient, p_value, sample_size, df_subset = calculate_spearman(args.csv_file, args.col1-1, args.col2-1, args.start_row-1, args.end_row-1)
     one_tailed_p_value = p_value_negative_correlation(corr_coefficient)
     statistical_significance = test_statistical_significance(one_tailed_p_value, 0.05)
     interpretation = spearman_coefficient_interpretation(corr_coefficient) 
@@ -80,6 +80,7 @@ if __name__ == "__main__":
     print("Negative correlation:", interpretation)
 
     # Plot the dataset as a line graph
+    plt.plot(df_subset.iloc[:, 0], df_subset.iloc[:, 1], marker='o', linestyle='-')
     plt.plot(df_subset.iloc[:, 0], df_subset.iloc[:, 1], marker='o', linestyle='-')
     plt.xlabel("Degree of symptom evolution")
     plt.ylabel("Fitness")

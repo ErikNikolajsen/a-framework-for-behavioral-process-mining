@@ -76,8 +76,55 @@ def add_repetitiveness_2(petri_net, petri_net_modified, degree):
         for place_ID in target_places_IDs:
             petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], place_ID, new_transition_id)
             petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], new_transition_id, place_ID)
-        
     return petri_net_modified
+
+def add_repetitiveness_3(petri_net, petri_net_modified, degree):
+    name_counter = 0
+    original_transitions = petri_net.transitions.copy()
+        
+    random.shuffle(original_transitions)
+    for i in range(round(len(original_transitions)*degree)):
+        picked_transition = original_transitions[i] # pick random transition sample
+        # log original source and target places and remove respectively outgoing and incoming arcs
+        source_places = []
+        target_places = []
+        for arc in petri_net_modified.arcs[:]: #iterate copy
+            if arc.target == picked_transition.id:
+                source_places.append(arc.source)
+                petri_net_modified.arcs.remove(arc)
+            if arc.source == picked_transition.id:
+                target_places.append(arc.target)
+                petri_net_modified.arcs.remove(arc)
+        # make two new places
+        p3_id = str(uuid.uuid4()).replace("-", "")[:15] #before
+        p4_id = str(uuid.uuid4()).replace("-", "")[:15] #after
+        petri_net_modified.add_place(p3_id,"rp"+str(name_counter),0)
+        name_counter += 1
+        petri_net_modified.add_place(p4_id,"rp"+str(name_counter),0)
+        # make three new transitions
+        t2_id = str(uuid.uuid4()).replace("-", "")[:15] #before 
+        t3_id = str(uuid.uuid4()).replace("-", "")[:15] #after
+        t4_id = str(uuid.uuid4()).replace("-", "")[:15] #above
+        name_counter += 1
+        petri_net_modified.add_transition(t2_id, "rt"+str(name_counter), "", 0, 0)
+        name_counter += 1
+        petri_net_modified.add_transition(t3_id, "rt"+str(name_counter), "", 0, 0)
+        name_counter += 1
+        petri_net_modified.add_transition(t4_id, "rt"+str(name_counter), "", 0, 0)
+        # make new arcs (see sketch for numbering references)
+        for source_place in source_places: #1
+            petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], source_place, t2_id)
+        for target_place in target_places: #2
+            petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], t3_id, target_place)
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], t2_id, p3_id) #3
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], p3_id, picked_transition.id) #4
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], picked_transition.id, p4_id) #5
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], p4_id, t3_id) #6
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], p4_id, t4_id) #7
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], t4_id, p3_id) #8
+    return petri_net_modified
+
+######################################################################################################################################
 
 def add_wandering(petri_net, petri_net_modified, degree, floorplan):
     
@@ -100,7 +147,10 @@ def add_wandering(petri_net, petri_net_modified, degree, floorplan):
     # Extract coordinates of walls
     wall_coordinates = [(wall['x'], wall['y']) for wall in data.get('walls', [])]
 
-    non_walkable_coordinates = passive_sensors_coords + active_sensors_coords + wall_coordinates
+    # Coordinates of unreachable tiles (STOPGAP)
+    unreachable_tiles = [(0,13),(1,13),(2,13),(3,13),(4,13),(5,13),(0,14),(1,14),(2,14),(3,14),(4,14),(5,14),(0,15),(1,15),(2,15),(3,15),(4,15),(5,15),(0,16),(1,16),(2,16),(3,16),(4,16),(5,16)]
+
+    non_walkable_coordinates = passive_sensors_coords + active_sensors_coords + wall_coordinates + unreachable_tiles
 
     width = data.get('width')
     height = data.get('height')
@@ -117,6 +167,7 @@ def add_wandering(petri_net, petri_net_modified, degree, floorplan):
     
     # Add wandering behavior
     wandering_name_counter = 0
+    
     for i in range(round(len(petri_net.arcs)*degree)):
         random_arc = random.choice(petri_net_modified.arcs)
         source = random_arc.source
@@ -142,6 +193,60 @@ def add_wandering(petri_net, petri_net_modified, degree, floorplan):
             petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], new_transition_id, target)
     return petri_net_modified
 
+def add_wandering_2(petri_net, petri_net_modified, degree, floorplan):
+    # Load in floorplan to determine walkable coordinates 
+    with open(floorplan) as f:
+        data = json.load(f)
+    # Extract coordinates of passiveSensors' physicalArea where walkable is False
+    passive_sensors_coords = []
+    for sensor in data.get('passiveSensors', []):
+        if not sensor.get('walkable', True):
+            passive_sensors_coords.extend([(area['x'], area['y']) for area in sensor.get('physicalArea', [])])
+    # Extract coordinates of passiveSensors' physicalArea where walkable is False
+    active_sensors_coords = []
+    for sensor in data.get('activeSensors', []):
+        if not sensor.get('walkable', True):
+            active_sensors_coords.extend([(area['x'], area['y']) for area in sensor.get('physicalArea', [])])
+    # Extract coordinates of walls
+    wall_coordinates = [(wall['x'], wall['y']) for wall in data.get('walls', [])]
+    # Coordinates of unreachable tiles (STOPGAP)
+    unreachable_tiles = [(0,13),(1,13),(2,13),(3,13),(4,13),(5,13),(0,14),(1,14),(2,14),(3,14),(4,14),(5,14),(0,15),(1,15),(2,15),(3,15),(4,15),(5,15),(0,16),(1,16),(2,16),(3,16),(4,16),(5,16)]
+    # Collect non-walkable tiles in a single list
+    non_walkable_coordinates = passive_sensors_coords + active_sensors_coords + wall_coordinates + unreachable_tiles
+    # Generate list of all coordinates within the grid
+    width = data.get('width')
+    height = data.get('height')
+    all_coordinates = [(x, y) for x in range(width) for y in range(height)]
+    # Filter for walkable coordinates
+    walkable_coordinates = [coord for coord in all_coordinates if coord not in non_walkable_coordinates]
+    # Add wandering behavior
+    name_counter = 0
+    original_transitions = petri_net.transitions.copy()
+    random.shuffle(original_transitions)
+    for i in range(round(len(petri_net.transitions)*degree)):
+        picked_transition = original_transitions[i] # pick random transition sample
+        # log original source places and remove outgoing arcs
+        source_places = []
+        for arc in petri_net_modified.arcs[:]: #iterate copy
+            if arc.target == picked_transition.id:
+                source_places.append(arc.source)
+                petri_net_modified.arcs.remove(arc)
+        # make one new place
+        p3_id = str(uuid.uuid4()).replace("-", "")[:15] #before
+        petri_net_modified.add_place(p3_id,"wp"+str(name_counter),0)
+        # make one new transitions
+        t2_id = str(uuid.uuid4()).replace("-", "")[:15] #before
+        name_counter += 1
+        petri_net_modified.add_transition(t2_id, "ft"+str(name_counter), "", 0, 0)
+        # make new arcs (see sketch for numbering references)
+        for source_place in source_places: #1
+            petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], source_place, t2_id)
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], t2_id, p3_id) #2
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], p3_id, picked_transition.id) #3
+    return petri_net_modified
+
+#################################################################################################################
+
 def add_forgetfulness(petri_net, petri_net_modified, degree):
     original_transitions = petri_net.transitions.copy()
         
@@ -156,4 +261,49 @@ def add_forgetfulness(petri_net, petri_net_modified, degree):
                 transition.delay_lower_limit = 0
                 transition.delay_upper_limit = 0
         
+    return petri_net_modified
+
+def add_forgetfulness_2(petri_net, petri_net_modified, degree):
+    name_counter = 0
+    original_transitions = petri_net.transitions.copy()
+    random.shuffle(original_transitions)
+    for i in range(round(len(original_transitions)*degree)):
+        picked_transition = original_transitions[i] # pick random transition sample
+        # log original source and target places and remove respectively outgoing and incoming arcs
+        source_places = []
+        target_places = []
+        for arc in petri_net_modified.arcs[:]: #iterate copy
+            if arc.target == picked_transition.id:
+                source_places.append(arc.source)
+                petri_net_modified.arcs.remove(arc)
+            if arc.source == picked_transition.id:
+                target_places.append(arc.target)
+                petri_net_modified.arcs.remove(arc)
+        # make two new places
+        p3_id = str(uuid.uuid4()).replace("-", "")[:15] #before
+        p4_id = str(uuid.uuid4()).replace("-", "")[:15] #after
+        petri_net_modified.add_place(p3_id,"fp"+str(name_counter),0)
+        name_counter += 1
+        petri_net_modified.add_place(p4_id,"fp"+str(name_counter),0)
+        # make three new transitions
+        t2_id = str(uuid.uuid4()).replace("-", "")[:15] #before 
+        t3_id = str(uuid.uuid4()).replace("-", "")[:15] #after
+        t4_id = str(uuid.uuid4()).replace("-", "")[:15] #above
+        name_counter += 1
+        petri_net_modified.add_transition(t2_id, "ft"+str(name_counter), "", 0, 0)
+        name_counter += 1
+        petri_net_modified.add_transition(t3_id, "ft"+str(name_counter), "", 0, 0)
+        name_counter += 1
+        petri_net_modified.add_transition(t4_id, "ft"+str(name_counter), "", 0, 0)
+        # make new arcs (see sketch for numbering references)
+        for source_place in source_places: #1
+            petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], source_place, t2_id)
+        for target_place in target_places: #2
+            petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], t3_id, target_place)
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], t2_id, p3_id) #3
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], p3_id, picked_transition.id) #4
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], picked_transition.id, p4_id) #5
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], p4_id, t3_id) #6
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], p3_id, t4_id) #7
+        petri_net_modified.add_arc(str(uuid.uuid4()).replace("-", "")[:15], t4_id, p4_id) #8
     return petri_net_modified

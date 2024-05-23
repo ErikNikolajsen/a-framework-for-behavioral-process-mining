@@ -15,11 +15,11 @@ import io # used for pm4py print suppression
 # USER SETTINGS ########################################################################################################################################
 
 NUMBER_OF_EVENT_LOGS = 35 # INPUT: The number of symptomatic event logs produced (integer >=1)
-NUMBER_OF_CASES = 20 # INPUT: The number of cases in each event log (integer >=1)
-SIMCOOR_SEED = 5193 # INPUT: SimCoor seed (Integer or None value (None value makes seed based on system time))
-OUTPUT_XES = "dementia" # OUTPUT: prefix-naming of the produced event logs (without file format extension)
+NUMBER_OF_CASES = 104 # INPUT: The number of cases in each event log (integer >=1)
+SIMCOOR_SEED = 5111 # INPUT: SimCoor seed (Integer or None value (None value makes seed based on system time))
+OUTPUT_XES = "wan-rep-for" # OUTPUT: prefix-naming of the produced event logs (without file format extension)
 ROUTINE_MODEL = "morning_routine_template_entitysensors_delay.pnml" # INPUT: The asymptomatic routine model (PNML)
-SYMPTOMS = ["repetitiveness_2"] # INPUT: The set of symptoms that one wants to inject (see available options in _Symptoms.py) %["wandering", "forgetfulness", "repetitiveness_2"]
+SYMPTOMS = ["wandering", "forgetfulness", "repetitiveness"] # INPUT: The set of symptoms that one wants to inject (see available options in _Symptoms.py) %["wandering", "forgetfulness", "repetitiveness"]
 FLOORPLAN_PATH = "morning_routine_floorplan_entitysensors.json" # INPUT: Linac floorplan (JSON)
 LINAC_SETTINGS_PATH = "simulator.json" # INPUT: Linac simulation settings (JSON)
 
@@ -57,7 +57,7 @@ Event log prefix: {OUTPUT_XES}
 ___________________________\n""")
 
 ### EVENT LOG LOGIC LOOP
-current_event_log = 1
+current_event_log = 0
 degree = 0
 first_run = True
 while (degree <= 1):  
@@ -167,7 +167,7 @@ while (degree <= 1):
         xes_name = OUTPUT_XES+f"_(C{NUMBER_OF_CASES}-D{degree:.{3}f}).xes"
     else:
         xes_name = OUTPUT_XES+f"_(C{NUMBER_OF_CASES}-asymptomatic).xes"
-    pm4py.write_xes(event_log, xes_name)
+    pm4py.write_xes(event_log, os.path.join("enrichedcc-v1.0", xes_name))
     sys.stderr = original_stderr # used for suppressing pm4py output
 
     if SIMCOOR_MODE in ("debug", "normal"):
@@ -179,7 +179,6 @@ while (degree <= 1):
         degrees.append(f"{degree:.{3}f}")
 
     ### EVENT LOG LOOP END OPERATIONS
-
     # Cleanup
     os.remove(CSV_PATH) # Remove intermediate Linac output
     os.remove(AGENT_INSTRUCTIONS_PATH) # Remove intermediate AIG output

@@ -1,147 +1,1358 @@
-p 5045.0 225.0 p27 0 n
-p 30.0 220.0 start 1 n
-t 120.0 220.0 sleep c 30 300 n {interact(bed,activate)} ne
-p 295.0 220.0 p7 0 n
-t 375.0 220.0 t6 c 0 w n {goto(bathroom)} ne
-p 530.0 220.0 p3 0 n
-p 530.0 300.0 p5 0 n
-p 530.0 140.0 p1 0 n
-t 605.0 300.0 t45 c 5 30 n {interact(cabinet,activate)} ne
-t 605.0 220.0 t1 c 60 300 n {interact(toilet,activate)} ne
-t 610.0 140.0 t0 c 180 420 n {interact(shower,activate)} ne
-p 810.0 300.0 p31 0 n
-t 885.0 300.0 t46 c 120 300 n {interact(bathroomFaucet,activate)} ne
-p 1145.0 300.0 p32 0 n
-t 1220.0 300.0 t47 c 5 30 n {interact(cabinet,activate)} ne
-p 1430.0 300.0 p4 0 n
-t 1490.0 220.0 t5 c 0 w n {goto(bedroom)} ne
-p 1430.0 220.0 p6 0 n
-p 1430.0 140.0 p10 0 n
-p 1650.0 220.0 p19 0 n
-t 1920.0 220.0 t23 c 60 120 n {interact(bedroomDrawers,activate)} nw
-p 2030.0 140.0 p20 0 n
-p 2030.0 300.0 p18 0 n
-t 2245.0 300.0 t27 c 60 120 n {interact(closet2,activate)} nw
-p 2350.0 140.0 p22 0 n
-t 2245.0 140.0 t26 c 60 180 n {interact(closet1,activate)} nw
-p 2350.0 300.0 p21 0 n
-t 2400.0 220.0 t28 c 0 w n {goto(kitchen)} nw
-p 2490.0 300.0 p14 0 n
-p 2490.0 140.0 p8 0 n
-t 2590.0 140.0 t13 c 20 80 n {interact(kitchenDrawers,activate)} ne
-t 2590.0 60.0 t7 c 20 80 n {interact(kitchenDrawers,activate)} ne
-t 2590.0 300.0 t17 c 20 80 n {interact(kitchenDrawers,activate)} ne
-p 2865.0 140.0 p11 0 n
-p 2865.0 60.0 p9 0 n
-t 2940.0 140.0 t14 c 30 360 n {interact(refrigerator,activate)} ne
-t 2940.0 60.0 t10 c 30 360 n {interact(refrigerator,activate)} ne
-p 3170.0 140.0 p12 0 n
-t 3360.0 140.0 t15 c 120 600 n {interact(hob,activate)} nw
-p 3490.0 60.0 p13 0 n
-p 2860.0 300.0 p15 0 n
-t 2940.0 300.0 t18 c 5 60 n {interact(kitchenFaucet,activate)} ne
-t 3665.0 220.0 t11 c 10 120 n {interact(kitchenTable,activate)} nw
-p 3490.0 300.0 p16 0 n
-p 3780.0 220.0 p23 0 n
-t 4060.0 225.0 t22 c 60 600 n {interact(kitchenChair2,activate)} nw
-t 4060.0 155.0 t20 c 60 600 n {interact(kitchenChair1,activate)} nw
-t 4060.0 295.0 t21 c 60 600 n {interact(kitchenChair3,activate)} nw
-p 4170.0 225.0 p24 0 n
-t 4315.0 125.0 t37 c 0 w n {goto(terrace)} nw
-t 4315.0 430.0 t36 c 0 w n {goto(livingroom)} nw
-p 4400.0 430.0 p28 0 n
-t 4500.0 515.0 t33 c 10 60 n {interact(livingRoomTable,activate)} nw
-t 4500.0 350.0 t29 c 10 120 n {interact(television,activate)} nw
-p 4595.0 515.0 p26 0 n
-p 4595.0 350.0 p25 0 n
-t 4875.0 395.0 t32 c 300 900 n {interact(sofa,activate)} nw
-t 4875.0 320.0 t30 c 300 900 n {interact(livingRoomChair,activate)} nw
-t 4870.0 560.0 t35 c 300 900 n {interact(sofa,activate)} nw
-t 4870.0 490.0 t34 c 300 900 n {interact(livingRoomChair,activate)} nw
-p 4405.0 125.0 p29 0 n
-t 4685.0 125.0 t41 c 120 600 n {interact(terraceChair1,activate)} nw
-t 4685.0 50.0 t42 c 0 w n {goto(terrace)} nw
-t 4685.0 200.0 t40 c 120 600 n {interact(terraceChair2,activate)} nw
-t 5165.0 225.0 t43 c 0 w n {goto(8,0)} nw
-p 5245.0 225.0 end 0 n
-e p23 t21 1 n
-e p23 t22 1 n
-e p23 t20 1 n
-e t11 p23 1 n
-e p16 t11 1 n
-e t28 p14 1 n
-e t28 p8 1 n
-e p21 t28 1 n
-e t27 p21 1 n
-e p18 t27 1 n
-e t23 p18 1 n
-e p6 t5 1 n
-e p10 t5 1 n
-e t1 p6 1 n
-e t0 p10 1 n
-e p1 t0 1 n
-e p3 t1 1 n
-e p5 t45 1 n
-e t6 p5 1 n
-e t6 p3 1 n
-e t6 p1 1 n
-e p28 t29 1 n
-e t10 p13 1 n
-e p8 t7 1 n
-e t7 p9 1 n
-e p9 t10 1 n
-e p32 t47 1 n
-e t43 end 1 n
-e start sleep 1 n
-e t14 p12 1 n
-e p11 t14 1 n
-e t13 p11 1 n
-e p29 t42 1 n
-e p29 t41 1 n
-e p8 t13 1 n
-e p12 t15 1 n
-e t15 p13 1 n
-e p13 t11 1 n
-e t18 p16 1 n
-e p15 t18 1 n
-e t17 p15 1 n
-e t42 p27 1 n
-e p28 t33 1 n
-e p14 t17 1 n
-e t45 p31 1 n
-e t41 p27 1 n
-e p24 t37 1 n
-e p19 t23 1 n
-e t23 p20 1 n
-e p20 t26 1 n
-e t5 p19 1 n
-e sleep p7 1 n
-e t37 p29 1 n
-e t26 p22 1 n
-e t40 p27 1 n
-e p31 t46 1 n
-e p22 t28 1 n
-e t20 p24 1 n
-e t22 p24 1 n
-e p29 t40 1 n
-e p7 t6 1 n
-e t21 p24 1 n
-e p27 t43 1 n
-e p25 t32 1 n
-e p25 t30 1 n
-e t29 p25 1 n
-e t46 p32 1 n
-e t33 p26 1 n
-e p26 t34 1 n
-e p4 t5 1 n
-e p26 t35 1 n
-e t30 p27 1 n
-e t32 p27 1 n
-e t34 p27 1 n
-e t35 p27 1 n
-e p24 t36 1 n
-e t36 p28 1 n
-e t47 p4 1 n
-h morning_routine_template_entitysensors_delay
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!--created Wed May 22 10:47:07 2024 by ndrio version 3.7.5-->
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="n-6C5C-E9A0F-0" type ="http://www.laas.fr/tina/tpn">
+  <name>
+   <text>morning_routine_template_entitysensors_delay</text>
+  </name>
+ <page id="g-6C5C-E9F8C-1">
+  <place id="p-6C5C-E9F9B-2">
+  <name>
+   <text>end</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="5245" y="225"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA34A-3">
+  <name>
+   <text>p1</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="530" y="140"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA356-4">
+  <name>
+   <text>p10</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1430" y="140"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA35E-5">
+  <name>
+   <text>p11</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2865" y="140"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA361-6">
+  <name>
+   <text>p12</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="3170" y="140"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA366-7">
+  <name>
+   <text>p13</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="3490" y="60"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA369-8">
+  <name>
+   <text>p14</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2490" y="300"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA36E-9">
+  <name>
+   <text>p15</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2860" y="300"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA370-10">
+  <name>
+   <text>p16</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="3490" y="300"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA373-11">
+  <name>
+   <text>p18</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2030" y="300"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA379-12">
+  <name>
+   <text>p19</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1650" y="220"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA37C-13">
+  <name>
+   <text>p20</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2030" y="140"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA381-14">
+  <name>
+   <text>p21</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2350" y="300"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA384-15">
+  <name>
+   <text>p22</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2350" y="140"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA38A-16">
+  <name>
+   <text>p23</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="3780" y="220"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA38D-17">
+  <name>
+   <text>p24</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4170" y="225"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA390-18">
+  <name>
+   <text>p25</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4595" y="350"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA396-19">
+  <name>
+   <text>p26</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4595" y="515"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA398-20">
+  <name>
+   <text>p27</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="5045" y="225"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA545-21">
+  <name>
+   <text>p28</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4400" y="430"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA54B-22">
+  <name>
+   <text>p29</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="4405" y="125"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA557-23">
+  <name>
+   <text>p3</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="530" y="220"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA55C-24">
+  <name>
+   <text>p31</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="810" y="300"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA55F-25">
+  <name>
+   <text>p32</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1145" y="300"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA564-26">
+  <name>
+   <text>p4</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1430" y="300"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA567-27">
+  <name>
+   <text>p5</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="530" y="300"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA5DA-28">
+  <name>
+   <text>p6</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="1430" y="220"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA5E0-29">
+  <name>
+   <text>p7</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="295" y="220"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA605-30">
+  <name>
+   <text>p8</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2490" y="140"/>
+   </graphics>
+  </place>
+  <place id="p-6C5C-EA60A-31">
+  <name>
+   <text>p9</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <graphics>
+    <position x="2865" y="60"/>
+   </graphics>
+  </place>
+  <transition id="t-6C5C-EA60D-32">
+  <name>
+   <text>sleep</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(bed,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>30</cn>
+     <cn>300</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="120" y="220"/>
+   </graphics>
+  </transition>
+  <place id="p-6C5C-EA61E-33">
+  <name>
+   <text>start</text>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+   <graphics>
+    <position x="30" y="220"/>
+   </graphics>
+  </place>
+  <transition id="t-6C5C-EA62B-34">
+  <name>
+   <text>t0</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(shower,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>180</cn>
+     <cn>420</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="610" y="140"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA638-35">
+  <name>
+   <text>t1</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(toilet,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>300</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="605" y="220"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA6D3-36">
+  <name>
+   <text>t10</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(refrigerator,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>30</cn>
+     <cn>360</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="2940" y="60"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA6E1-37">
+  <name>
+   <text>t11</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenTable,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>10</cn>
+     <cn>120</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="3665" y="220"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA6EE-38">
+  <name>
+   <text>t13</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenDrawers,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>20</cn>
+     <cn>80</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="2590" y="140"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA6F9-39">
+  <name>
+   <text>t14</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(refrigerator,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>30</cn>
+     <cn>360</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="2940" y="140"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA705-40">
+  <name>
+   <text>t15</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(hob,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>120</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="3360" y="140"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA70E-41">
+  <name>
+   <text>t17</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenDrawers,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>20</cn>
+     <cn>80</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="2590" y="300"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA719-42">
+  <name>
+   <text>t18</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenFaucet,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>5</cn>
+     <cn>60</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="2940" y="300"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA723-43">
+  <name>
+   <text>t20</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenChair1,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4060" y="155"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA778-44">
+  <name>
+   <text>t21</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenChair3,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4060" y="295"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA782-45">
+  <name>
+   <text>t22</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenChair2,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4060" y="225"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA78E-46">
+  <name>
+   <text>t23</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(bedroomDrawers,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>120</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="1920" y="220"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA797-47">
+  <name>
+   <text>t26</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(closet1,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>180</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="2245" y="140"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA7B0-48">
+  <name>
+   <text>t27</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(closet2,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>60</cn>
+     <cn>120</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="2245" y="300"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA7B9-49">
+  <name>
+   <text>t28</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(kitchen)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="2400" y="220"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA7C1-50">
+  <name>
+   <text>t29</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(television,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>10</cn>
+     <cn>120</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4500" y="350"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA83B-51">
+  <name>
+   <text>t30</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(livingRoomChair,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>300</cn>
+     <cn>900</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4875" y="320"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA847-52">
+  <name>
+   <text>t32</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(sofa,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>300</cn>
+     <cn>900</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4875" y="395"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA850-53">
+  <name>
+   <text>t33</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(livingRoomTable,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>10</cn>
+     <cn>60</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4500" y="515"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA8BA-54">
+  <name>
+   <text>t34</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(livingRoomChair,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>300</cn>
+     <cn>900</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4870" y="490"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA8C6-55">
+  <name>
+   <text>t35</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(sofa,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>300</cn>
+     <cn>900</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4870" y="560"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA8CF-56">
+  <name>
+   <text>t36</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(livingroom)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4315" y="430"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA8D6-57">
+  <name>
+   <text>t37</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(terrace)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4315" y="125"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA8DD-58">
+  <name>
+   <text>t40</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(terraceChair2,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>120</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4685" y="200"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA8E6-59">
+  <name>
+   <text>t41</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(terraceChair1,activate)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>120</cn>
+     <cn>600</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="4685" y="125"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA92A-60">
+  <name>
+   <text>t42</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(terrace)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="4685" y="50"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA934-61">
+  <name>
+   <text>t43</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(8,0)</text>
+    <graphics>
+     <offset x="-10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="5165" y="225"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA939-62">
+  <name>
+   <text>t45</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(cabinet,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>5</cn>
+     <cn>30</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="605" y="300"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA949-63">
+  <name>
+   <text>t46</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(bathroomFaucet,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>120</cn>
+     <cn>300</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="885" y="300"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA956-64">
+  <name>
+   <text>t47</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(cabinet,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>5</cn>
+     <cn>30</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="1220" y="300"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA961-65">
+  <name>
+   <text>t5</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(bedroom)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="1490" y="220"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA970-66">
+  <name>
+   <text>t6</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>goto(bathroom)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <graphics>
+    <position x="375" y="220"/>
+   </graphics>
+  </transition>
+  <transition id="t-6C5C-EA979-67">
+  <name>
+   <text>t7</text>
+    <graphics>
+     <offset x="0" y="0" />
+    </graphics>
+  </name>
+   <label>
+    <text>interact(kitchenDrawers,activate)</text>
+    <graphics>
+     <offset x="10" y="-10" />
+    </graphics>
+   </label>
+   <delay>
+    <interval xmlns="http://www.w3.org/1998/Math/MathML" closure="closed">
+     <cn>20</cn>
+     <cn>80</cn>
+    </interval>
+    <graphics>
+     <offset x="0" y="-10" />
+    </graphics>
+   </delay>
+   <graphics>
+    <position x="2590" y="60"/>
+   </graphics>
+  </transition>
+  <arc id="e-6C5C-EA9B6-68" source="p-6C5C-EA38A-16" target="t-6C5C-EA778-44">
+  </arc>
+  <arc id="e-6C5C-EAA94-69" source="p-6C5C-EA373-11" target="t-6C5C-EA7B0-48">
+  </arc>
+  <arc id="e-6C5C-EAA99-70" source="t-6C5C-EA78E-46" target="p-6C5C-EA373-11">
+  </arc>
+  <arc id="e-6C5C-EAA9C-71" source="p-6C5C-EA5DA-28" target="t-6C5C-EA961-65">
+  </arc>
+  <arc id="e-6C5C-EAAA3-72" source="p-6C5C-EA356-4" target="t-6C5C-EA961-65">
+  </arc>
+  <arc id="e-6C5C-EAAA6-73" source="t-6C5C-EA638-35" target="p-6C5C-EA5DA-28">
+  </arc>
+  <arc id="e-6C5C-EAAA8-74" source="t-6C5C-EA62B-34" target="p-6C5C-EA356-4">
+  </arc>
+  <arc id="e-6C5C-EAAAA-75" source="p-6C5C-EA34A-3" target="t-6C5C-EA62B-34">
+  </arc>
+  <arc id="e-6C5C-EAAAB-76" source="p-6C5C-EA557-23" target="t-6C5C-EA638-35">
+  </arc>
+  <arc id="e-6C5C-EAAAD-77" source="p-6C5C-EA567-27" target="t-6C5C-EA939-62">
+  </arc>
+  <arc id="e-6C5C-EAAB0-78" source="t-6C5C-EA970-66" target="p-6C5C-EA567-27">
+  </arc>
+  <arc id="e-6C5C-EAAB5-79" source="p-6C5C-EA38A-16" target="t-6C5C-EA782-45">
+  </arc>
+  <arc id="e-6C5C-EAAB7-80" source="t-6C5C-EA970-66" target="p-6C5C-EA557-23">
+  </arc>
+  <arc id="e-6C5C-EAAB9-81" source="t-6C5C-EA970-66" target="p-6C5C-EA34A-3">
+  </arc>
+  <arc id="e-6C5C-EAABA-82" source="p-6C5C-EA545-21" target="t-6C5C-EA7C1-50">
+  </arc>
+  <arc id="e-6C5C-EAABC-83" source="t-6C5C-EA6D3-36" target="p-6C5C-EA366-7">
+  </arc>
+  <arc id="e-6C5C-EAABF-84" source="p-6C5C-EA605-30" target="t-6C5C-EA979-67">
+  </arc>
+  <arc id="e-6C5C-EAAC1-85" source="t-6C5C-EA979-67" target="p-6C5C-EA60A-31">
+  </arc>
+  <arc id="e-6C5C-EAAC3-86" source="p-6C5C-EA60A-31" target="t-6C5C-EA6D3-36">
+  </arc>
+  <arc id="e-6C5C-EAAC7-87" source="p-6C5C-EA55F-25" target="t-6C5C-EA956-64">
+  </arc>
+  <arc id="e-6C5C-EAAC9-88" source="t-6C5C-EA934-61" target="p-6C5C-E9F9B-2">
+  </arc>
+  <arc id="e-6C5C-EAACB-89" source="p-6C5C-EA61E-33" target="t-6C5C-EA60D-32">
+  </arc>
+  <arc id="e-6C5C-EAACD-90" source="p-6C5C-EA38A-16" target="t-6C5C-EA723-43">
+  </arc>
+  <arc id="e-6C5C-EAACF-91" source="t-6C5C-EA6F9-39" target="p-6C5C-EA361-6">
+  </arc>
+  <arc id="e-6C5C-EAAD3-92" source="p-6C5C-EA35E-5" target="t-6C5C-EA6F9-39">
+  </arc>
+  <arc id="e-6C5C-EAAD4-93" source="t-6C5C-EA6EE-38" target="p-6C5C-EA35E-5">
+  </arc>
+  <arc id="e-6C5C-EAAD6-94" source="p-6C5C-EA54B-22" target="t-6C5C-EA92A-60">
+  </arc>
+  <arc id="e-6C5C-EAADB-95" source="p-6C5C-EA54B-22" target="t-6C5C-EA8E6-59">
+  </arc>
+  <arc id="e-6C5C-EAADD-96" source="p-6C5C-EA605-30" target="t-6C5C-EA6EE-38">
+  </arc>
+  <arc id="e-6C5C-EAADF-97" source="p-6C5C-EA361-6" target="t-6C5C-EA705-40">
+  </arc>
+  <arc id="e-6C5C-EAAE1-98" source="t-6C5C-EA705-40" target="p-6C5C-EA366-7">
+  </arc>
+  <arc id="e-6C5C-EAAF3-99" source="p-6C5C-EA366-7" target="t-6C5C-EA6E1-37">
+  </arc>
+  <arc id="e-6C5C-EAAF6-100" source="t-6C5C-EA719-42" target="p-6C5C-EA370-10">
+  </arc>
+  <arc id="e-6C5C-EAAF8-101" source="t-6C5C-EA6E1-37" target="p-6C5C-EA38A-16">
+  </arc>
+  <arc id="e-6C5C-EAAFE-102" source="p-6C5C-EA36E-9" target="t-6C5C-EA719-42">
+  </arc>
+  <arc id="e-6C5C-EAAFF-103" source="t-6C5C-EA70E-41" target="p-6C5C-EA36E-9">
+  </arc>
+  <arc id="e-6C5C-EAB01-104" source="t-6C5C-EA92A-60" target="p-6C5C-EA398-20">
+  </arc>
+  <arc id="e-6C5C-EAB03-105" source="p-6C5C-EA545-21" target="t-6C5C-EA850-53">
+  </arc>
+  <arc id="e-6C5C-EAB05-106" source="p-6C5C-EA369-8" target="t-6C5C-EA70E-41">
+  </arc>
+  <arc id="e-6C5C-EAB07-107" source="t-6C5C-EA939-62" target="p-6C5C-EA55C-24">
+  </arc>
+  <arc id="e-6C5C-EAB09-108" source="t-6C5C-EA8E6-59" target="p-6C5C-EA398-20">
+  </arc>
+  <arc id="e-6C5C-EAB0B-109" source="p-6C5C-EA38D-17" target="t-6C5C-EA8D6-57">
+  </arc>
+  <arc id="e-6C5C-EAB0F-110" source="p-6C5C-EA379-12" target="t-6C5C-EA78E-46">
+  </arc>
+  <arc id="e-6C5C-EAB11-111" source="t-6C5C-EA78E-46" target="p-6C5C-EA37C-13">
+  </arc>
+  <arc id="e-6C5C-EAB13-112" source="p-6C5C-EA370-10" target="t-6C5C-EA6E1-37">
+  </arc>
+  <arc id="e-6C5C-EAB15-113" source="p-6C5C-EA37C-13" target="t-6C5C-EA797-47">
+  </arc>
+  <arc id="e-6C5C-EAB16-114" source="t-6C5C-EA961-65" target="p-6C5C-EA379-12">
+  </arc>
+  <arc id="e-6C5C-EAB18-115" source="t-6C5C-EA60D-32" target="p-6C5C-EA5E0-29">
+  </arc>
+  <arc id="e-6C5C-EAB55-116" source="t-6C5C-EA8D6-57" target="p-6C5C-EA54B-22">
+  </arc>
+  <arc id="e-6C5C-EAB5B-117" source="t-6C5C-EA797-47" target="p-6C5C-EA384-15">
+  </arc>
+  <arc id="e-6C5C-EAB5D-118" source="t-6C5C-EA8DD-58" target="p-6C5C-EA398-20">
+  </arc>
+  <arc id="e-6C5C-EAB5E-119" source="p-6C5C-EA55C-24" target="t-6C5C-EA949-63">
+  </arc>
+  <arc id="e-6C5C-EAB60-120" source="p-6C5C-EA384-15" target="t-6C5C-EA7B9-49">
+  </arc>
+  <arc id="e-6C5C-EAB62-121" source="t-6C5C-EA723-43" target="p-6C5C-EA38D-17">
+  </arc>
+  <arc id="e-6C5C-EAB63-122" source="t-6C5C-EA782-45" target="p-6C5C-EA38D-17">
+  </arc>
+  <arc id="e-6C5C-EAB64-123" source="t-6C5C-EA7B9-49" target="p-6C5C-EA369-8">
+  </arc>
+  <arc id="e-6C5C-EAB66-124" source="p-6C5C-EA54B-22" target="t-6C5C-EA8DD-58">
+  </arc>
+  <arc id="e-6C5C-EAB6A-125" source="p-6C5C-EA5E0-29" target="t-6C5C-EA970-66">
+  </arc>
+  <arc id="e-6C5C-EAB6C-126" source="t-6C5C-EA778-44" target="p-6C5C-EA38D-17">
+  </arc>
+  <arc id="e-6C5C-EAB6E-127" source="p-6C5C-EA398-20" target="t-6C5C-EA934-61">
+  </arc>
+  <arc id="e-6C5C-EAB6F-128" source="p-6C5C-EA390-18" target="t-6C5C-EA847-52">
+  </arc>
+  <arc id="e-6C5C-EAB71-129" source="p-6C5C-EA390-18" target="t-6C5C-EA83B-51">
+  </arc>
+  <arc id="e-6C5C-EAB73-130" source="t-6C5C-EA7C1-50" target="p-6C5C-EA390-18">
+  </arc>
+  <arc id="e-6C5C-EAB75-131" source="t-6C5C-EA949-63" target="p-6C5C-EA55F-25">
+  </arc>
+  <arc id="e-6C5C-EAB77-132" source="t-6C5C-EA850-53" target="p-6C5C-EA396-19">
+  </arc>
+  <arc id="e-6C5C-EAB7B-133" source="p-6C5C-EA396-19" target="t-6C5C-EA8BA-54">
+  </arc>
+  <arc id="e-6C5C-EAB80-134" source="t-6C5C-EA7B9-49" target="p-6C5C-EA605-30">
+  </arc>
+  <arc id="e-6C5C-EAB82-135" source="p-6C5C-EA564-26" target="t-6C5C-EA961-65">
+  </arc>
+  <arc id="e-6C5C-EAB84-136" source="p-6C5C-EA396-19" target="t-6C5C-EA8C6-55">
+  </arc>
+  <arc id="e-6C5C-EAB85-137" source="t-6C5C-EA83B-51" target="p-6C5C-EA398-20">
+  </arc>
+  <arc id="e-6C5C-EAB87-138" source="t-6C5C-EA847-52" target="p-6C5C-EA398-20">
+  </arc>
+  <arc id="e-6C5C-EAB88-139" source="t-6C5C-EA8BA-54" target="p-6C5C-EA398-20">
+  </arc>
+  <arc id="e-6C5C-EAB8D-140" source="t-6C5C-EA8C6-55" target="p-6C5C-EA398-20">
+  </arc>
+  <arc id="e-6C5C-EAB8F-141" source="p-6C5C-EA38D-17" target="t-6C5C-EA8CF-56">
+  </arc>
+  <arc id="e-6C5C-EAB90-142" source="t-6C5C-EA8CF-56" target="p-6C5C-EA545-21">
+  </arc>
+  <arc id="e-6C5C-EAB92-143" source="t-6C5C-EA956-64" target="p-6C5C-EA564-26">
+  </arc>
+  <arc id="e-6C5C-EAB94-144" source="p-6C5C-EA381-14" target="t-6C5C-EA7B9-49">
+  </arc>
+  <arc id="e-6C5C-EAB96-145" source="t-6C5C-EA7B0-48" target="p-6C5C-EA381-14">
+  </arc>
+ </page>
+ </net>
+</pnml>

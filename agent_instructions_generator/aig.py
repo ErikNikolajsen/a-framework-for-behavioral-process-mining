@@ -211,7 +211,7 @@ if __name__ == "__main__":
     parser.add_argument("-s", "--seed", default=random.randint(0, 2**32 - 1), help="Random seed (default: random 32-bit integer)")
     parser.add_argument("-d", "--degree", type=float, default=0.0, help="Degree of symptoms expressed between 0 and 1 (default: 0.0)")
     parser.add_argument("-m", "--mode", type=str, default="normal", help="Output mode (options: debug, normal, fast, invisible) (default: normal)")
-    parser.add_argument("-sy", "--symptoms", nargs="+", type=str, help="The symptoms expressed in the routine (options: wandering, repetitiveness)")
+    parser.add_argument("-sy", "--symptoms", nargs="+", type=str, help="The symptoms expressed in the routine (options: wandering, repetitiveness, forgetfulness)")
     parser.add_argument("-o", "--output", type=str, default="rig-output.json", help="The name of the resulting file (default: rig-output)")
     parser.add_argument("-f", "--floorplan", type=str, default=None, help="The path of the floorplan file")
     args = parser.parse_args()

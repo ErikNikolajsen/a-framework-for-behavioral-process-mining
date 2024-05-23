@@ -134,7 +134,7 @@ ______________________________\n""")
         # Express symptoms in the routine model    
         if symptoms != None:
             if "wandering" in symptoms:
-                petri_net_modified = _symptoms.add_wandering_2(petri_net, petri_net_modified, degree, floorplan)
+                petri_net_modified = _symptoms.add_wandering_3(petri_net, petri_net_modified, degree, floorplan)
                 petri_net_temporary = copy.deepcopy(petri_net_modified)
             if "forgetfulness" in symptoms:
                 petri_net_modified = _symptoms.add_forgetfulness_2(petri_net, petri_net_modified, degree)

@@ -53,7 +53,7 @@ def run_routine_instruction_generator(model, iterations, seed, degree, mode, sym
     if symptoms != None:
         symptoms_string = ",\n            ".join(symptoms)
         for symptom in symptoms:
-            if symptom not in ("wandering", "repetitiveness", "forgetfulness"):
+            if symptom not in ("wandering", "repetitiveness", "forgetfulness", "slowness"):
                 print(f"Error: the symptom '{symptom}' is not an option")
                 print("Halting program\n")
                 sys.exit(1)
@@ -135,13 +135,16 @@ ______________________________\n""")
         if symptoms != None:
             if "wandering" in symptoms:
                 petri_net_modified = _symptoms.add_wandering_3(petri_net, petri_net_modified, degree, floorplan)
-                petri_net_temporary = copy.deepcopy(petri_net_modified)
+                #petri_net_temporary = copy.deepcopy(petri_net_modified)
             if "forgetfulness" in symptoms:
                 petri_net_modified = _symptoms.add_forgetfulness_2(petri_net, petri_net_modified, degree)
-                petri_net_temporary = copy.deepcopy(petri_net_modified)
+                #petri_net_temporary = copy.deepcopy(petri_net_modified)
             if "repetitiveness" in symptoms:
                 petri_net_modified = _symptoms.add_repetitiveness_3(petri_net, petri_net_modified, degree)
-                petri_net_temporary = copy.deepcopy(petri_net_modified)
+                #petri_net_temporary = copy.deepcopy(petri_net_modified)
+            if "slowness" in symptoms:
+                petri_net_modified = _symptoms.add_slowness(petri_net, petri_net_modified, degree)
+                #petri_net_temporary = copy.deepcopy(petri_net_modified)
             
             
             

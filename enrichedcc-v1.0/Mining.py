@@ -55,5 +55,5 @@ def conformance (logA, logB, alg):
     #x = int(x)
     #aligned_traces_dataframe = alignments.get_diagnostics_dataframe(logA, aligned_traces)
     #return aligned_traces_dataframe, x/len(logB)
-    return "test", token_replay["average_trace_fitness"] #dict_keys(['perc_fit_traces', 'average_trace_fitness', 'log_fitness', 'percentage_of_fitting_traces'])
+    return "test", token_replay["average_trace_fitness"] #dict_keys(['log_fitness', 'average_trace_fitness', 'log_fitness', 'percentage_of_fitting_traces'])
 

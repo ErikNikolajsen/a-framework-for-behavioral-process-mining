@@ -189,7 +189,7 @@ public class Simulator {
 		}
 		
 		// Three-phase simulation start
-		print("*** Simulation has started ***");
+		//print("*** Simulation has started ***");
 		for (BEvent event : bEvents) {
 			
 			//Update clock to next B-event
@@ -205,7 +205,7 @@ public class Simulator {
 						event.getNode().getX(), 
 						event.getNode().getY()
 						);
-				print(clock.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.nnnnnnnnn")).toString()+" : "+event.getAgent().getId()+" : "+event.getAgent().getPosition().toString()); // print time & position
+				//print(clock.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.nnnnnnnnn")).toString()+" : "+event.getAgent().getId()+" : "+event.getAgent().getPosition().toString()); // print time & position
 			
 			// Active sensor activation event
 			} else if (event.getEventType() == BEventType.SENSOR_ACTIVATION) {
@@ -213,7 +213,7 @@ public class Simulator {
 			
 			// Output event
 			} else if (event.getEventType() == BEventType.OUTPUT) {
-				print(event.getOutput());
+				//print(event.getOutput());
 
 			// Case event
 			} else if (event.getEventType() == BEventType.CASE) {
@@ -231,7 +231,7 @@ public class Simulator {
 
 			}
 		}
-		print("*** Simulation has ended ***");
+		//print("*** Simulation has ended ***");
 		
 		// close fileWriter if user wants to generate a CSV file 
 		if (csvOutput == true) {
@@ -251,7 +251,7 @@ public class Simulator {
 		
 		// detects if goto is impossible (HALTING ERROR)
 		if (path.isEmpty()) {
-			print("ERROR: coordinates are not reachable");
+			print("ERROR: coordinates are not reachable: ("+gotoPosition.getX()+", "+gotoPosition.getY()+")");
 		}
 		
 		for (AStarNode node : path) {

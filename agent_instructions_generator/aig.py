@@ -78,15 +78,9 @@ def run_routine_instruction_generator(model, iterations, seed, degree, mode, sym
     
     if mode != "invisible":
         print(f"""
-       d8888 8888888 .d8888b.  
-      d88888   888  d88P  Y88b 
-     d88P888   888  888    888 
-    d88P 888   888  888        
-   d88P  888   888  888  88888 
-  d88P   888   888  888    888 
- d8888888888   888  Y88b  d88P 
-d88P     888 8888888 "Y8888P88
-
+            ┏┓┳┏┓
+            ┣┫┃┃┓
+            ┛┗┻┗┛
 ---------- Settings ----------
           
 Model:      {model}

@@ -161,4 +161,4 @@ backend separately from SimCoor.
     `python coral.py –help`
 
 4.  An example of a command could be:\
-    `python coral.py coral-test.csv 0 38 0 6`
+    `python coral.py coral-data.csv 0 38 0 6`

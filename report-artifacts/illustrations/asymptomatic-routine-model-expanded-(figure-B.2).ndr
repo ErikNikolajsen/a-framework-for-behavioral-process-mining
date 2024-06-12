@@ -1,0 +1,147 @@
+p 1395.0 975.0 p27 0 n
+p 50.0 130.0 start 1 n
+t 140.0 130.0 sleep c 30 300 n {interact(bed,activate)} ne
+p 315.0 130.0 p7 0 n
+t 395.0 130.0 t6 c 0 w n {goto(bathroom)} ne
+p 550.0 130.0 p3 0 n
+p 550.0 210.0 p5 0 n
+p 550.0 50.0 p1 0 n
+t 625.0 210.0 t45 c 5 30 n {interact(cabinet,activate)} ne
+t 625.0 130.0 t1 c 60 300 n {interact(toilet,activate)} ne
+t 630.0 50.0 t0 c 180 420 n {interact(shower,activate)} ne
+p 830.0 210.0 p31 0 n
+t 905.0 210.0 t46 c 120 300 n {interact(bathroomFaucet,activate)} ne
+p 1165.0 210.0 p32 0 n
+t 1240.0 210.0 t47 c 5 30 n {interact(cabinet,activate)} ne
+p 1450.0 210.0 p4 0 n
+t 1510.0 130.0 t5 c 0 w n {goto(bedroom)} ne
+p 1450.0 130.0 p6 0 n
+p 1450.0 50.0 p10 0 n
+p 1670.0 130.0 p19 0 n
+t 35.0 530.0 t23 c 60 120 s {interact(bedroomDrawers,activate)} e
+p 145.0 450.0 p20 0 n
+p 145.0 610.0 p18 0 n
+t 360.0 610.0 t27 c 60 120 n {interact(closet2,activate)} s
+p 465.0 450.0 p22 0 n
+t 360.0 450.0 t26 c 60 180 n {interact(closet1,activate)} s
+p 465.0 610.0 p21 0 n
+t 515.0 530.0 t28 c 0 w n {goto(kitchen)} e
+p 605.0 610.0 p14 0 n
+p 605.0 450.0 p8 0 n
+t 705.0 450.0 t13 c 20 80 n {interact(kitchenDrawers,activate)} s
+t 705.0 370.0 t7 c 20 80 n {interact(kitchenDrawers,activate)} ne
+t 705.0 610.0 t17 c 20 80 n {interact(kitchenDrawers,activate)} s
+p 980.0 450.0 p11 0 n
+p 980.0 370.0 p9 0 n
+t 1055.0 450.0 t14 c 30 360 n {interact(refrigerator,activate)} ne
+t 1055.0 370.0 t10 c 30 360 n {interact(refrigerator,activate)} ne
+p 1285.0 450.0 p12 0 n
+t 1475.0 450.0 t15 c 120 600 n {interact(hob,activate)} nw
+p 1605.0 370.0 p13 0 n
+p 975.0 610.0 p15 0 n
+t 1055.0 610.0 t18 c 5 60 n {interact(kitchenFaucet,activate)} ne
+t 1780.0 530.0 t11 c 10 120 n {interact(kitchenTable,activate)} nw
+p 1605.0 610.0 p16 0 n
+p 130.0 970.0 p23 0 n
+t 410.0 975.0 t22 c 60 600 n {interact(kitchenChair2,activate)} nw
+t 410.0 905.0 t20 c 60 600 n {interact(kitchenChair1,activate)} nw
+t 410.0 1045.0 t21 c 60 600 n {interact(kitchenChair3,activate)} nw
+p 520.0 975.0 p24 0 n
+t 665.0 875.0 t37 c 0 w n {goto(terrace)} nw
+t 665.0 1180.0 t36 c 0 w n {goto(livingroom)} nw
+p 750.0 1180.0 p28 0 n
+t 850.0 1265.0 t33 c 10 60 n {interact(livingRoomTable,activate)} nw
+t 850.0 1100.0 t29 c 10 120 n {interact(television,activate)} nw
+p 945.0 1265.0 p26 0 n
+p 945.0 1100.0 p25 0 n
+t 1225.0 1145.0 t32 c 300 900 n {interact(sofa,activate)} nw
+t 1225.0 1070.0 t30 c 300 900 n {interact(livingRoomChair,activate)} nw
+t 1220.0 1310.0 t35 c 300 900 n {interact(sofa,activate)} nw
+t 1220.0 1240.0 t34 c 300 900 n {interact(livingRoomChair,activate)} nw
+p 755.0 875.0 p29 0 n
+t 1035.0 875.0 t41 c 120 600 n {interact(terraceChair1,activate)} nw
+t 1035.0 800.0 t42 c 0 w n {goto(terrace)} nw
+t 1035.0 950.0 t40 c 120 600 n {interact(terraceChair2,activate)} nw
+t 1515.0 975.0 t43 c 0 w n {goto(8,0)} nw
+p 1595.0 975.0 end 0 n
+e t47 p4 1 n
+e t36 p28 1 n
+e p24 t36 1 n
+e t35 p27 1 n
+e t34 p27 1 n
+e t32 p27 1 n
+e t30 p27 1 n
+e p26 t35 1 n
+e p4 t5 1 n
+e p26 t34 1 n
+e t33 p26 1 n
+e t46 p32 1 n
+e t29 p25 1 n
+e p25 t30 1 n
+e p25 t32 1 n
+e p27 t43 1 n
+e t21 p24 1 n
+e p7 t6 1 n
+e p29 t40 1 n
+e t22 p24 1 n
+e t20 p24 1 n
+e p22 t28 1 n
+e p31 t46 1 n
+e t40 p27 1 n
+e t26 p22 1 n
+e t37 p29 1 n
+e sleep p7 1 n
+e t5 p19 1 n
+e p20 t26 1 n
+e t23 p20 1 n
+e p19 0.7638906795 160.6113321 t23 0.2548423514 230.1064971 1 n
+e p24 t37 1 n
+e t41 p27 1 n
+e t45 p31 1 n
+e p14 t17 1 n
+e p28 t33 1 n
+e t42 p27 1 n
+e t17 p15 1 n
+e p15 t18 1 n
+e t18 p16 1 n
+e p13 t11 1 n
+e t15 p13 1 n
+e p12 t15 1 n
+e p8 t13 1 n
+e p29 t41 1 n
+e p29 t42 1 n
+e t13 p11 1 n
+e p11 t14 1 n
+e t14 p12 1 n
+e start sleep 1 n
+e t43 end 1 n
+e p32 t47 1 n
+e p9 t10 1 n
+e t7 p9 1 n
+e p8 t7 1 n
+e t10 p13 1 n
+e p28 t29 1 n
+e t6 p1 1 n
+e t6 p3 1 n
+e t6 p5 1 n
+e p5 t45 1 n
+e p3 t1 1 n
+e p1 t0 1 n
+e t0 p10 1 n
+e t1 p6 1 n
+e p10 t5 1 n
+e p6 t5 1 n
+e t23 p18 1 n
+e p18 t27 1 n
+e t27 p21 1 n
+e p21 t28 1 n
+e t28 p8 1 n
+e t28 p14 1 n
+e p16 t11 1 n
+e t11 0.762218626 260.7680962 p23 0.2591135577 314.5155004 1 n
+e p23 t20 1 n
+e p23 t22 1 n
+e p23 t21 1 n
+h morning_routine_template_entitysensors_delay_illustration
+
+

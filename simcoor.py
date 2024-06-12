@@ -5,10 +5,10 @@ import pandas as pd
 import agent_instructions_generator
 import os
 import random
-import warnings
+import warnings # used for pm4py warning print suppression
 #import copy
-import sys # used for pm4py print suppression
-import io # used for pm4py print suppression
+import sys # used for pm4py loading bar print suppression
+import io # used for pm4py loading bar print suppression
 
 
 
@@ -17,10 +17,10 @@ import io # used for pm4py print suppression
 NUMBER_OF_EVENT_LOGS = 35 # INPUT: The number of symptomatic event logs produced (integer >=1)
 NUMBER_OF_CASES = 104 # INPUT: The number of cases in each event log (integer >=1)
 SIMCOOR_SEED = 5111 # INPUT: SimCoor seed (Integer or None value (None value makes seed based on system time))
-OUTPUT_XES = "wan-rep-for" # OUTPUT: prefix-naming of the produced event logs (without file format extension)
+OUTPUT_XES = "dementia" # OUTPUT: prefix-naming of the produced event logs (without file format extension)
 ROUTINE_MODEL = "morning_routine_template_entitysensors_delay.pnml" # INPUT: The asymptomatic routine model (PNML)
-SYMPTOMS = ["wandering", "forgetfulness", "repetitiveness"] # INPUT: The set of symptoms that one wants to inject (see available options in _Symptoms.py) %["wandering", "forgetfulness", "repetitiveness"]
-FLOORPLAN_PATH = "morning_routine_floorplan_entitysensors.json" # INPUT: Linac floorplan (JSON)
+SYMPTOMS = ["wandering", "forgetfulness", "repetitiveness", "slowness"] # INPUT: The set of symptoms that one wants to inject (see available options in _Symptoms.py) %["wandering", "forgetfulness", "repetitiveness", "slowness"]
+FLOORPLAN_PATH = "morning_routine_floorplan_entitysensors_presencesensors.json" # INPUT: Linac floorplan (JSON) #morning_routine_floorplan_entitysensors_presencesensors
 LINAC_SETTINGS_PATH = "simulator.json" # INPUT: Linac simulation settings (JSON)
 
 # DEVELOPER SETTINGS ###################################################################################################################################
@@ -133,7 +133,6 @@ while (degree <= 1):
 
     # Filtering of PresenceSensors
     # Filter redundant PresenceSensor events
-    '''
     rows_to_delete = []
     previous_sensor_name = None
     for index, row in dataframe.iterrows():
@@ -142,7 +141,6 @@ while (degree <= 1):
                 rows_to_delete.append(index)
             previous_sensor_name = row['sensor:name']
     dataframe = dataframe.drop(rows_to_delete)
-    '''
     """
     # drop all events of sensor type EntitySensor
     for index, row in dataframe.iterrows():
@@ -191,7 +189,7 @@ while (degree <= 1):
     first_run = False
 
     
-
+# Print commands for EnrichedCC v1.0
 for i in degrees:
     print(i)
 enrichedCC_command = "python Econformance.py " + OUTPUT_XES+f"_(C{NUMBER_OF_CASES}-asymptomatic).xes"

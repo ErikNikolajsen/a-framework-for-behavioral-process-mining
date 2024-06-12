@@ -74,8 +74,6 @@ class PetriNet():
             if arc.id == id:
                 return "place"
    
-
-
 class Place():
     def __init__(self, id, name, tokens):
         self.id = id
